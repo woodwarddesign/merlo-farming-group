@@ -769,8 +769,8 @@ input[type="email"],
 input[type="password"],
 input[type="search"],
 input[type="tel"] {
-  border: 1px solid #444444;
-  box-shadow: 0 0 2px #444444 inset;
+  border: 1px solid #dddddd;
+  box-shadow: 0 0 2px #dddddd inset;
   color: #222222;
   font-size: 22px;
   height: 2.25rem;
