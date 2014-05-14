@@ -33,7 +33,6 @@ input[type="email"],
 input[type="password"],
 input[type="search"],
 input[type="tel"] {
-  background: lighten($text-color, 15%);
   border: 1px solid $text-color;
   box-shadow: 0 0 2px $text-color inset;
   color: $black;
