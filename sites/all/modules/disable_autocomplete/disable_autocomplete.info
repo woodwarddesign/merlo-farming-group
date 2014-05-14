@@ -1,0 +1,6 @@
+; $Id$
+name = Disable Login Form Autocomplete
+description = A custom module to prohibit browsers from saving username and password on login form.
+package = WDG
+core = 7.x
+files[] = disable_autocomplete.module

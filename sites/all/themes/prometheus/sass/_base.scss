@@ -1,0 +1,86 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $base-font-size;
+}
+
+a,
+a:link,
+a:visited,
+a.active {
+  border: none;
+  color: $accent;
+  text-decoration: none;
+  -moz-transition: color .3s;
+  -o-transition: color .3s;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+a img, a, img {
+  border: none !important;
+  border-color: none !important;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: lighten($accent, 15%);
+  outline: none;
+}
+
+p, ol, ul, blockquote, pre, code, span {
+  color: $black;
+  font-weight: $body-font-weight;
+  hyphens: auto;
+  line-height: $base-line-height;
+  margin: 0 0 $vert-spacing 0;
+  word-wrap: break-word;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+blockquote {
+  background: $light-gray;
+  border: 1px solid $gray;
+  font-style: italic;
+  padding: 1em;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+ol, ul {
+  padding-left: 0;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+dt {
+  margin-bottom: .5rem;
+}
+
+dd {
+  font-weight: $body-font-weight;
+  margin: 0;
+}

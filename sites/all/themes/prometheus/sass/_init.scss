@@ -1,0 +1,74 @@
+// Variables for _normalize.scss
+
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+
+// breakpoints
+$tab: 40em;
+$desk: 60em;
+
+// Font faces, stacks and sizes.
+
+$base-font-size:   20px; // The font size set on the root html element.
+
+$h1-font-size: 2.25 * $base-font-size;
+$h2-font-size: 1.5  * $base-font-size;
+$h3-font-size: 1.31 * $base-font-size;
+$h4-font-size: 1    * $base-font-size;
+$h5-font-size: 0.83 * $base-font-size;
+$h6-font-size: 0.67 * $base-font-size;
+
+$courier: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+$sans: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Now create some variables for the font stacks we want to use on this site.
+$base-font-family: $sans; // The font family set on the html element.
+$body-font:        $sans;
+$font-monospace:   $courier;
+$body-font-weight: 300;
+$bold-font-weight: 500;
+$base-line-height: 1.4;
+
+$header-font-family: $sans;
+$header-font-weight: 300;
+$header-font-style: normal;
+$header-line-height: 110%;
+$header-top-margin: 0;
+$header-bottom-margin: .5em;
+
+//
+// Colors, etc.
+//
+
+$white: #fff;
+$light-gray: #efefef;
+$gray: #ddd;
+$dark-gray: #bbb;
+$accent: #237ad9;
+$black: #444;
+$error: #f5dfdf;
+$warning: #f8fad5;
+$info: #dfeff5;
+$success: #e8f5df;
+
+// The amount lists, blockquotes and comments are indented.
+$indent-amount: 30px;
+
+$vert-spacing: 1.5rem;
+
+// The height of the navigation container.
+$nav-height: 3em;
+
+// Tab styling.
+$tabs-container-bg: #fff;
+$tabs-border: $gray;
+
+
+// =============================================================================
+// Partials to be shared with all .scss files.
+// =============================================================================
+@import "normalize";
+@import "compass/utilities/general/clearfix";
+
+// Now we add our custom helper mixins.
+@import "mixins";

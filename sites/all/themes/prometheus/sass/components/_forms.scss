@@ -1,0 +1,164 @@
+/* FORM STYLES */
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.form-type-checkbox label {
+  display: inline-block;
+}
+
+fieldset,
+.form-type-password-confirm {
+  border: 1px solid $gray;
+  margin: 0 0 $vert-spacing 0;
+  padding: 1rem;
+}
+
+// description text for form inputs
+.description,
+.password-strength-title,
+.password-confirm {
+  color: lighten($black, 30%);
+  font-size: $base-font-size * .75;
+}
+
+input[type='text'],
+textarea,
+select,
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"] {
+  border: 1px solid $gray;
+  box-shadow: 0 0 2px $light-gray inset;
+  color: $black;
+  font-size: $base-font-size;
+  height: 2.25rem;
+  margin-bottom: .5rem;
+  padding: 0 .5rem;
+  position: relative;
+  width: 80%;
+}
+
+textarea {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  min-height: 200px;
+  width: 100%;
+}
+
+button, input[type="reset"],
+input[type="submit"],
+input[type="button"],
+.comment-links a,
+.button {
+  background: $accent;
+  border: none;
+  border-radius: .5rem;
+  color: $white;
+  font-size: $base-font-size;
+  margin: 4px 2px;
+  padding: 8px 16px; padding: .5rem 1rem;
+  text-shadow: none;
+}
+
+button:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.comment-links a:hover,
+.button:hover {
+  background: lighten($accent, 15%);
+  color: $white !important;
+  cursor: pointer;
+}
+
+input[type='text']:focus,
+textarea:focus,
+select:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus {
+  border: 1px solid $accent;
+  box-shadow: 0 0 2px $accent inset;
+}
+
+// Drupal's form field wrapper class
+.form-item {
+  margin-bottom: $vert-spacing * 1.5;
+  overflow: hidden;
+}
+
+//profile edit form
+
+.form-item-pass-pass1,
+.form-item-pass-pass2 {
+  overflow: visible;
+  position: relative;
+  width: 40%;
+}
+
+.page-user input.password-confirm {
+//  margin-left: -50%;
+  margin-top: 0;
+}
+
+.form-type-password-confirm {
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.password-strength,
+.password-confirm {
+  display: block;
+  margin-bottom: .5rem;
+  padding: .5rem 0;
+//  position: absolute;
+//  right: -50%;
+  .password-indicator div {
+    background: #f76558;
+    height: 3px;
+    width: 0;
+  }
+}
+
+.password-strength-title {
+  margin-bottom: .5rem;
+}
+
+.password-strength-text {
+  font-size: $base-font-size * .75;
+  font-weight: bold;
+//  position: absolute;
+//  right: -.5rem;
+//  top: 0;
+}
+
+.password-confirm .error,
+.password-confirm .ok {
+  font-size: $base-font-size * .75;
+  font-weight: bold;
+}
+
+.password-strength-text {
+  margin-top: .5rem;
+}
+
+.password-confirm .error {
+  margin-top: .3rem;
+}
+
+.password-suggestions {
+  background: $light-gray;
+  border: 1px solid $gray;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 40%;
+}

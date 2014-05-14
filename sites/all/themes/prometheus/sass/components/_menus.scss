@@ -1,0 +1,115 @@
+/* MENU STYLES */
+
+ul li.leaf {
+  list-style: none;
+}
+
+li a.active {
+  color: $accent;
+}
+
+li a.active:hover  {
+  color: lighten($accent, 15%);
+}
+
+.region-menu .menu {
+	float: right;
+}
+
+.region-menu .menu li {
+  display: block;
+}
+
+.region-menu .menu li a {
+  color: $accent;
+  font-family: $header-font-family;
+}
+
+.region-menu .menu li a:hover,
+.region-menu .menu li a:focus,
+.region-menu .menu li a:active {
+  color: lighten($accent, 15%);
+  outline: none;
+}
+
+.sidebars .menu li {
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: .5em;
+  padding-bottom: .5em;
+  padding-top: 0;
+}
+
+.sidebars .menu li.last {
+  border: none;
+}
+
+// node edit menu styles
+
+ul.primary {
+  border-bottom: 1px solid $dark-gray;
+   li {
+    display: inline-block;
+    list-style: none;
+    background-color: $gray;
+    border-color: $dark-gray;
+    border-style: solid solid none solid;
+    border-width: 1px;
+    height: auto;
+    margin-right: 0.5em;
+    padding: 0 1em;
+    a {
+
+      text-decoration: none;
+    }
+    &:active {
+      background-color: $white;
+    }
+  }
+}
+
+@media all and (min-width: $tab) {
+
+  // main menu at tablet breakpoints
+  .region-menu .menu li {
+    display: inline-block;
+    padding-left: 1em;
+    position: relative;
+  }
+
+  .region-menu .menu li ul {
+    background: $white;
+    border: 1px solid $gray;
+    float: left;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 1.5rem;
+    visibility: hidden;
+    width: 10em;
+     -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+    z-index: 10;
+    li {
+      background: $white;
+      border-bottom: 1px solid $gray;
+      display: block;
+      padding: .5em;
+      @include trans-all;
+      &:last-child {
+        border: none;
+      }
+      &:hover {
+        background: $light-gray;
+      }
+    }
+  }
+
+  .region-menu .menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
