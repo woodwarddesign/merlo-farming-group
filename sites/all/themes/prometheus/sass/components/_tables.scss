@@ -1,4 +1,4 @@
-/* TABLE STYLES */
+// table styles
 
 table {
   background-color: transparent;
@@ -32,11 +32,10 @@ table thead th {
 
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
-  background-color: $light-gray;
+  background-color: $accent;
 }
 
-table tbody tr:hover > td,
-table tbody tr:hover > th {
-  background-color: $accent;
-  color: $white;
+table tbody > tr:nth-child(even) > td,
+table tbody > tr:nth-child(even) > th {
+  background-color: lighten($accent, 7%);
 }

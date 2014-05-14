@@ -2,6 +2,7 @@
 
   <div class="header-wrapper">
     <header class="header" id="header" role="banner">
+      <div class="branding-wrapper">
       <div class="region region-branding">
         <?php if ($logo): ?>
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
@@ -17,11 +18,20 @@
 
             <?php if ($site_slogan): ?>
               <div class="header__site-slogan" id="site-slogan"><?php print $site_slogan; ?></div>
+                <?php endif; ?>
+              </div>
             <?php endif; ?>
-          </div>
-            <?php endif; ?>
+            <?php print render($page['branding']); ?>
       </div>
-      <?php print render($page['menu']); ?>
+    </div>
+    <div class="menu-wrapper">
+       <?php if($main_menu): ?>
+       <nav class="region-menu">
+        <a href="#menu" class="menu-link">Menu</a>
+        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('main-menu', 'menu')))); ?>
+     </nav>
+     <?php endif; ?>
+    </div>
     </header>
   </div>
 
@@ -32,10 +42,6 @@
   </div>
 
   <div id="main" class="content-wrapper">
-    <div class="content-top">
-      <?php print $breadcrumb; ?>
-    </div>
-
     <div id="content" class="column" role="main">
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
@@ -67,7 +73,7 @@
 
   </div>
 <footer>
-    <?php print render($page['footer']); ?>
+  <?php print render($page['footer']); ?>
 </footer>
 </div>
 

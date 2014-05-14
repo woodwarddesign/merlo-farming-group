@@ -39,6 +39,14 @@
   transition: all .3s;
 }
 
+@mixin trans-color {
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+// clearfix
 @mixin clear-it {
   content: "";
   display: table;

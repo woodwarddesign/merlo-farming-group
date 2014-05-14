@@ -7,7 +7,9 @@
 }
 
 body {
-  font-size: $base-font-size;
+  color: $text-color;
+  font-size: $base-font-size * .925;
+  font-family: $sans-body;
 }
 
 a,
@@ -16,16 +18,19 @@ a:visited,
 a.active {
   border: none;
   color: $accent;
+  font-weight: $body-font-weight;
   text-decoration: none;
-  -moz-transition: color .3s;
-  -o-transition: color .3s;
-  -webkit-transition: color .3s;
-  transition: color .3s;
+  @include trans-color;
 }
 
 a img, a, img {
   border: none !important;
   border-color: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a:hover,
@@ -36,7 +41,7 @@ a:active {
 }
 
 p, ol, ul, blockquote, pre, code, span {
-  color: $black;
+  color: $text-color;
   font-weight: $body-font-weight;
   hyphens: auto;
   line-height: $base-line-height;
@@ -57,11 +62,6 @@ blockquote {
 
 blockquote p {
   margin-bottom: 0;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
 }
 
 ol, ul {

@@ -1,15 +1,6 @@
 // misc styles
 
-.header__logo-image {
-  float: left;
-  height: auto;
-  margin-right: 1em;
-  max-width: 60px;
-}
 
-.header__name-and-slogan {
-  float: left;
-}
 
 // pager styles
 
@@ -25,7 +16,7 @@ ul.pager {
 
 ul.pager li {
   border: none;
-  font-size: $base-font-size;
+  font-size: $base-font-size * .75;
   padding: .5em 0 .5em 1em;
 }
 
@@ -118,6 +109,9 @@ ul.pager li a {
   color: $black;
   margin-bottom: $vert-spacing;
   padding: 1rem;
+  li {
+    color: $black;
+  }
 }
 
 // accessible invisibility

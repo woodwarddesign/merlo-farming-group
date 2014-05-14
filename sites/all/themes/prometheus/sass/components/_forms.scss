@@ -12,7 +12,7 @@ label {
 
 fieldset,
 .form-type-password-confirm {
-  border: 1px solid $gray;
+  border: 1px solid $text-color;
   margin: 0 0 $vert-spacing 0;
   padding: 1rem;
 }
@@ -33,8 +33,9 @@ input[type="email"],
 input[type="password"],
 input[type="search"],
 input[type="tel"] {
-  border: 1px solid $gray;
-  box-shadow: 0 0 2px $light-gray inset;
+  background: lighten($text-color, 15%);
+  border: 1px solid $text-color;
+  box-shadow: 0 0 2px $text-color inset;
   color: $black;
   font-size: $base-font-size;
   height: 2.25rem;
@@ -58,13 +59,14 @@ input[type="button"],
 .comment-links a,
 .button {
   background: $accent;
-  border: none;
+  border: 2px solid lighten($accent, 15%);
   border-radius: .5rem;
   color: $white;
   font-size: $base-font-size;
   margin: 4px 2px;
   padding: 8px 16px; padding: .5rem 1rem;
   text-shadow: none;
+  @include trans-all;
 }
 
 button:hover,
@@ -73,7 +75,7 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 .comment-links a:hover,
 .button:hover {
-  background: lighten($accent, 15%);
+  background: lighten($accent, 10%);
   color: $white !important;
   cursor: pointer;
 }
@@ -136,9 +138,6 @@ input[type="tel"]:focus {
 .password-strength-text {
   font-size: $base-font-size * .75;
   font-weight: bold;
-//  position: absolute;
-//  right: -.5rem;
-//  top: 0;
 }
 
 .password-confirm .error,

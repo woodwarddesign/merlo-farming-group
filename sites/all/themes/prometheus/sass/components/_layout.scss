@@ -7,13 +7,13 @@
  *
  */
 
-$max-width: 1100px;
+$max-width: 1000px;
 $gutter: 30px;
 
 header,
-#preface,
+.preface,
 .content-wrapper,
-.region-footer {
+footer {
   clear: both;
   margin: 0 auto;
   max-width: $max-width;
@@ -23,7 +23,7 @@ header,
 .region-branding,
 .region-menu {
   float: left;
-  width: 50%;
+  width: 100%;
 }
 
 #content,
@@ -58,6 +58,14 @@ header,
 
 
 @media all and (min-width: $desk) {
+
+  .region-branding {
+    width: 50%;
+  }
+
+  .region-menu {
+    width: 50%;
+  }
 
 // two sidebars, one on either side of content
 .two-sidebars {
