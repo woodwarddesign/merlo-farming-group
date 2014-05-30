@@ -1502,7 +1502,7 @@ footer {
 
 /* line 24, ../sass/components/_layout.scss */
 .header-wrapper {
-  padding-bottom: 4em;
+  padding-bottom: 5em;
 }
 
 /* line 29, ../sass/components/_layout.scss */
@@ -1523,8 +1523,8 @@ footer {
 #main {
   padding: 0;
   margin: 15px;
-  margin-top: -4em;
-  margin-bottom: -2em;
+  margin-top: -5em;
+  margin-bottom: -2.5em;
   position: relative;
   z-index: 2;
 }
@@ -1537,7 +1537,7 @@ footer {
 
 /* line 54, ../sass/components/_layout.scss */
 .footer-wrapper {
-  padding-top: 2em;
+  padding-top: 2.5em;
 }
 
 @media all and (min-width: 40em) {
