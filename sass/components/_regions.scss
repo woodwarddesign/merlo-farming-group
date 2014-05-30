@@ -4,6 +4,12 @@
   width: 100%;
 }
 
+.header-wrapper {
+	@include merlo-gradient;
+	border-bottom: $white;
+	overflow: hidden;
+}
+
 img.header__logo-image {
   height: 90px;
 }
@@ -59,6 +65,11 @@ img.header__logo-image {
 
 
 // footer region
+
+.footer-wrapper {
+	@include merlo-gradient-180;
+	overflow: hidden;
+}
 
 footer {
   clear: both;

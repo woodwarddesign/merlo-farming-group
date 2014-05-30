@@ -52,3 +52,11 @@
   display: table;
   clear: both;
 }
+
+@mixin merlo-gradient {
+	@include background-image(linear-gradient($dark-green, $light-green));
+}
+
+@mixin merlo-gradient-180 {
+	@include background-image(linear-gradient($light-green, $dark-green));
+}
