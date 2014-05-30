@@ -565,7 +565,7 @@ a:link,
 a:visited,
 a.active {
   border: none;
-  color: #237ad9;
+  color: #79b01f;
   font-weight: 300;
   text-decoration: none;
   -webkit-transition: color .3s;
@@ -590,7 +590,7 @@ img {
 a:hover,
 a:focus,
 a:active {
-  color: #63a1e6;
+  color: #a1dd3e;
   outline: none;
 }
 
@@ -688,7 +688,7 @@ dd {
 
 /* line 34, ../sass/components/_views.scss */
 .view-uc-catalog input[type="submit"] {
-  border: 2px solid #63a1e6;
+  border: 2px solid #a1dd3e;
 }
 
 /* line 38, ../sass/components/_views.scss */
@@ -796,8 +796,8 @@ input[type="submit"],
 input[type="button"],
 .comment-links a,
 .button {
-  background: #237ad9;
-  border: 2px solid #63a1e6;
+  background: #79b01f;
+  border: 2px solid #a1dd3e;
   border-radius: .5rem;
   color: #fefefe;
   font-size: 20px;
@@ -818,7 +818,7 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 .comment-links a:hover,
 .button:hover {
-  background: #4d94e2;
+  background: #96d929;
   color: #fefefe !important;
   cursor: pointer;
 }
@@ -832,8 +832,8 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus {
-  border: 1px solid #237ad9;
-  box-shadow: 0 0 2px #237ad9 inset;
+  border: 1px solid #79b01f;
+  box-shadow: 0 0 2px #79b01f inset;
 }
 
 /* line 96, ../sass/components/_forms.scss */
@@ -951,13 +951,13 @@ table thead th {
 /* line 34, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
-  background-color: #237ad9;
+  background-color: #79b01f;
 }
 
 /* line 39, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(even) > td,
 table tbody > tr:nth-child(even) > th {
-  background-color: #408ce0;
+  background-color: #8ece24;
 }
 
 /* line 1, ../sass/components/_typography.scss */
@@ -1102,7 +1102,7 @@ ul li.leaf {
 
 /* line 31, ../sass/components/_menus.scss */
 a.menu-link {
-  background: url("../images/menu-icon.svg") no-repeat scroll 10px 0.9em #237ad9;
+  background: url("../images/menu-icon.svg") no-repeat scroll 10px 0.9em #79b01f;
   color: #fefefe !important;
   display: block;
   float: left;
@@ -1150,7 +1150,7 @@ a.menu-link {
 /* line 72, ../sass/components/_menus.scss */
 .region-menu .menu li a,
 a.menu-link {
-  color: #237ad9;
+  color: #e6b015;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
@@ -1159,7 +1159,7 @@ a.menu-link {
 .region-menu .menu li a:hover,
 .region-menu .menu li a:focus,
 .region-menu .menu li a.toggled {
-  color: #185597;
+  color: #a07a0f;
   outline: none;
 }
 
@@ -1167,7 +1167,7 @@ a.menu-link {
 footer .region-footer p a:hover,
 footer .region-footer p a:focus,
 footer .region-footer p a.toggled {
-  color: #0e3055;
+  color: #5a4508;
 }
 
 /* line 91, ../sass/components/_menus.scss */
