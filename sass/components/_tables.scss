@@ -1,0 +1,41 @@
+// table styles
+
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: $base-line-height;
+  max-width: 100%;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: .75em;
+  line-height: $base-line-height;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  border-bottom: 0;
+  font-weight: bold;
+}
+
+tbody {
+  border-top: 0;
+}
+
+table thead th {
+  vertical-align: bottom;
+}
+
+table tbody > tr:nth-child(odd) > td,
+table tbody > tr:nth-child(odd) > th {
+  background-color: $accent;
+}
+
+table tbody > tr:nth-child(even) > td,
+table tbody > tr:nth-child(even) > th {
+  background-color: lighten($accent, 7%);
+}

@@ -1,0 +1,250 @@
+// menu styles
+
+ul li.leaf,
+ul li.leaf {
+  list-style: none;
+}
+
+.menu li a {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.region-menu .menu {
+	float: left;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.js .region-menu .menu {
+  background: $light-gray;
+  max-height: 0;
+  overflow: hidden;
+  &.toggled {
+    max-height: 50em;
+  }
+}
+
+// multi-toggle styles
+
+a.menu-link {
+  background: url('../images/menu-icon.svg') no-repeat scroll 10px .9em $accent;
+  color: $white !important;
+  display: block;
+  float: left;
+  padding: .5em .5em .5em 40px;
+}
+
+.region-menu .menu {
+  clear: both;
+  width: 100%;
+  ul {
+    clear: both;
+  }
+}
+
+.region-menu .menu li.menuparent > a:after {
+	content: '+';
+	position: absolute;
+	top: -10px;
+	right: 0;
+	display: block;
+	font-size: 1.5em;
+	padding: 0.25em 0.5em;
+}
+
+.region-menu .menu li.menuparent > a.toggled:after {
+  content: "-";
+  top: -13px;
+  right: 2px;
+}
+
+.region-menu .menu li {
+  padding: .75em 20px;
+}
+
+.region-menu .menu li.menuparent {
+  padding-bottom: 1.25em;
+}
+
+.region-menu .menu li a,
+a.menu-link {
+  color: $link-color;
+  font-family: $header-font-family;
+  font-weight: 100;
+}
+
+.region-menu .menu li a:hover,
+.region-menu .menu li a:focus,
+.region-menu .menu li a.toggled {
+  color: darken($link-color, 15%);
+  outline: none;
+}
+
+footer .region-footer p a:hover,
+footer .region-footer p a:focus,
+footer .region-footer p a.toggled {
+	  color: darken($link-color, 30%);
+}
+
+.region-menu .menu li ul  {
+  background: $gray;
+  clear: both;
+  list-style: none;
+  left: 20px;
+  margin-bottom: 0;
+  opacity: 1;
+  top: 35px;
+  @include trans-all;
+  li {
+    padding: .75rem .75rem .75rem 2rem;
+    list-style: none;
+    width: 200%;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.region-menu .menu li ul {
+  margin: .5em -20px -1em -100px;
+  padding-left: 80px;
+  padding-right: 150px;
+  max-height: 50em;
+}
+
+.js .region-menu .menu li ul {
+  max-height: 0;
+  overflow: hidden;
+  @include trans-all;
+  &.toggled {
+    max-height: 50em;
+    margin-bottom: -1.25em;
+  }
+}
+
+
+@media all and (min-width: $desk) {
+
+	#main-menu {
+		margin-top: 1px;
+		text-align: right;
+	}
+
+  .js .region-menu .menu,
+  .js .region-menu .menu li ul {
+    background-color: transparent;
+    max-height: none;
+    overflow: visible;
+    z-index: 1000;
+  }
+
+    .region-menu .menu {
+      margin-top: 0;
+    }
+
+  .region-menu .menu li.menuparent > a:after {
+    content: '';
+  }
+
+  .region-menu .menu li.menuparent > a.toggled:after {
+    content: '';
+  }
+
+  .region-menu .menu li.menuparent > a:after {
+    content: '';
+  }
+
+  .region-menu .menu li.menuparent {
+    padding-bottom: .5em;
+  }
+
+  .region-menu .menu li  {
+    border-top: none;
+    padding: .5em 1em;
+    &.first {
+      padding-left: 0;
+    }
+    &.last {
+      border-right: none;
+    }
+  }
+
+  .region-menu .menu li {
+    display: inline-block;
+    font-size: $base-font-size * .7;
+    position: relative;
+    font-weight: 300;
+  }
+
+  a.menu-link {
+      display: none;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .menu li:hover > ul {
+    display: block;
+  }
+
+  .region-menu .menu li ul {
+    border: 1px solid $light-gray;
+		position: absolute;
+		top: 1.75em;
+		left: 7.65em;
+		width: 12em;
+		text-align: left;
+    li {
+      border-right: none;
+      display: inline-block;
+      margin-left: -5.25em;
+      overflow: hidden;
+      padding-left: .75em;
+      position: relative;
+      width: 15.2em;
+      a {
+        display: block;
+      }
+    }
+	}
+
+} //end media query
+
+
+.region-sidebar-left .menu li,
+.region-sidebar-right .menu li  {
+  border-bottom: 1px solid lighten($gray, 15%);
+  margin-bottom: .5em;
+  padding-bottom: .5em;
+  padding-top: 0;
+  &.last {
+    border: none;
+  }
+}
+
+// node edit menu styles
+
+ul.primary {
+  border-bottom: 1px solid $dark-gray;
+   li {
+    display: inline-block;
+    list-style: none;
+    background-color: $gray;
+    border-color: $dark-gray;
+    border-style: solid solid none solid;
+    border-width: 1px;
+    height: auto;
+    margin-right: 0.5em;
+    padding: 0 1em;
+    a {
+
+      text-decoration: none;
+    }
+    &:toggled {
+      background-color: $white;
+    }
+  }
+}

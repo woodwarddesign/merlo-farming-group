@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><html class="ie" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>><![endif]-->
+<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+<head>
+  <title>WDG Responsive HTML Starter Kit</title>
+  <meta http-equiv="cleartype" content="on">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=3">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500" media="all">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- body class options: one-sidebar sidebar-first sidebar-second two-sidebars no-sidebars -->
+<body class="no-sidebars">
+<div id="skip-link">
+  <a href="#main-content" class="element-invisible element-focusable"></a>
+</div>
+<div id="page">
+  <div class="header-wrapper">
+    <header class="header" id="header" role="banner">
+      <div class="region region-branding">
+        <a href="index.html" title="Home" rel="home" class="header__logo" id="logo"><img src="images/logo.png" alt="logo" class="header__logo-image" /></a>
+        <div class="header__name-and-slogan" id="name-and-slogan">
+          <h1 class="site-name">
+            <a href="index.html" title="Site name" class="header__site-link" rel="home">Site Name</a>
+         </h1>
+         <div class="header__site-slogan" id="site-slogan">Site slogan</div>
+        </div>
+        <!-- end of name and slogan -->
+      </div> <!-- end of branding -->
+      <div class="region region-menu">
+          <a href="#menu" class="menu-link">Menu</a>
+          <ul id="main-menu" class="menu main-menu">
+            <li class="active-trail first odd"><a href="index.html" class="active">Home</a></li>
+            <li class="even menuparent"><a href="sidebar-second.html">Sidebar second</a>
+              <ul>
+                <li class="first odd"><a href="#">Submenu item</a></li>
+              </ul>
+            </li>
+            <li class="odd"><a href="sidebar-first.html">Sidebar first</a></li>
+            <li class="even last"><a href="two-sidebars.html">Two sidebars</a></li>
+          </ul>
+      </div> <!-- end of menu -->
+    </header>
+  </div> <!-- end of header wrapper -->
+
+  <div class="preface-wrapper">
+    <div class="preface">
+
+    </div>
+  </div>
+
+  <div id="main" class="content-wrapper">
+
+    <div class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li> &raquo; </li>
+      <li>Page title</li>
+    </div>
+
+    <div id="content" class="column" role="main">
+      <h1 class="title" id="page-title">Mobile First Default</h1>
+        <a id="main-content"></a>
+        <div id="block-system-main" class="block block-system">
+          <article id="node-1" class="node node-page clearfix">
+            <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur <a href="#">aliquet quam</a> id dui posuere blandit. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat.</p>
+  <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+        </article>
+        <div class="view view-name view-id-name">
+          <div class="row first odd">
+            <h2><a href="/blog/view-sample-styles">View Item Title</a></h2>
+            <p>This page has some sample styles you can preview. Bene cogo cui gemino incassum lucidus quia tego vulputate. Augue eros gravis metuo. Dignissim iriure nisl paratus. Abluo iaceo imputo natu patria populus typicus vel. Abdo aliquam consectetuer decet fere jugis venio voco. Aliquam obruo persto quis saepius vicis ymo. Abbas distineo gemino hos iusto... <a href="/" class="views-more-link"> Full Article</a>
+            </p>
+          </div>
+      <div class="row last even">
+        <h2><a href="#">View Item Title</a></h2>
+        <p>Sed porttitor lectus nibh. Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat... <a href="/" class="views-more-link"> Full Article</a>
+        </p>
+      </div>
+      <div class="item-list">
+        <ul class="pager"><li class="pager-previous first">&nbsp;</li>
+          <li class="pager-current">1 of 3</li>
+          <li class="pager-next last"><a href="#?page=1">next &raquo;</a></li>
+        </ul>
+      </div>
+    </div> <!-- end of view -->
+  </div> <!-- end of block-system-main -->
+ </div> <!-- end of main content -->
+  <div class="region region-sidebar-first">
+    <div id="block-block-1" class="block block-block">
+      <h2>This is a block in the first sidebar</h2>
+      <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+    </div><!-- end of block -->
+  </div> <!-- end of sidebar-first -->
+  <div class="region region-sidebar-second">
+    <div id="block-block-2" class="block block-block">
+      <h2>This is a block in the second sidebar</h2>
+      <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+    </div><!-- end of block -->
+  </div> <!-- end of sidebar-second -->
+
+  </div> <!-- end of content wrapper -->
+    <footer>
+      <div class="region-footer">
+        <div class="copyright"><p>&copy; Woodward Design Group</p></div>
+      </div>
+    </footer>
+  </div> <!-- end of page div -->
+<script src="js/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

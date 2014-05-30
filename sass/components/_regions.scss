@@ -1,0 +1,77 @@
+// header region
+.header-wrapper,
+.preface-wrapper {
+  width: 100%;
+}
+
+img.header__logo-image {
+  height: 90px;
+}
+
+.header__logo-image {
+  float: left;
+  height: auto;
+  margin-right: 1em;
+  position: relative;
+}
+
+.header__name-and-slogan {
+  float: left;
+ }
+
+.region-branding {
+  float: left;
+  overflow: hidden;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.region-menu {
+  padding: 1rem 0;
+}
+
+// preface region
+
+
+
+
+// content region
+
+#content {
+  background: $base-color;
+}
+
+#content .messages {
+  padding: 0 20px;
+}
+
+.breadcrumb {
+  li {
+    display: inline-block;
+    list-style: none;
+    padding: 2rem 0;
+    font-family: $sans;
+    font-size: $base-font-size * .725;
+  }
+}
+
+// postscript region
+
+
+// footer region
+
+footer {
+  clear: both;
+}
+
+.region-footer {
+  padding: 10px 0;
+}
+
+.copyright {
+  padding-bottom: 10px;
+  p {
+    float: left;
+    font-size: $base-font-size * .625;
+  }
+}
