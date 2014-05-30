@@ -9,6 +9,7 @@
 
 $max-width: 1000px;
 $gutter: 30px;
+$overlay: 4em;
 
 header,
 .preface,
@@ -18,6 +19,10 @@ footer {
   margin: 0 auto;
   max-width: $max-width;
   padding: 0 ($gutter / 2);
+}
+
+.header-wrapper {
+	padding-bottom: $overlay;
 }
 
 .region-branding,
@@ -35,6 +40,7 @@ footer {
 #main {
 	padding: 0;
 	margin: 15px;
+	margin-top: -$overlay;
 	.content-inner {
 		margin: 15px;
 		overflow: hidden;
