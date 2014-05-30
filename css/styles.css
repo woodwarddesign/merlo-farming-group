@@ -556,7 +556,7 @@ th {
 body {
   color: #444444;
   font-size: 18.5px;
-  font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 /* line 18, ../sass/_base.scss */
@@ -964,7 +964,7 @@ table tbody > tr:nth-child(even) > th {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   color: #222222;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 110%;
   margin-top: 0;
@@ -1151,7 +1151,7 @@ a.menu-link {
 .region-menu .menu li a,
 a.menu-link {
   color: #237ad9;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 
@@ -1422,7 +1422,7 @@ img.header__logo-image {
   display: inline-block;
   list-style: none;
   padding: 2rem 0;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 14.5px;
 }
 

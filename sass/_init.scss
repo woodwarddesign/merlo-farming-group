@@ -19,8 +19,8 @@ $h5-font-size: 0.83 * $base-font-size;
 $h6-font-size: 0.67 * $base-font-size;
 
 $courier: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
-$sans: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$sans-body: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$sans: Helvetica, Arial, sans-serif;
+$sans-body: Helvetica, Arial, "Lucida Grande", sans-serif;
 
 // Variables for fonts.
 $body-font: $sans-body;
@@ -47,6 +47,7 @@ $gray: #ddd;
 $dark-gray: #bbb;
 $dark-green: #336607;
 $light-green: #79b01f;
+$brown: #2d2c0f;
 $link-color: #237ad9;
 $accent: #237ad9;
 $black: #222;
