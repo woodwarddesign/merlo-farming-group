@@ -41,11 +41,18 @@ footer {
 	padding: 0;
 	margin: 15px;
 	margin-top: -$overlay;
+	margin-bottom: -($overlay / 2);
+	position: relative;
+	z-index: 2;
 	.content-inner {
 		margin: 15px;
 		overflow: hidden;
 		padding: 0 15px;
 	}
+}
+
+.footer-wrapper {
+	padding-top: ($overlay / 2);
 }
 
 @media all and (min-width: $tab) {
