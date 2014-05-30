@@ -9,6 +9,7 @@
 
 $max-width: 1000px;
 $gutter: 30px;
+$overlay: 4em;
 
 header,
 .preface,
@@ -18,6 +19,10 @@ footer {
   margin: 0 auto;
   max-width: $max-width;
   padding: 0 ($gutter / 2);
+}
+
+.header-wrapper {
+	padding-bottom: $overlay;
 }
 
 .region-branding,
@@ -30,6 +35,24 @@ footer {
 .region-sidebar-first,
 .region-sidebar-second {
   margin-bottom: $vert-spacing * 1.5;
+}
+
+#main {
+	padding: 0;
+	margin: 15px;
+	margin-top: -$overlay;
+	margin-bottom: -($overlay / 2);
+	position: relative;
+	z-index: 2;
+	.content-inner {
+		margin: 15px;
+		overflow: hidden;
+		padding: 0 15px;
+	}
+}
+
+.footer-wrapper {
+	padding-top: ($overlay / 2);
 }
 
 @media all and (min-width: $tab) {
@@ -65,6 +88,10 @@ footer {
 
   .region-menu {
     width: 67%;
+  }
+  #main {
+	  margin-left: auto;
+	  margin-right: auto;
   }
 
 // two sidebars, one on either side of content
