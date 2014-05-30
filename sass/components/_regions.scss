@@ -1,3 +1,20 @@
+#page {
+	@include background-image(linear-gradient($black 10%, $brown 25%));
+}
+
+#main {
+	background-color: rgba($white, .3);
+	border: 1px solid $white;
+	padding: 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	.content-inner {
+		background-color: $white;
+		margin: 15px;
+		overflow: hidden;
+	}
+}
+
 // header region
 .header-wrapper,
 .preface-wrapper {
@@ -6,7 +23,7 @@
 
 .header-wrapper {
 	@include merlo-gradient;
-	border-bottom: $white;
+	border-bottom: 1px solid $white;
 	overflow: hidden;
 }
 
@@ -68,6 +85,7 @@ img.header__logo-image {
 
 .footer-wrapper {
 	@include merlo-gradient-180;
+	border-top: 1px solid $white;
 	overflow: hidden;
 }
 
