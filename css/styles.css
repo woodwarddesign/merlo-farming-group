@@ -1408,7 +1408,6 @@ img.header__logo-image {
 
 /* line 34, ../sass/components/_regions.scss */
 .header__logo-image {
-  float: left;
   height: auto;
   margin-right: 1em;
   position: relative;
@@ -1426,23 +1425,28 @@ img.header__logo-image {
   padding: 1rem 0;
   position: relative;
 }
+/* line 50, ../sass/components/_regions.scss */
+.region-branding a {
+  text-align: center;
+  display: inherit;
+}
 
-/* line 52, ../sass/components/_regions.scss */
+/* line 56, ../sass/components/_regions.scss */
 .region-menu {
   padding: 1rem 0;
 }
 
-/* line 63, ../sass/components/_regions.scss */
+/* line 67, ../sass/components/_regions.scss */
 #content {
   background: white;
 }
 
-/* line 67, ../sass/components/_regions.scss */
+/* line 71, ../sass/components/_regions.scss */
 #content .messages {
   padding: 0 20px;
 }
 
-/* line 72, ../sass/components/_regions.scss */
+/* line 76, ../sass/components/_regions.scss */
 .breadcrumb li {
   display: inline-block;
   list-style: none;
@@ -1451,7 +1455,7 @@ img.header__logo-image {
   font-size: 14.5px;
 }
 
-/* line 86, ../sass/components/_regions.scss */
+/* line 90, ../sass/components/_regions.scss */
 .footer-wrapper {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #79b01f), color-stop(100%, #336607));
   background-image: -webkit-linear-gradient(#79b01f, #336607);
@@ -1462,21 +1466,21 @@ img.header__logo-image {
   overflow: hidden;
 }
 
-/* line 92, ../sass/components/_regions.scss */
+/* line 96, ../sass/components/_regions.scss */
 footer {
   clear: both;
 }
 
-/* line 96, ../sass/components/_regions.scss */
+/* line 100, ../sass/components/_regions.scss */
 .region-footer {
   padding: 10px 0;
 }
 
-/* line 100, ../sass/components/_regions.scss */
+/* line 104, ../sass/components/_regions.scss */
 .copyright {
   padding-bottom: 10px;
 }
-/* line 102, ../sass/components/_regions.scss */
+/* line 106, ../sass/components/_regions.scss */
 .copyright p {
   float: left;
   font-size: 12.5px;
