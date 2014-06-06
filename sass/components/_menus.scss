@@ -34,9 +34,11 @@ a.menu-link {
   display: block;
   float: left;
   padding: .5em .5em .5em 40px;
+  width: 30%;
 }
 
-.region-menu .menu {
+.region-menu .menu,
+footer .menu {
   clear: both;
   width: 100%;
   ul {
@@ -44,7 +46,8 @@ a.menu-link {
   }
 }
 
-.region-menu .menu li.menuparent > a:after {
+.region-menu .menu li.menuparent > a:after
+footer .menu li.menuparent > a:after {
 	content: '+';
 	position: absolute;
 	top: -10px;
@@ -54,17 +57,20 @@ a.menu-link {
 	padding: 0.25em 0.5em;
 }
 
-.region-menu .menu li.menuparent > a.toggled:after {
+.region-menu .menu li.menuparent > a.toggled:after
+footer .menu li.menuparent > a.toggled:after {
   content: "-";
   top: -13px;
   right: 2px;
 }
 
-.region-menu .menu li {
+.region-menu .menu li
+footer .menu li {
   padding: .75em 20px;
 }
 
-.region-menu .menu li.menuparent {
+.region-menu .menu li.menuparent
+footer .menu li.menuparent {
   padding-bottom: 1.25em;
 }
 
@@ -77,7 +83,10 @@ a.menu-link {
 
 .region-menu .menu li a:hover,
 .region-menu .menu li a:focus,
-.region-menu .menu li a.toggled {
+.region-menu .menu li a.toggled
+footer .menu li a:hover,
+footer .menu li a:focus,
+footer .menu li a.toggled {
   color: darken($link-color, 15%);
   outline: none;
 }
@@ -88,7 +97,8 @@ footer .region-footer p a.toggled {
 	  color: darken($link-color, 30%);
 }
 
-.region-menu .menu li ul  {
+.region-menu .menu li ul,
+footer .menu li ul {
   background: $gray;
   clear: both;
   list-style: none;
@@ -107,14 +117,16 @@ footer .region-footer p a.toggled {
   }
 }
 
-.region-menu .menu li ul {
+.region-menu .menu li ul,
+footer .menu li ul {
   margin: .5em -20px -1em -100px;
   padding-left: 80px;
   padding-right: 150px;
   max-height: 50em;
 }
 
-.js .region-menu .menu li ul {
+.js .region-menu .menu li ul,
+.js footer .menu li ul {
   max-height: 0;
   overflow: hidden;
   @include trans-all;
@@ -124,12 +136,34 @@ footer .region-footer p a.toggled {
   }
 }
 
+// Mobile & Tablet Client Login 
+
+.login.mobile  {
+	background-color: $light-green;
+	display: block;
+	color: $white;
+	padding: .5em;
+	width: 65%;
+	float: right;
+	text-align: right;
+}
+
 
 @media all and (min-width: $desk) {
+	.login.mobile {
+		display: none;
+	}
 
 	#main-menu {
 		margin-top: 1px;
 		text-align: right;
+		.login {
+			display: inline-block;
+			@include background-image(linear-gradient($dark-green, $black));
+			@include border-radius(10px);
+			border: 1px solid $light-green;
+			
+		}
 	}
 
   .js .region-menu .menu,
