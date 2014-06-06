@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h1 a {
-  font-size: $h1-font-size * .75;
+  font-size: $h1-font-size * .5;
 }
 
 h1.site-name, h1.site-name a, h2.site-name, h2.site-name a {
@@ -20,8 +20,17 @@ h1.site-name, h1.site-name a, h2.site-name, h2.site-name a {
   text-transform: uppercase;
 }
 
-h1.page-title {
+h1#page-title {
   margin-bottom: .5rem; margin-bottom: 8px;
+	@include background-image(linear-gradient($dark-green 0%, $light-green 100%));
+	@include box-shadow(0 0 1px darken($gray, 50%));
+	border: 4px solid $white;
+	padding: 15px;
+	margin-top: 20px;
+	color: $white;
+	a {
+		color: $white;
+	}
 }
 
 h2, h2 a {

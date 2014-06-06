@@ -148,6 +148,7 @@ footer .menu li ul {
 	background-color: $light-green;
 	display: block;
 	color: $white;
+	font-weight: 100;
 	padding: .5em;
 	width: 65%;
 	float: right;
@@ -166,10 +167,12 @@ footer .menu li ul {
 		.login {
 			display: inline-block;
 			@include background-image(linear-gradient($dark-green, $black));
-			@include border-radius(10px);
+			@include border-radius(20px);
 			border: 1px solid $light-green;
-			
 		}
+	}
+	.region #main-menu li.login a {
+		font-weight: 100;
 	}
 
   .js .region-menu .menu,
