@@ -11,7 +11,8 @@ ul li.leaf {
   width: 100%;
 }
 
-.region-menu .menu {
+.region-menu .menu,
+.region-footer .menu {
 	float: left;
   list-style: none;
   margin-bottom: 0;
@@ -46,7 +47,7 @@ footer .menu {
   }
 }
 
-.region-menu .menu li.menuparent > a:after
+.region-menu .menu li.menuparent > a:after,
 footer .menu li.menuparent > a:after {
 	content: '+';
 	position: absolute;
@@ -57,19 +58,20 @@ footer .menu li.menuparent > a:after {
 	padding: 0.25em 0.5em;
 }
 
-.region-menu .menu li.menuparent > a.toggled:after
+.region-menu .menu li.menuparent > a.toggled:after,
 footer .menu li.menuparent > a.toggled:after {
   content: "-";
   top: -13px;
   right: 2px;
 }
 
-.region-menu .menu li
+.region-menu .menu li,
 footer .menu li {
-  padding: .75em 20px;
+  padding: .5em 20px;
+  border-top: 1px solid lighten($dark-green, 0%);
 }
 
-.region-menu .menu li.menuparent
+.region-menu .menu li.menuparent,
 footer .menu li.menuparent {
   padding-bottom: 1.25em;
 }
@@ -83,7 +85,7 @@ a.menu-link {
 
 .region-menu .menu li a:hover,
 .region-menu .menu li a:focus,
-.region-menu .menu li a.toggled
+.region-menu .menu li a.toggled,
 footer .menu li a:hover,
 footer .menu li a:focus,
 footer .menu li a.toggled {
