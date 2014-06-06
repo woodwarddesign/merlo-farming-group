@@ -47,6 +47,10 @@ footer .menu {
   }
 }
 
+#footer-menu {
+	margin-bottom: 15px;
+}
+
 .region-menu .menu li.menuparent > a:after,
 footer .menu li.menuparent > a:after {
 	content: '+';
@@ -81,7 +85,8 @@ footer .menu li.menuparent {
 }
 
 .region-menu .menu li a,
-a.menu-link {
+a.menu-link,
+.region-footer .menu li a {
   color: $link-color;
   font-family: $header-font-family;
   font-weight: 100;
@@ -93,14 +98,8 @@ a.menu-link {
 footer .menu li a:hover,
 footer .menu li a:focus,
 footer .menu li a.toggled {
-  color: darken($link-color, 15%);
   outline: none;
-}
-
-footer .region-footer p a:hover,
-footer .region-footer p a:focus,
-footer .region-footer p a.toggled {
-	  color: darken($link-color, 30%);
+	text-decoration: underline;
 }
 
 .region-menu .menu li ul,
@@ -208,7 +207,7 @@ footer .menu li ul {
 
   .region-menu .menu li  {
     border-top: none;
-    padding: .5em 1em;
+    padding: .15em .75em;
     &.first {
       padding-left: 0;
     }
