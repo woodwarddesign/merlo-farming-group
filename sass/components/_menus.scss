@@ -30,7 +30,7 @@ ul li.leaf {
 // multi-toggle styles
 
 a.menu-link {
-  background: url('../images/menu-icon.svg') no-repeat scroll 10px .9em $accent;
+  background: url('../images/menu-icon.svg') no-repeat scroll 10px .7em $accent;
   color: $white !important;
   display: block;
   float: left;
@@ -84,7 +84,7 @@ footer .menu li.menuparent {
 a.menu-link {
   color: $link-color;
   font-family: $header-font-family;
-  font-weight: bold;
+  font-weight: 100;
 }
 
 .region-menu .menu li a:hover,
@@ -164,6 +164,9 @@ footer .menu li ul {
 	#main-menu {
 		margin-top: 1px;
 		text-align: right;
+		li a {
+			font-weight: bold;
+		}
 		.login {
 			display: inline-block;
 			@include background-image(linear-gradient($dark-green, $black));

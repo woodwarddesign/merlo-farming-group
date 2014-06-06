@@ -92,6 +92,10 @@ img.header__logo-image {
 	border-top: 1px solid $white;
 	overflow: hidden;
 	text-align: center;
+	
+	p {
+		color: $white;
+	}
 }
 
 footer {
