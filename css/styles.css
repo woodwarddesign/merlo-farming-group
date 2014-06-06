@@ -1742,32 +1742,33 @@ ul.pager {
   list-style: none;
   overflow: hidden;
   text-align: right;
+  margin-bottom: 1em;
 }
 
-/* line 17, ../sass/components/_misc.scss */
+/* line 18, ../sass/components/_misc.scss */
 ul.pager li {
   border: none;
   font-size: 15px;
   padding: .5em 0 .5em 1em;
 }
 
-/* line 23, ../sass/components/_misc.scss */
+/* line 24, ../sass/components/_misc.scss */
 ul.pager li a {
   border: none;
 }
 
-/* line 28, ../sass/components/_misc.scss */
+/* line 29, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-previous {
   text-transform: capitalize;
 }
 
-/* line 32, ../sass/components/_misc.scss */
+/* line 33, ../sass/components/_misc.scss */
 .pager li.pager-current {
   font-weight: normal;
 }
 
-/* line 36, ../sass/components/_misc.scss */
+/* line 37, ../sass/components/_misc.scss */
 .pager li, .pager li.pager-next, .pager li.pager-previous, .pager li.pager-last, .pager li.pager-first {
   border: none;
   margin-left: 1em;
@@ -1775,28 +1776,28 @@ ul.pager li a {
   text-align: right;
 }
 
-/* line 43, ../sass/components/_misc.scss */
+/* line 44, ../sass/components/_misc.scss */
 .pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
   display: inline-block;
 }
 
-/* line 48, ../sass/components/_misc.scss */
+/* line 49, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-current {
   float: right;
 }
 
-/* line 52, ../sass/components/_misc.scss */
+/* line 53, ../sass/components/_misc.scss */
 .pager li.pager-previous {
   float: left;
 }
 
-/* line 56, ../sass/components/_misc.scss */
+/* line 57, ../sass/components/_misc.scss */
 .item-list .pager li {
   padding: .25em 1em;
 }
 
-/* line 65, ../sass/components/_misc.scss */
+/* line 66, ../sass/components/_misc.scss */
 .img-right {
   float: right;
   height: auto;
@@ -1804,7 +1805,7 @@ ul.pager li a {
   max-width: 50%;
 }
 
-/* line 72, ../sass/components/_misc.scss */
+/* line 73, ../sass/components/_misc.scss */
 .img-left {
   float: left;
   height: auto;
@@ -1812,33 +1813,33 @@ ul.pager li a {
   max-width: 50%;
 }
 
-/* line 82, ../sass/components/_misc.scss */
+/* line 83, ../sass/components/_misc.scss */
 .messages.error {
   background: #f5dfdf;
   border: 2px solid #ce9e9e;
 }
-/* line 86, ../sass/components/_misc.scss */
+/* line 87, ../sass/components/_misc.scss */
 .messages.warning {
   background: #f8fad5;
   border: 2px solid #e5d35b;
 }
-/* line 90, ../sass/components/_misc.scss */
+/* line 91, ../sass/components/_misc.scss */
 .messages.info {
   background: #dfeff5;
   border: 2px solid #9ebcce;
 }
-/* line 94, ../sass/components/_misc.scss */
+/* line 95, ../sass/components/_misc.scss */
 .messages.success {
   background: #e8f5df;
   border: 2px solid #9ece9e;
 }
-/* line 98, ../sass/components/_misc.scss */
+/* line 99, ../sass/components/_misc.scss */
 .messages h2 {
   font-size: 1rem;
   font-weight: 300;
 }
 
-/* line 108, ../sass/components/_misc.scss */
+/* line 109, ../sass/components/_misc.scss */
 .messages.error,
 .messages.warning,
 .messages.info,
@@ -1847,7 +1848,7 @@ ul.pager li a {
   margin-bottom: 2rem;
   padding: 1rem;
 }
-/* line 112, ../sass/components/_misc.scss */
+/* line 113, ../sass/components/_misc.scss */
 .messages.error li,
 .messages.warning li,
 .messages.info li,
@@ -1855,7 +1856,7 @@ ul.pager li a {
   color: #222222;
 }
 
-/* line 118, ../sass/components/_misc.scss */
+/* line 119, ../sass/components/_misc.scss */
 .element-invisible {
   position: absolute !important;
   height: 1px;
@@ -1864,7 +1865,7 @@ ul.pager li a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 122, ../sass/components/_misc.scss */
+/* line 123, ../sass/components/_misc.scss */
 .clearfix:after {
   content: "";
   display: table;
