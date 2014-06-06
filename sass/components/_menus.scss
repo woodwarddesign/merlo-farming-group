@@ -71,6 +71,10 @@ footer .menu li {
   border-top: 1px solid lighten($dark-green, 0%);
 }
 
+footer .menu li.first {
+	border-top: none;
+}
+
 .region-menu .menu li.menuparent,
 footer .menu li.menuparent {
   padding-bottom: 1.25em;
@@ -207,13 +211,17 @@ footer .menu li ul {
     }
   }
 
-  .region-menu .menu li {
+  .region-menu .menu li,
+  .region-footer .menu li {
     display: inline-block;
-    font-size: $base-font-size * .7;
+    font-size: $base-font-size * .65;
     position: relative;
     font-weight: 300;
+    border-top: none;
   }
-
+	.region-footer .menu {
+		text-align: center;
+	}
   a.menu-link {
       display: none;
   }
@@ -227,7 +235,7 @@ footer .menu li ul {
   }
 
   .region-menu .menu li ul {
-    border: 1px solid $light-gray;
+//    border: 1px solid $light-gray;
 		position: absolute;
 		top: 1.75em;
 		left: 7.65em;
