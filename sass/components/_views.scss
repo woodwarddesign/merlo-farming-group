@@ -40,9 +40,8 @@
 		margin-right: auto;
 		margin-bottom: .5em;
 		text-align: center;
-		background-position: 0 50%;
 		&:hover {
-			background-position: -100%;
+			@include border-radius(4px);
 			color: $light-green;
 		}
 	}
