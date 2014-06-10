@@ -43,7 +43,7 @@
 		position: relative;
 		&:hover {
 			@include border-radius(4px);
-			color: $light-green;
+//		color: $light-green;
 		}
 		&:active {
 			top: 1px;
