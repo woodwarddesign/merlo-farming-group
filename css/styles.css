@@ -669,7 +669,7 @@ dd {
   -moz-box-shadow: 0 0 1px #5e5e5e;
   box-shadow: 0 0 1px #5e5e5e;
   border: 4px solid #fefefe;
-  padding: 15px;
+  padding: 1.5em;
   text-align: center;
 }
 /* line 16, ../sass/components/_views.scss */
@@ -799,18 +799,11 @@ dd {
   }
   /* line 110, ../sass/components/_views.scss */
   .view .row .left {
-    padding-right: 1em;
+    padding-right: 1.5em;
   }
   /* line 113, ../sass/components/_views.scss */
   .view .row .right {
     width: 65%;
-  }
-
-  /* line 119, ../sass/components/_views.scss */
-  .view .even .left {
-    padding-left: 0;
-    padding-right: 1em;
-    float: right;
   }
 }
 /* line 3, ../sass/components/_blocks.scss */
