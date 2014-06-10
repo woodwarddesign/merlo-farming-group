@@ -27,6 +27,14 @@
 	overflow: hidden;
 }
 
+.header {
+	background-image: url('../images/leaf.svg');
+	background-position: 100% -30%;
+	background-repeat: no-repeat;
+	background-size: 75%;
+	overflow: hidden;
+}
+
 img.header__logo-image {
   height: 90px;
 }
@@ -55,6 +63,13 @@ img.header__logo-image {
 
 .region-menu {
   padding: 1rem 0;
+}
+
+@media all and (min-width: $tab) {
+	.header {
+		background-position: 100% 30%;
+		background-size: 55%;		
+	}
 }
 
 // preface region
