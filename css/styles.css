@@ -716,8 +716,9 @@ dd {
   margin-right: auto;
   margin-bottom: .5em;
   text-align: center;
+  position: relative;
 }
-/* line 43, ../sass/components/_views.scss */
+/* line 44, ../sass/components/_views.scss */
 .view .row a.views-more-link:hover {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -726,14 +727,18 @@ dd {
   border-radius: 4px;
   color: #79b01f;
 }
+/* line 48, ../sass/components/_views.scss */
+.view .row a.views-more-link:active {
+  top: 1px;
+}
 
-/* line 51, ../sass/components/_views.scss */
+/* line 55, ../sass/components/_views.scss */
 .uc-catalog-terms td,
 .uc-catalog-terms td span {
   color: #fefefe;
 }
 
-/* line 60, ../sass/components/_views.scss */
+/* line 64, ../sass/components/_views.scss */
 .view-uc-catalog td a:link,
 .view-uc-catalog td a:visited,
 .view-uc-catalog td a.active,
@@ -743,37 +748,37 @@ dd {
   color: #fefefe;
 }
 
-/* line 64, ../sass/components/_views.scss */
+/* line 68, ../sass/components/_views.scss */
 .view-uc-catalog input[type="submit"] {
   border: 2px solid #a1dd3e;
 }
 
-/* line 68, ../sass/components/_views.scss */
+/* line 72, ../sass/components/_views.scss */
 .view-front-feature img {
   display: block;
 }
 
-/* line 75, ../sass/components/_views.scss */
+/* line 79, ../sass/components/_views.scss */
 .view-product-listing table tbody > tr:nth-child(odd) > td,
 .view-product-listing table tbody > tr:nth-child(odd) > th {
   background-color: transparent;
 }
 
-/* line 80, ../sass/components/_views.scss */
+/* line 84, ../sass/components/_views.scss */
 .view-product-listing table tbody > tr:nth-child(even) > td,
 .view-product-listing table tbody > tr:nth-child(even) > th {
   background-color: transparent;
 }
 
-/* line 85, ../sass/components/_views.scss */
+/* line 89, ../sass/components/_views.scss */
 .view-product-listing tr {
   border-bottom: 1px solid white;
 }
-/* line 87, ../sass/components/_views.scss */
+/* line 91, ../sass/components/_views.scss */
 .view-product-listing tr:last-child {
   border-bottom: none;
 }
-/* line 91, ../sass/components/_views.scss */
+/* line 95, ../sass/components/_views.scss */
 .view-product-listing td {
   padding-left: 0;
   vertical-align: bottom;
@@ -866,9 +871,18 @@ input[type="button"],
   -moz-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
+  position: relative;
+}
+/* line 71, ../sass/components/_forms.scss */
+button:active, input[type="reset"]:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+.comment-links a:active,
+.button:active {
+  top: 2px;
 }
 
-/* line 77, ../sass/components/_forms.scss */
+/* line 81, ../sass/components/_forms.scss */
 button:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
@@ -880,7 +894,7 @@ input[type="button"]:hover,
   cursor: pointer;
 }
 
-/* line 90, ../sass/components/_forms.scss */
+/* line 94, ../sass/components/_forms.scss */
 input[type='text']:focus,
 textarea:focus,
 select:focus,
@@ -893,13 +907,13 @@ input[type="tel"]:focus {
   box-shadow: 0 0 2px #79b01f inset;
 }
 
-/* line 96, ../sass/components/_forms.scss */
+/* line 100, ../sass/components/_forms.scss */
 .form-item {
   margin-bottom: 3rem;
   overflow: hidden;
 }
 
-/* line 104, ../sass/components/_forms.scss */
+/* line 108, ../sass/components/_forms.scss */
 .form-item-pass-pass1,
 .form-item-pass-pass2 {
   overflow: visible;
@@ -907,25 +921,25 @@ input[type="tel"]:focus {
   width: 40%;
 }
 
-/* line 110, ../sass/components/_forms.scss */
+/* line 114, ../sass/components/_forms.scss */
 .page-user input.password-confirm {
   margin-top: 0;
 }
 
-/* line 115, ../sass/components/_forms.scss */
+/* line 119, ../sass/components/_forms.scss */
 .form-type-password-confirm {
   padding-bottom: 3rem;
   position: relative;
 }
 
-/* line 121, ../sass/components/_forms.scss */
+/* line 125, ../sass/components/_forms.scss */
 .password-strength,
 .password-confirm {
   display: block;
   margin-bottom: .5rem;
   padding: .5rem 0;
 }
-/* line 127, ../sass/components/_forms.scss */
+/* line 131, ../sass/components/_forms.scss */
 .password-strength .password-indicator div,
 .password-confirm .password-indicator div {
   background: #f76558;
@@ -933,35 +947,35 @@ input[type="tel"]:focus {
   width: 0;
 }
 
-/* line 134, ../sass/components/_forms.scss */
+/* line 138, ../sass/components/_forms.scss */
 .password-strength-title {
   margin-bottom: .5rem;
 }
 
-/* line 138, ../sass/components/_forms.scss */
+/* line 142, ../sass/components/_forms.scss */
 .password-strength-text {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 144, ../sass/components/_forms.scss */
+/* line 148, ../sass/components/_forms.scss */
 .password-confirm .error,
 .password-confirm .ok {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 149, ../sass/components/_forms.scss */
+/* line 153, ../sass/components/_forms.scss */
 .password-strength-text {
   margin-top: .5rem;
 }
 
-/* line 153, ../sass/components/_forms.scss */
+/* line 157, ../sass/components/_forms.scss */
 .password-confirm .error {
   margin-top: .3rem;
 }
 
-/* line 157, ../sass/components/_forms.scss */
+/* line 161, ../sass/components/_forms.scss */
 .password-suggestions {
   background: #efefef;
   border: 1px solid #dddddd;

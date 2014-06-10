@@ -67,6 +67,10 @@ input[type="button"],
   padding: 8px 16px; padding: .5rem 1rem;
   text-shadow: none;
   @include trans-all;
+  position: relative;
+  &:active {
+	  top: 2px;
+  }
 }
 
 button:hover,
