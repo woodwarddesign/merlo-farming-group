@@ -205,7 +205,8 @@ footer .menu li ul {
     padding-bottom: .5em;
   }
 
-  .region-menu .menu li  {
+  .region-menu .menu li,
+  .region-footer .menu li {
     border-top: none;
     padding: .15em .75em;
     &.first {

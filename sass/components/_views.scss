@@ -98,3 +98,18 @@
   }
 }
 
+@media all and (min-width: $tab) {
+	.view .row {
+		@include clear-it;
+		text-align: left;
+		.left,
+		.right {
+			width: 35%;
+			float: left;
+		}
+		.right {
+			width: 65%;
+		}
+	}
+}
+
