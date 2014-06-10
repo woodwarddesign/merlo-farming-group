@@ -20,6 +20,7 @@
 	  color: $white;
 	  text-align: left;
   }
+  
   a {
 	  color: $white;
   }
@@ -102,6 +103,7 @@
 	.view .row {
 		@include clear-it;
 		text-align: left;
+		overflow: hidden;
 		.left,
 		.right {
 			width: 35%;
@@ -113,6 +115,13 @@
 		.right {
 			width: 65%;
 		}
+
+	  h2 {
+		  background-color: $brown;
+			padding: .5em;
+			margin: -0.9em -1.5em 1.5em 0;
+			
+	  }
 	}
 
 //
