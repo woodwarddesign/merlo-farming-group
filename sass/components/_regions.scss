@@ -55,6 +55,10 @@ img.header__logo-image {
   overflow: hidden;
   padding: 1rem 0;
   position: relative;
+//	@include background-image(radial-gradient($light-green, transparent 85%));
+//	@include background-size(85%);
+//	background-repeat: no-repeat;
+//	background-position: center center;
   a {
 	  text-align: center;
 	  display: inherit;
