@@ -685,59 +685,14 @@ dd {
 .view .row a {
   color: #fefefe;
 }
-/* line 27, ../sass/components/_views.scss */
-.view .row a.views-more-link {
-  display: inline-block;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #fefefe));
-  background-image: -webkit-linear-gradient(#dddddd 0%, #fefefe 100%);
-  background-image: -moz-linear-gradient(#dddddd 0%, #fefefe 100%);
-  background-image: -o-linear-gradient(#dddddd 0%, #fefefe 100%);
-  background-image: linear-gradient(#dddddd 0%, #fefefe 100%);
-  -webkit-box-shadow: 0 0 4px #484848, inset 0 0 2px #222222;
-  -moz-box-shadow: 0 0 4px #484848, inset 0 0 2px #222222;
-  box-shadow: 0 0 4px #484848, inset 0 0 2px #222222;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-  text-shadow: 0 -1px 0 #fefefe;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  border: 1px solid #fefefe !important;
-  color: #484848;
-  font-weight: bold;
-  font-size: .9em;
-  letter-spacing: .1em;
-  padding: .75em 1.5em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: .5em;
-  text-align: center;
-  position: relative;
-}
-/* line 45, ../sass/components/_views.scss */
-.view .row a.views-more-link:hover {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-/* line 49, ../sass/components/_views.scss */
-.view .row a.views-more-link:active {
-  top: 1px;
-}
 
-/* line 56, ../sass/components/_views.scss */
+/* line 30, ../sass/components/_views.scss */
 .uc-catalog-terms td,
 .uc-catalog-terms td span {
   color: #fefefe;
 }
 
-/* line 65, ../sass/components/_views.scss */
+/* line 39, ../sass/components/_views.scss */
 .view-uc-catalog td a:link,
 .view-uc-catalog td a:visited,
 .view-uc-catalog td a.active,
@@ -747,44 +702,44 @@ dd {
   color: #fefefe;
 }
 
-/* line 69, ../sass/components/_views.scss */
+/* line 43, ../sass/components/_views.scss */
 .view-uc-catalog input[type="submit"] {
   border: 2px solid #a1dd3e;
 }
 
-/* line 73, ../sass/components/_views.scss */
+/* line 47, ../sass/components/_views.scss */
 .view-front-feature img {
   display: block;
 }
 
-/* line 80, ../sass/components/_views.scss */
+/* line 54, ../sass/components/_views.scss */
 .view-product-listing table tbody > tr:nth-child(odd) > td,
 .view-product-listing table tbody > tr:nth-child(odd) > th {
   background-color: transparent;
 }
 
-/* line 85, ../sass/components/_views.scss */
+/* line 59, ../sass/components/_views.scss */
 .view-product-listing table tbody > tr:nth-child(even) > td,
 .view-product-listing table tbody > tr:nth-child(even) > th {
   background-color: transparent;
 }
 
-/* line 90, ../sass/components/_views.scss */
+/* line 64, ../sass/components/_views.scss */
 .view-product-listing tr {
   border-bottom: 1px solid white;
 }
-/* line 92, ../sass/components/_views.scss */
+/* line 66, ../sass/components/_views.scss */
 .view-product-listing tr:last-child {
   border-bottom: none;
 }
-/* line 96, ../sass/components/_views.scss */
+/* line 70, ../sass/components/_views.scss */
 .view-product-listing td {
   padding-left: 0;
   vertical-align: bottom;
 }
 
 @media all and (min-width: 40em) {
-  /* line 103, ../sass/components/_views.scss */
+  /* line 77, ../sass/components/_views.scss */
   .view .row {
     content: "";
     display: table;
@@ -793,21 +748,21 @@ dd {
     overflow: hidden;
     position: relative;
   }
-  /* line 110, ../sass/components/_views.scss */
+  /* line 84, ../sass/components/_views.scss */
   .view .row .left,
   .view .row .right {
     width: 35%;
     float: left;
   }
-  /* line 114, ../sass/components/_views.scss */
+  /* line 88, ../sass/components/_views.scss */
   .view .row .left {
     padding: 4rem 2rem 0 0;
   }
-  /* line 117, ../sass/components/_views.scss */
+  /* line 91, ../sass/components/_views.scss */
   .view .row .right {
     width: 65%;
   }
-  /* line 121, ../sass/components/_views.scss */
+  /* line 95, ../sass/components/_views.scss */
   .view .row .fancy-header {
     background-color: #2d2c0f;
     padding: .5em;
@@ -816,7 +771,7 @@ dd {
     position: relative;
     z-index: 2;
   }
-  /* line 128, ../sass/components/_views.scss */
+  /* line 102, ../sass/components/_views.scss */
   .view .row .fancy-header:before {
     position: absolute;
     top: 0;
@@ -927,9 +882,10 @@ input[type="button"]:active,
   top: 2px;
 }
 
-/* line 76, ../sass/components/_forms.scss */
+/* line 78, ../sass/components/_forms.scss */
 a.views-more-link {
-  display: inline-block;
+  display: block;
+  float: left;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #fefefe));
   background-image: -webkit-linear-gradient(#dddddd 0%, #fefefe 100%);
   background-image: -moz-linear-gradient(#dddddd 0%, #fefefe 100%);
@@ -949,7 +905,7 @@ a.views-more-link {
   -o-transition: all .3s;
   transition: all .3s;
   border: 1px solid #fefefe !important;
-  color: #484848;
+  color: #484848 !important;
   font-weight: bold;
   font-size: .9em;
   letter-spacing: .1em;
@@ -958,7 +914,7 @@ a.views-more-link {
   text-align: center;
   position: relative;
 }
-/* line 92, ../sass/components/_forms.scss */
+/* line 95, ../sass/components/_forms.scss */
 a.views-more-link:hover {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -966,12 +922,12 @@ a.views-more-link:hover {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 96, ../sass/components/_forms.scss */
+/* line 99, ../sass/components/_forms.scss */
 a.views-more-link:active {
   top: 1px;
 }
 
-/* line 107, ../sass/components/_forms.scss */
+/* line 110, ../sass/components/_forms.scss */
 button:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
@@ -983,7 +939,7 @@ input[type="button"]:hover,
   cursor: pointer;
 }
 
-/* line 120, ../sass/components/_forms.scss */
+/* line 123, ../sass/components/_forms.scss */
 input[type='text']:focus,
 textarea:focus,
 select:focus,
@@ -996,13 +952,13 @@ input[type="tel"]:focus {
   box-shadow: 0 0 2px #79b01f inset;
 }
 
-/* line 126, ../sass/components/_forms.scss */
+/* line 129, ../sass/components/_forms.scss */
 .form-item {
   margin-bottom: 3rem;
   overflow: hidden;
 }
 
-/* line 134, ../sass/components/_forms.scss */
+/* line 137, ../sass/components/_forms.scss */
 .form-item-pass-pass1,
 .form-item-pass-pass2 {
   overflow: visible;
@@ -1010,25 +966,25 @@ input[type="tel"]:focus {
   width: 40%;
 }
 
-/* line 140, ../sass/components/_forms.scss */
+/* line 143, ../sass/components/_forms.scss */
 .page-user input.password-confirm {
   margin-top: 0;
 }
 
-/* line 145, ../sass/components/_forms.scss */
+/* line 148, ../sass/components/_forms.scss */
 .form-type-password-confirm {
   padding-bottom: 3rem;
   position: relative;
 }
 
-/* line 151, ../sass/components/_forms.scss */
+/* line 154, ../sass/components/_forms.scss */
 .password-strength,
 .password-confirm {
   display: block;
   margin-bottom: .5rem;
   padding: .5rem 0;
 }
-/* line 157, ../sass/components/_forms.scss */
+/* line 160, ../sass/components/_forms.scss */
 .password-strength .password-indicator div,
 .password-confirm .password-indicator div {
   background: #f76558;
@@ -1036,35 +992,35 @@ input[type="tel"]:focus {
   width: 0;
 }
 
-/* line 164, ../sass/components/_forms.scss */
+/* line 167, ../sass/components/_forms.scss */
 .password-strength-title {
   margin-bottom: .5rem;
 }
 
-/* line 168, ../sass/components/_forms.scss */
+/* line 171, ../sass/components/_forms.scss */
 .password-strength-text {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 174, ../sass/components/_forms.scss */
+/* line 177, ../sass/components/_forms.scss */
 .password-confirm .error,
 .password-confirm .ok {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 179, ../sass/components/_forms.scss */
+/* line 182, ../sass/components/_forms.scss */
 .password-strength-text {
   margin-top: .5rem;
 }
 
-/* line 183, ../sass/components/_forms.scss */
+/* line 186, ../sass/components/_forms.scss */
 .password-confirm .error {
   margin-top: .3rem;
 }
 
-/* line 187, ../sass/components/_forms.scss */
+/* line 190, ../sass/components/_forms.scss */
 .password-suggestions {
   background: #efefef;
   border: 1px solid #dddddd;

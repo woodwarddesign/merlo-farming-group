@@ -73,15 +73,18 @@ input[type="button"],
   }
 }
 
+// Chrome button 
+
 a.views-more-link {
-	display: inline-block;
+	display: block;
+	float: left;
 	@include background-image(linear-gradient($gray 0%, $white 100%));
 	@include box-shadow(0 0 4px lighten($black, 15%), inset 0 0 2px $black);
 	@include border-radius(20px);
 	@include text-shadow(0 -1px 0 $white);
 	@include trans-all;
 	border: 1px solid $white!important;
-	color: lighten($black, 15%);
+	color: lighten($black, 15%)!important;
 	font-weight: bold;
 	font-size: .9em;
 	letter-spacing: .1em;
