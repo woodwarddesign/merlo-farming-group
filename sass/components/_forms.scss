@@ -76,8 +76,7 @@ input[type="button"],
 // Chrome button 
 
 a.views-more-link {
-	display: block;
-	float: left;
+	display: inline-block;
 	@include background-image(linear-gradient($gray 0%, $white 100%));
 	@include box-shadow(0 0 4px lighten($black, 15%), inset 0 0 2px $black);
 	@include border-radius(20px);
@@ -98,6 +97,13 @@ a.views-more-link {
 	}
 	&:active {
 		top: 1px;
+	}
+}
+
+@media all and (min-width: $tab) {
+	a.views-more-link {
+		display: inline-block;
+		float: left;
 	}
 }
 
@@ -194,3 +200,4 @@ input[type="tel"]:focus {
   padding: 1rem;
   width: 40%;
 }
+
