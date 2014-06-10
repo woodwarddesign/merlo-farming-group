@@ -102,6 +102,10 @@ footer .menu li a.toggled {
 	text-decoration: underline;
 }
 
+.menu li {
+	list-style: none;
+}
+
 .region-menu .menu li ul,
 footer .menu li ul {
   background: $gray;
@@ -154,10 +158,35 @@ footer .menu li ul {
 	text-align: right;
 }
 
+ul.sub-menu {
+//	border: 1px solid $gray;
+	display: block;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding: 5px 15px;
+}
+
 
 @media all and (min-width: $desk) {
 	.login.mobile {
 		display: none;
+	}
+	ul.sub-menu {
+		padding: 5px 0px;
+		text-align: right;
+		li {
+			display: inline-block;
+			padding: 0 10px 0 5px;
+			border-right: 1px solid $gray;
+			&:last-child {
+				border-right: none;
+			}
+		}
+		.active-trail,
+		.active {
+			background-color: $light-green;
+			color: $white;
+		}
 	}
 
 	#main-menu {
