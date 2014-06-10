@@ -689,10 +689,10 @@ dd {
 .view .row a.views-more-link {
   display: inline-block;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #fefefe));
-  background-image: -webkit-linear-gradient(#dddddd, #fefefe);
-  background-image: -moz-linear-gradient(#dddddd, #fefefe);
-  background-image: -o-linear-gradient(#dddddd, #fefefe);
-  background-image: linear-gradient(#dddddd, #fefefe);
+  background-image: -webkit-linear-gradient(#dddddd 0%, #fefefe 100%);
+  background-image: -moz-linear-gradient(#dddddd 0%, #fefefe 100%);
+  background-image: -o-linear-gradient(#dddddd 0%, #fefefe 100%);
+  background-image: linear-gradient(#dddddd 0%, #fefefe 100%);
   -webkit-box-shadow: 0 0 4px #484848, inset 0 0 2px #222222;
   -moz-box-shadow: 0 0 4px #484848, inset 0 0 2px #222222;
   box-shadow: 0 0 4px #484848, inset 0 0 2px #222222;
@@ -702,6 +702,10 @@ dd {
   -o-border-radius: 20px;
   border-radius: 20px;
   text-shadow: 0 -1px 0 #fefefe;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
   border: 1px solid #fefefe !important;
   color: #484848;
   font-weight: bold;
@@ -712,15 +716,21 @@ dd {
   margin-right: auto;
   margin-bottom: .5em;
   text-align: center;
+  background-position: 0 50%;
+}
+/* line 44, ../sass/components/_views.scss */
+.view .row a.views-more-link:hover {
+  background-position: -100%;
+  color: #79b01f;
 }
 
-/* line 46, ../sass/components/_views.scss */
+/* line 52, ../sass/components/_views.scss */
 .uc-catalog-terms td,
 .uc-catalog-terms td span {
   color: #fefefe;
 }
 
-/* line 55, ../sass/components/_views.scss */
+/* line 61, ../sass/components/_views.scss */
 .view-uc-catalog td a:link,
 .view-uc-catalog td a:visited,
 .view-uc-catalog td a.active,
@@ -730,37 +740,37 @@ dd {
   color: #fefefe;
 }
 
-/* line 59, ../sass/components/_views.scss */
+/* line 65, ../sass/components/_views.scss */
 .view-uc-catalog input[type="submit"] {
   border: 2px solid #a1dd3e;
 }
 
-/* line 63, ../sass/components/_views.scss */
+/* line 69, ../sass/components/_views.scss */
 .view-front-feature img {
   display: block;
 }
 
-/* line 70, ../sass/components/_views.scss */
+/* line 76, ../sass/components/_views.scss */
 .view-product-listing table tbody > tr:nth-child(odd) > td,
 .view-product-listing table tbody > tr:nth-child(odd) > th {
   background-color: transparent;
 }
 
-/* line 75, ../sass/components/_views.scss */
+/* line 81, ../sass/components/_views.scss */
 .view-product-listing table tbody > tr:nth-child(even) > td,
 .view-product-listing table tbody > tr:nth-child(even) > th {
   background-color: transparent;
 }
 
-/* line 80, ../sass/components/_views.scss */
+/* line 86, ../sass/components/_views.scss */
 .view-product-listing tr {
   border-bottom: 1px solid white;
 }
-/* line 82, ../sass/components/_views.scss */
+/* line 88, ../sass/components/_views.scss */
 .view-product-listing tr:last-child {
   border-bottom: none;
 }
-/* line 86, ../sass/components/_views.scss */
+/* line 92, ../sass/components/_views.scss */
 .view-product-listing td {
   padding-left: 0;
   vertical-align: bottom;
