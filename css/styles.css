@@ -798,8 +798,19 @@ dd {
     float: left;
   }
   /* line 110, ../sass/components/_views.scss */
+  .view .row .left {
+    padding-right: 1em;
+  }
+  /* line 113, ../sass/components/_views.scss */
   .view .row .right {
     width: 65%;
+  }
+
+  /* line 119, ../sass/components/_views.scss */
+  .view .even .left {
+    padding-left: 0;
+    padding-right: 1em;
+    float: right;
   }
 }
 /* line 3, ../sass/components/_blocks.scss */
