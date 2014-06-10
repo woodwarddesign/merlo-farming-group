@@ -115,6 +115,12 @@ img.header__logo-image {
 	p {
 		color: $white;
 	}
+	a {
+		color: $link-color;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 footer {
@@ -123,6 +129,16 @@ footer {
 
 .region-footer {
   padding: 10px 0;
+}
+
+.address {
+	width: 100%;
+	overflow: hidden;
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .copyright,

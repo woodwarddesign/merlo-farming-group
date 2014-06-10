@@ -1640,23 +1640,41 @@ img.header__logo-image {
 .footer-wrapper p {
   color: #fefefe;
 }
-
+/* line 118, ../sass/components/_regions.scss */
+.footer-wrapper a {
+  color: #e6b015;
+}
 /* line 120, ../sass/components/_regions.scss */
+.footer-wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* line 126, ../sass/components/_regions.scss */
 footer {
   clear: both;
 }
 
-/* line 124, ../sass/components/_regions.scss */
+/* line 130, ../sass/components/_regions.scss */
 .region-footer {
   padding: 10px 0;
 }
 
-/* line 129, ../sass/components/_regions.scss */
+/* line 134, ../sass/components/_regions.scss */
+.address {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 138, ../sass/components/_regions.scss */
+.address p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 145, ../sass/components/_regions.scss */
 .copyright,
 .address {
   padding-bottom: 10px;
 }
-/* line 131, ../sass/components/_regions.scss */
+/* line 147, ../sass/components/_regions.scss */
 .copyright p,
 .address p {
   font-size: 12.5px;
