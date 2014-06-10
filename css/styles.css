@@ -670,30 +670,32 @@ dd {
   box-shadow: 0 0 1px #5e5e5e;
   border: 4px solid #fefefe;
   padding: 15px;
+  text-align: center;
 }
-/* line 15, ../sass/components/_views.scss */
+/* line 16, ../sass/components/_views.scss */
 .view .row p:last-child {
   margin-bottom: 0;
 }
-/* line 18, ../sass/components/_views.scss */
+/* line 19, ../sass/components/_views.scss */
 .view .row h1, .view .row h2, .view .row h3, .view .row h4, .view .row h5, .view .row p {
   color: #fefefe;
+  text-align: left;
 }
-/* line 21, ../sass/components/_views.scss */
+/* line 23, ../sass/components/_views.scss */
 .view .row a {
   color: #fefefe;
 }
-/* line 24, ../sass/components/_views.scss */
+/* line 26, ../sass/components/_views.scss */
 .view .row a.views-more-link {
   display: inline-block;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #fefefe));
-  background-image: -webkit-linear-gradient(#efefef, #fefefe);
-  background-image: -moz-linear-gradient(#efefef, #fefefe);
-  background-image: -o-linear-gradient(#efefef, #fefefe);
-  background-image: linear-gradient(#efefef, #fefefe);
-  -webkit-box-shadow: 0 0 1px #5e5e5e, inset 0 0 2px #222222;
-  -moz-box-shadow: 0 0 1px #5e5e5e, inset 0 0 2px #222222;
-  box-shadow: 0 0 1px #5e5e5e, inset 0 0 2px #222222;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #fefefe));
+  background-image: -webkit-linear-gradient(#dddddd, #fefefe);
+  background-image: -moz-linear-gradient(#dddddd, #fefefe);
+  background-image: -o-linear-gradient(#dddddd, #fefefe);
+  background-image: linear-gradient(#dddddd, #fefefe);
+  -webkit-box-shadow: 0 0 4px #484848, inset 0 0 2px #222222;
+  -moz-box-shadow: 0 0 4px #484848, inset 0 0 2px #222222;
+  box-shadow: 0 0 4px #484848, inset 0 0 2px #222222;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -706,16 +708,19 @@ dd {
   font-size: .9em;
   letter-spacing: .1em;
   padding: .75em 1.5em;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: .5em;
+  text-align: center;
 }
 
-/* line 41, ../sass/components/_views.scss */
+/* line 46, ../sass/components/_views.scss */
 .uc-catalog-terms td,
 .uc-catalog-terms td span {
   color: #fefefe;
 }
 
-/* line 50, ../sass/components/_views.scss */
+/* line 55, ../sass/components/_views.scss */
 .view-uc-catalog td a:link,
 .view-uc-catalog td a:visited,
 .view-uc-catalog td a.active,
@@ -725,37 +730,37 @@ dd {
   color: #fefefe;
 }
 
-/* line 54, ../sass/components/_views.scss */
+/* line 59, ../sass/components/_views.scss */
 .view-uc-catalog input[type="submit"] {
   border: 2px solid #a1dd3e;
 }
 
-/* line 58, ../sass/components/_views.scss */
+/* line 63, ../sass/components/_views.scss */
 .view-front-feature img {
   display: block;
 }
 
-/* line 65, ../sass/components/_views.scss */
+/* line 70, ../sass/components/_views.scss */
 .view-product-listing table tbody > tr:nth-child(odd) > td,
 .view-product-listing table tbody > tr:nth-child(odd) > th {
   background-color: transparent;
 }
 
-/* line 70, ../sass/components/_views.scss */
+/* line 75, ../sass/components/_views.scss */
 .view-product-listing table tbody > tr:nth-child(even) > td,
 .view-product-listing table tbody > tr:nth-child(even) > th {
   background-color: transparent;
 }
 
-/* line 75, ../sass/components/_views.scss */
+/* line 80, ../sass/components/_views.scss */
 .view-product-listing tr {
   border-bottom: 1px solid white;
 }
-/* line 77, ../sass/components/_views.scss */
+/* line 82, ../sass/components/_views.scss */
 .view-product-listing tr:last-child {
   border-bottom: none;
 }
-/* line 81, ../sass/components/_views.scss */
+/* line 86, ../sass/components/_views.scss */
 .view-product-listing td {
   padding-left: 0;
   vertical-align: bottom;

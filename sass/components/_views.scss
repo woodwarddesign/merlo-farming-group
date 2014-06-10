@@ -12,19 +12,21 @@
 	@include box-shadow(0 0 1px darken($gray, 50%));
 	border: 4px solid $white;
 	padding: 15px;
+	text-align: center;
   p:last-child {
     margin-bottom: 0;
   }
   h1, h2, h3, h4, h5, p {
 	  color: $white;
+	  text-align: left;
   }
   a {
 	  color: $white;
   }
 	a.views-more-link {
 		display: inline-block;
-		@include background-image(linear-gradient($light-gray, $white));
-		@include box-shadow(0 0 1px darken($gray, 50%), inset 0 0 2px $black);
+		@include background-image(linear-gradient($gray, $white));
+		@include box-shadow(0 0 4px lighten($black, 15%), inset 0 0 2px $black);
 		@include border-radius(20px);
 		@include text-shadow(0 -1px 0 $white);
 		border: 1px solid $white!important;
@@ -33,7 +35,10 @@
 		font-size: .9em;
 		letter-spacing: .1em;
 		padding: .75em 1.5em;
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: .5em;
+		text-align: center;
 	}
 }
 
