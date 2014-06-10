@@ -27,12 +27,20 @@
 	overflow: hidden;
 }
 
+.header {
+	background-image: url('../images/leaf.svg');
+	background-position: 100% -30%;
+	background-repeat: no-repeat;
+	background-size: 75%;
+	overflow: hidden;
+}
+
 img.header__logo-image {
   height: 90px;
 }
 
 .header__logo-image {
-  float: left;
+  // float: left;
   height: auto;
   margin-right: 1em;
   position: relative;
@@ -47,15 +55,33 @@ img.header__logo-image {
   overflow: hidden;
   padding: 1rem 0;
   position: relative;
+//	@include background-image(radial-gradient($light-green, transparent 85%));
+//	@include background-size(85%);
+//	background-repeat: no-repeat;
+//	background-position: center center;
+  a {
+	  text-align: center;
+	  display: inherit;
+  }
 }
 
 .region-menu {
   padding: 1rem 0;
 }
 
+@media all and (min-width: $tab) {
+	.header {
+		background-position: 100% 30%;
+		background-size: 55%;		
+	}
+}
+
 // preface region
 
-
+.preface-wrapper {
+	margin-top: 1em;
+	margin-bottom: -20px;
+}
 
 
 // content region
@@ -72,7 +98,7 @@ img.header__logo-image {
   li {
     display: inline-block;
     list-style: none;
-    padding: 2rem 0;
+    padding: .25rem 0 1.75rem;
     font-family: $sans;
     font-size: $base-font-size * .725;
   }
@@ -87,6 +113,17 @@ img.header__logo-image {
 	@include merlo-gradient-180;
 	border-top: 1px solid $white;
 	overflow: hidden;
+	text-align: center;
+	
+	p {
+		color: $white;
+	}
+	a {
+		color: $link-color;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 footer {
@@ -97,10 +134,21 @@ footer {
   padding: 10px 0;
 }
 
-.copyright {
+.address {
+	width: 100%;
+	overflow: hidden;
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.copyright,
+.address {
   padding-bottom: 10px;
   p {
-    float: left;
+    //float: left;
     font-size: $base-font-size * .625;
   }
 }

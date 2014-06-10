@@ -9,7 +9,7 @@
 
 $max-width: 1000px;
 $gutter: 30px;
-$overlay: 4em;
+$overlay: 5em;
 
 header,
 .preface,
@@ -31,6 +31,11 @@ footer {
   width: 100%;
 }
 
+.region-menu {
+	width: 100%;
+	float: right;
+}
+
 #content,
 .region-sidebar-first,
 .region-sidebar-second {
@@ -45,9 +50,9 @@ footer {
 	position: relative;
 	z-index: 2;
 	.content-inner {
-		margin: 15px;
+		margin: 10px;
 		overflow: hidden;
-		padding: 0 15px;
+		padding: 0 20px;
 	}
 }
 
