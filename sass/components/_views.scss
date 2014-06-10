@@ -24,32 +24,6 @@
   a {
 	  color: $white;
   }
-	a.views-more-link {
-		display: inline-block;
-		@include background-image(linear-gradient($gray 0%, $white 100%));
-		@include box-shadow(0 0 4px lighten($black, 15%), inset 0 0 2px $black);
-		@include border-radius(20px);
-		@include text-shadow(0 -1px 0 $white);
-		@include trans-all;
-		border: 1px solid $white!important;
-		color: lighten($black, 15%);
-		font-weight: bold;
-		font-size: .9em;
-		letter-spacing: .1em;
-		padding: .75em 1.5em;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: .5em;
-		text-align: center;
-		position: relative;
-		&:hover {
-			@include border-radius(4px);
-//		color: $light-green;
-		}
-		&:active {
-			top: 1px;
-		}
-	}
 }
 
 .uc-catalog-terms td,
