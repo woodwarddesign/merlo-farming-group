@@ -791,26 +791,42 @@ dd {
     clear: both;
     text-align: left;
     overflow: hidden;
+    position: relative;
   }
-  /* line 108, ../sass/components/_views.scss */
+  /* line 110, ../sass/components/_views.scss */
   .view .row .left,
   .view .row .right {
     width: 35%;
     float: left;
   }
-  /* line 112, ../sass/components/_views.scss */
+  /* line 114, ../sass/components/_views.scss */
   .view .row .left {
-    padding-right: 1.5em;
+    padding: 4rem 2rem 0 0;
   }
-  /* line 115, ../sass/components/_views.scss */
+  /* line 117, ../sass/components/_views.scss */
   .view .row .right {
     width: 65%;
   }
-  /* line 119, ../sass/components/_views.scss */
+  /* line 121, ../sass/components/_views.scss */
   .view .row h2 {
     background-color: #2d2c0f;
     padding: .5em;
+    padding-left: 1em;
     margin: -0.9em -1.5em 1.5em 0;
+    position: relative;
+    z-index: 2;
+  }
+  /* line 128, ../sass/components/_views.scss */
+  .view .row h2:before {
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    width: 1000px;
+    height: 63px;
+    display: block;
+    content: " ";
+    background-color: #79b01f;
+    z-index: 1;
   }
 }
 /* line 3, ../sass/components/_blocks.scss */

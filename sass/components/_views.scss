@@ -104,13 +104,15 @@
 		@include clear-it;
 		text-align: left;
 		overflow: hidden;
+		position: relative;		
+
 		.left,
 		.right {
 			width: 35%;
 			float: left;
 		}
 		.left {
-			padding-right: 1.5em;
+			padding: 4rem 2rem 0 0;
 		}
 		.right {
 			width: 65%;
@@ -119,8 +121,21 @@
 	  h2 {
 		  background-color: $brown;
 			padding: .5em;
+			padding-left: 1em;
 			margin: -0.9em -1.5em 1.5em 0;
-			
+			position: relative;
+			z-index: 2;
+			&:before {
+				position: absolute;
+				top: 0;
+				left: -1000px;
+				width: 1000px;
+				height: 63px;
+				display: block;
+				content: " ";
+				background-color: $light-green;
+				z-index: 1;
+			}
 	  }
 	}
 
