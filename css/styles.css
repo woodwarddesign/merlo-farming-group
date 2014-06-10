@@ -808,7 +808,7 @@ dd {
     width: 65%;
   }
   /* line 121, ../sass/components/_views.scss */
-  .view .row h2 {
+  .view .row .fancy-header {
     background-color: #2d2c0f;
     padding: .5em;
     padding-left: 1em;
@@ -817,7 +817,7 @@ dd {
     z-index: 2;
   }
   /* line 128, ../sass/components/_views.scss */
-  .view .row h2:before {
+  .view .row .fancy-header:before {
     position: absolute;
     top: 0;
     left: -1000px;
