@@ -765,14 +765,18 @@ dd {
   /* line 95, ../sass/components/_views.scss */
   .view .row .fancy-header {
     background-color: #2d2c0f;
-    padding: .5em;
+    padding: .45em;
     padding-left: 1em;
-    margin: -0.9em -1.5em 1.5em 0;
+    margin: -1em -1.5em 1em 0;
     position: relative;
     z-index: 2;
     text-transform: uppercase;
   }
   /* line 103, ../sass/components/_views.scss */
+  .view .row .fancy-header a {
+    font-size: 1.25rem;
+  }
+  /* line 106, ../sass/components/_views.scss */
   .view .row .fancy-header:before {
     position: absolute;
     top: 0;

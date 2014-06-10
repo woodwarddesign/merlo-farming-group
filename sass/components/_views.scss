@@ -94,12 +94,15 @@
 
 	  .fancy-header {
 		  background-color: $brown;
-			padding: .5em;
+			padding: .45em;
 			padding-left: 1em;
-			margin: -0.9em -1.5em 1.5em 0;
+			margin: -1em -1.5em 1em 0;
 			position: relative;
 			z-index: 2;
 			text-transform: uppercase;
+			a {
+				font-size: 1.25rem;
+			}
 			&:before {
 				position: absolute;
 				top: 0;
