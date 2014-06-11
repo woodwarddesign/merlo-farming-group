@@ -1428,7 +1428,7 @@ ul.sub-menu {
   /* line 183, ../sass/components/_menus.scss */
   ul.sub-menu .active-trail,
   ul.sub-menu .active {
-    border-bottom: 5px solid #79b01f;
+    color: #336607;
   }
 
   /* line 190, ../sass/components/_menus.scss */
