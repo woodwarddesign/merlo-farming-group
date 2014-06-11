@@ -1443,7 +1443,7 @@ ul.sub-menu li .active, ul.sub-menu li:hover {
     display: block;
     position: absolute;
     top: 3px;
-    left: -5px;
+    left: -6px;
     height: 1em;
     width: 1px;
     background-color: #dddddd;
