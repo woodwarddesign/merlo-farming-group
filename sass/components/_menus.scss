@@ -159,11 +159,15 @@ footer .menu li ul {
 }
 
 ul.sub-menu {
-//	border: 1px solid $gray;
+	border: 1px solid $gray;
 	display: block;
 	margin-left: -15px;
 	margin-right: -15px;
-	padding: 5px 15px;
+	padding: 5px 5px;
+	
+	li {
+		
+	}
 }
 
 
