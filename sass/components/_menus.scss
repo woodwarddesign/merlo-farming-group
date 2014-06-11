@@ -186,7 +186,22 @@ ul.sub-menu {
 	ul.sub-menu {
 		text-align: right;
 		li {
+			position: relative;
 			display: inline-block;
+			margin-left: 7px;
+			&:before {
+				content: " ";
+				display: block;
+				position: absolute;
+				top: 3px;
+				left: -5px;
+				height: 1em;
+				width: 1px;
+				background-color: $gray;
+			}
+			&:first-child {
+				&:before {display: none;}
+			}
 		}
 	}
 
