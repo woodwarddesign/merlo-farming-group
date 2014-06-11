@@ -30,6 +30,10 @@ ul li.leaf {
 	  li {
 		  background-color: $white;
 		  overflow: hidden;
+		  li {
+			  background-color: transparent;
+			 a {color: white;}
+		  }
 	  }
   }
   li:first-child {
@@ -276,10 +280,16 @@ ul.sub-menu {
 		  background: transparent;
 		  border: none;
 			margin-top: 10px;
-		  li {
+		  li,
+		  li a {
 			  background-color: transparent;
-			  overflow: hidden;
 		  }
+		 }
+		 li a {
+			 background-color: transparent;
+			 &:hover {
+				 color: $link-color;
+			 }
 		 }
 		}
 
