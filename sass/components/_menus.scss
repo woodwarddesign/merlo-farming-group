@@ -166,7 +166,13 @@ ul.sub-menu {
 	padding: 5px 5px;
 	
 	li {
-		
+		padding: 0 5px;
+		&.active-trail,
+		.active,
+		&:hover {
+			background-color: $light-green;
+			color: $white;
+		}
 	}
 }
 
