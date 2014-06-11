@@ -83,7 +83,7 @@ footer .menu {
 footer .menu li.menuparent > a:after {
 	content: '+';
 	position: absolute;
-	top: -10px;
+	top: -9px;
 	right: 0;
 	display: block;
 	font-size: 1.5em;
@@ -93,7 +93,7 @@ footer .menu li.menuparent > a:after {
 .region-menu .menu li.menuparent > a.toggled:after,
 footer .menu li.menuparent > a.toggled:after {
   content: "-";
-  top: -13px;
+  top: -6px;
   right: 2px;
 }
 
@@ -155,7 +155,7 @@ footer .menu li ul {
   top: 35px;
   @include trans-all;
   li {
-    padding: .5rem .75rem .5rem 2rem;
+    padding: .15rem .75rem .15rem 2rem;
     list-style: none;
     width: 200%;
     &:last-child {
@@ -179,7 +179,8 @@ footer .menu li ul {
   @include trans-all;
   &.toggled {
     max-height: 50em;
-    margin-bottom: -1.25em;
+    padding-bottom: 5px;
+//    margin-bottom: -1.25em;
   }
 }
 
