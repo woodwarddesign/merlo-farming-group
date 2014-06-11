@@ -30,12 +30,14 @@ ul li.leaf {
 // multi-toggle styles
 
 a.menu-link {
-  background: url('../images/menu-icon.svg') no-repeat scroll 10px .7em $accent;
+  background: url('../images/menu-icon.svg') no-repeat scroll 10px .7em transparent;
   color: $white !important;
   display: block;
   float: left;
-  padding: .5em .5em .5em 40px;
-  width: 30%;
+  padding: .5em 1em .5em 40px;
+//  width: 40%;
+	@include border-radius(15px);
+//	border: 1px solid $light-green!important;
 }
 
 .region-menu .menu,
@@ -152,10 +154,13 @@ footer .menu li ul {
 	display: block;
 	color: $white;
 	font-weight: 100;
-	padding: .5em;
-	width: 65%;
+	padding: .5em 1em;
+//	width: 65%;
 	float: right;
 	text-align: right;
+	@include background-image(linear-gradient($dark-green, $black));
+	@include border-radius(15px);
+	border: 1px solid $light-green!important;
 }
 
 ul.sub-menu {
