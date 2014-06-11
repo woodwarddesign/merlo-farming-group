@@ -182,18 +182,9 @@ ul.sub-menu {
 		display: none;
 	}
 	ul.sub-menu {
-		padding: 5px 0px;
 		text-align: right;
 		li {
 			display: inline-block;
-			padding: 0;
-			margin: 0 7px;
-		}
-		.active-trail,
-		.active {
-//			background-color: $light-green;
-//			color: $white;
-				color: $dark-green;
 		}
 	}
 
