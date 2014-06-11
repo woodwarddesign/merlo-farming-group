@@ -19,19 +19,41 @@ ul li.leaf {
 }
 
 .js .region-menu .menu {
-  background: $light-gray;
+  padding: 10px;
   max-height: 0;
   overflow: hidden;
   &.toggled {
     max-height: 50em;
+	  background-color: rgba($white, .2);
+	  border: 1px solid $white;
+		margin-top: 10px;
+	  li {
+		  background-color: $white;
+		  overflow: hidden;
+	  }
+  }
+  li:first-child {
+	  border-top: none;
   }
 }
+
+   .region-menu {
+	   	&.toggled {
+			  background-color: rgba($white, .2);
+			  border: 1px solid $white;
+				margin-top: 10px;
+			  li {
+				  background-color: $white;
+				  overflow: hidden;
+			  }
+			 }
+			}
 
 // multi-toggle styles
 
 a.menu-link {
-  background: url('../images/menu-icon.svg') no-repeat scroll 10px .7em transparent;
-  color: $white !important;
+  background: url('../images/menu-icon.svg') no-repeat scroll 10px .65em transparent;
+//  color: $white !important;
   display: block;
   float: left;
   padding: .5em 1em .5em 40px;
@@ -74,7 +96,7 @@ footer .menu li.menuparent > a.toggled:after {
 .region-menu .menu li,
 footer .menu li {
   padding: .5em 20px;
-  border-top: 1px solid lighten($dark-green, 0%);
+  margin-top: 1px;
 }
 
 footer .menu li.first {
@@ -110,7 +132,7 @@ footer .menu li a.toggled {
 
 .region-menu .menu li ul,
 footer .menu li ul {
-  background: $gray;
+  background: $light-green;
   clear: both;
   list-style: none;
   left: 20px;
@@ -119,7 +141,7 @@ footer .menu li ul {
   top: 35px;
   @include trans-all;
   li {
-    padding: .75rem .75rem .75rem 2rem;
+    padding: .5rem .75rem .5rem 2rem;
     list-style: none;
     width: 200%;
     &:last-child {
@@ -216,6 +238,7 @@ ul.sub-menu {
 		li a {
 			font-weight: bold;
 		}
+		
 		.login {
 			display: inline-block;
 			@include background-image(linear-gradient($dark-green, $black));
@@ -230,10 +253,22 @@ ul.sub-menu {
   .js .region-menu .menu,
   .js .region-menu .menu li ul {
     background-color: transparent;
+    border: none;
     max-height: none;
     overflow: visible;
     z-index: 1000;
   }
+ .js .region-menu .menu {
+   	&.toggled {
+		  background: transparent;
+		  border: none;
+			margin-top: 10px;
+		  li {
+			  background-color: transparent;
+			  overflow: hidden;
+		  }
+		 }
+		}
 
     .region-menu .menu {
       margin-top: 0;
@@ -252,7 +287,7 @@ ul.sub-menu {
   }
 
   .region-menu .menu li.menuparent {
-    padding-bottom: .5em;
+    padding-bottom: .15em;
   }
 
   .region-menu .menu li,
