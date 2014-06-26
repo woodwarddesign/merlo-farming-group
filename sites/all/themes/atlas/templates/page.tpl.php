@@ -11,7 +11,7 @@
         <?php if ($site_name || $site_slogan): ?>
           <div class="header__name-and-slogan" id="name-and-slogan">
             <?php if ($site_name): ?>
-              <h1 class="site-name">
+              <h1 class="site-name element-invisible">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="header__site-link" rel="home"><?php print $site_name; ?></a>
               </h1>
             <?php endif; ?>
