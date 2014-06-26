@@ -1,0 +1,16 @@
+name = Prometheus Views
+description = Views included with the Prometheus installation profile.
+core = 7.x
+package = Features
+dependencies[] = semanticviews
+dependencies[] = strongarm
+dependencies[] = views
+features[ctools][] = strongarm:strongarm:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[variable][] = views_defaults
+features[variable][] = views_field_rewrite_elements
+features[views_view][] = about_the_author
+features[views_view][] = blog
+features[views_view][] = taxonomy_term_page
+features_exclude[dependencies][ctools] = ctools

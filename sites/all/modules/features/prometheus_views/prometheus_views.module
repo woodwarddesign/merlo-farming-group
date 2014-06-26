@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Prometheus Views feature.
+ */
+
+include_once 'prometheus_views.features.inc';

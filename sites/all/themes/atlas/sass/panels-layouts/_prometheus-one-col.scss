@@ -1,0 +1,24 @@
+$gutter: 35px;
+
+.panel-left {
+  margin-bottom: $vert-spacing;
+}
+
+@media all and (min-width: $tab) {
+
+  .panel-left,
+  .panel-right {
+    float: left;
+    padding: 0 $gutter;
+    width: 50%;
+  }
+
+  .panel-left {
+    margin-left: -($gutter);
+  }
+
+  .panel-right {
+    margin-right: -($gutter);
+  }
+
+}

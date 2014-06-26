@@ -1,4 +1,0 @@
-name = Prometheus Responsive Starter Kit
-description = An installation profile for responsive theme development and site building.
-core = 7.x
-files[] = responsive_starter.profile

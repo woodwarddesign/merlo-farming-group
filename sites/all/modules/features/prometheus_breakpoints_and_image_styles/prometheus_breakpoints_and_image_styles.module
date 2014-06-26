@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Prometheus Breakpoints and Image Styles feature.
+ */
+
+include_once 'prometheus_breakpoints_and_image_styles.features.inc';

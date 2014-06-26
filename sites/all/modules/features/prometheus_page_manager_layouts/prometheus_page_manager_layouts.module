@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Prometheus Page Manager Layouts feature.
+ */
+
+include_once 'prometheus_page_manager_layouts.features.inc';

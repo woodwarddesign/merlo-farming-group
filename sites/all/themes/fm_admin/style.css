@@ -1004,24 +1004,38 @@ div.add-or-remove-shortcuts {
 .page-node-add input[type="search"],
 .page-node-add textarea,
 .page-node-add .panel-pane,
-.admin-panel {
-  border: 1px solid #dddddd;
+.admin-panel,
+.page-node-add .ctools-collapsible-container,
+.page-node-edit .ctools-collapsible-container {
+  border: 1px solid #ccc;
+}
+
+.page-node-add .ctools-collapsible-container .ctools-toggle,
+.page-node-edit .ctools-collapsible-container .ctools-toggle {
+  height: 31px;
+  background-position: 7px 20px;
 }
 
 .panel-2col .panel-col-last {
-  width: 39%;
+  width: 44%;
 }
 
 .panel-2col .panel-col-first {
-  width: 60%;
+  width: 55%;
+}
+
+.page-node-edit .form-item .form-item {
+  width: 100%;
 }
 
 .page-node-edit .panel-pane,
 .page-node-add .panel-pane,
-.admin-panel {
-  background: #fbfbfb;
+.admin-panel,
+.page-node-edit  .ctools-collapsible-container,
+.page-node-add  .ctools-collapsible-container {
+  background: #eee;
   margin-bottom: 27px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .form-textarea-wrapper textarea {
@@ -1126,4 +1140,20 @@ textarea.text-full {
 .views-displays .secondary .action-list input.form-submit,
 .views-displays .secondary .action-list input.form-submit:hover {
   color: #444;
+}
+
+.imagefield-focus.focus-box {
+  min-width: 350px;
+}
+
+#admin-menu {
+  font-size: 15px;
+}
+
+#admin-menu li.admin-menu-account > a {
+  background: #237ad9;
+}
+
+#admin-menu .dropdown li li.expandable ul {
+margin: -27px 0 0 160px;
 }

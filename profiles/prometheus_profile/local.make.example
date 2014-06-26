@@ -1,0 +1,44 @@
+; prometheus_profile make file for local development
+core = "7.x"
+api = "2"
+
+projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ TODO modules without versions +++++
+
+projects[prometheus_breakpoints_and_image_styles][version] = "" ; TODO add version
+projects[prometheus_breakpoints_and_image_styles][subdir] = "custom"
+
+projects[prometheus_menus][version] = "" ; TODO add version
+projects[prometheus_menus][subdir] = "custom"
+
+projects[prometheus_page_manager_layouts][version] = "" ; TODO add version
+projects[prometheus_page_manager_layouts][subdir] = "custom"
+
+projects[prometheus_sample_content_dependencies][version] = "" ; TODO add version
+projects[prometheus_sample_content_dependencies][subdir] = "custom"
+
+projects[prometheus_site_variables][version] = "" ; TODO add version
+projects[prometheus_site_variables][subdir] = "custom"
+
+projects[prometheus_views][version] = "" ; TODO add version
+projects[prometheus_views][subdir] = "custom"
+
+; +++++ Libraries +++++
+
+; easing
+libraries[easing][directory_name] = "easing"
+libraries[easing][type] = "library"
+libraries[easing][destination] = "libraries"
+libraries[easing][download][type] = "get"
+libraries[easing][download][url] = "" ; TODO add download URI
+
+; s3-php5-curl
+libraries[s3-php5-curl][directory_name] = "s3-php5-curl"
+libraries[s3-php5-curl][type] = "library"
+libraries[s3-php5-curl][destination] = "libraries"
+libraries[s3-php5-curl][download][type] = "get"
+libraries[s3-php5-curl][download][url] = "" ; TODO add download URI
+

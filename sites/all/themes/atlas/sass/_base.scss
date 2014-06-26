@@ -1,0 +1,90 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: $text-color;
+  font-size: $base-font-size * .85;
+  font-family: $sans-body;
+}
+
+a,
+a:link,
+a:visited,
+a.active {
+  border: none;
+  color: $accent;
+  font-weight: $body-font-weight;
+  text-decoration: none;
+  @include trans-color;
+}
+
+a img, a, img {
+  border: none !important;
+  border-color: none !important;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: lighten($accent, 15%);
+  outline: none;
+}
+
+p, ol, ul, blockquote, pre, code, span {
+  color: $text-color;
+  font-weight: $body-font-weight;
+  hyphens: auto;
+  line-height: $base-line-height;
+  margin: 0 0 $vert-spacing 0;
+  word-wrap: break-word;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+blockquote {
+  background: $light-gray;
+  border: 1px solid $gray;
+  font-style: italic;
+  padding: 1em;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+ol, ul {
+  padding-left: 0;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+dt {
+  margin-bottom: .5rem;
+}
+
+dd {
+  font-weight: $body-font-weight;
+  margin: 0;
+}

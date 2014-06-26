@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Prometheus Boxes + Context feature.
+ */
+
+include_once 'prometheus_boxes_context.features.inc';

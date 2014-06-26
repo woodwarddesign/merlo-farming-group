@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Prometheus Menus feature.
+ */
+
+include_once 'prometheus_menus.features.inc';

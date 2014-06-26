@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Prometheus Sample Content + Dependencies feature.
+ */
+
+include_once 'prometheus_sample_content_dependencies.features.inc';
