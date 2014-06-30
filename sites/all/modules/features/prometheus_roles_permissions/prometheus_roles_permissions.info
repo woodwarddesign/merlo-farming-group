@@ -3,7 +3,6 @@ description = Export of roles and permissions for Prometheus installation profil
 core = 7.x
 package = Features
 dependencies[] = comment
-dependencies[] = contact
 dependencies[] = disable_messages
 dependencies[] = features
 dependencies[] = features_roles_permissions
