@@ -1321,7 +1321,7 @@ footer .region-footer p a.toggled {
 /* line 249, ../sass/components/_menus.scss */
 ul.primary {
   border-bottom: 1px solid #bbbbbb;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 /* line 252, ../sass/components/_menus.scss */
 ul.primary li {
