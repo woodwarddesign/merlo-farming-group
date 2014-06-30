@@ -10,17 +10,6 @@
 function prometheus_roles_permissions_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'access comments'.
-  $permissions['access comments'] = array(
-    'name' => 'access comments',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'comment',
-  );
-
   // Exported permission: 'access content'.
   $permissions['access content'] = array(
     'name' => 'access content',
@@ -41,15 +30,6 @@ function prometheus_roles_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'edit own comments'.
-  $permissions['edit own comments'] = array(
-    'name' => 'edit own comments',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'comment',
-  );
-
   // Exported permission: 'exclude from message filtering'.
   $permissions['exclude from message filtering'] = array(
     'name' => 'exclude from message filtering',
@@ -57,16 +37,6 @@ function prometheus_roles_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'disable_messages',
-  );
-
-  // Exported permission: 'post comments'.
-  $permissions['post comments'] = array(
-    'name' => 'post comments',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'comment',
   );
 
   // Exported permission: 'use text format full_html'.
