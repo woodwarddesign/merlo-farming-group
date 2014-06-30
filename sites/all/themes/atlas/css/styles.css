@@ -1,13 +1,10 @@
 /**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
- *
- * When you turn on CSS aggregation at admin/config/development/performance, all
- * of these @include files will be combined into a single file.
  */
 /* Import Sass mixins, variables, Compass modules, etc. */
-/* normalize.css v3.0.0 | MIT License | git.io/normalize */
-/* normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
 /* line 20, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 article,
 aside,
@@ -45,7 +42,7 @@ template {
   display: none;
 }
 
-/* normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
 /* line 11, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
 html {
   font-family: sans-serif;
@@ -58,7 +55,7 @@ body {
   margin: 0;
 }
 
-/* normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
 a {
   background: transparent;
@@ -70,7 +67,7 @@ a:hover {
   outline: 0;
 }
 
-/* normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 abbr[title] {
   border-bottom: 1px dotted;
@@ -123,7 +120,7 @@ sub {
   bottom: -0.25em;
 }
 
-/* normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
 img {
   border: 0;
@@ -134,7 +131,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-/* normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 figure {
   margin: 1em 40px;
@@ -161,7 +158,7 @@ samp {
   font-size: 1em;
 }
 
-/* normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
 /* line 19, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button,
 input,
@@ -261,7 +258,7 @@ optgroup {
   font-weight: bold;
 }
 
-/* normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
 table {
   border-collapse: collapse;
@@ -274,9 +271,8 @@ th {
   padding: 0;
 }
 
-/* HTML element (SMACSS base) rules */
-/* normalize.css v3.0.0 | MIT License | git.io/normalize */
-/* normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
 /* line 20, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 article,
 aside,
@@ -314,7 +310,7 @@ template {
   display: none;
 }
 
-/* normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
 /* line 11, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
 html {
   font-family: sans-serif;
@@ -327,7 +323,7 @@ body {
   margin: 0;
 }
 
-/* normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
 a {
   background: transparent;
@@ -339,7 +335,7 @@ a:hover {
   outline: 0;
 }
 
-/* normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 abbr[title] {
   border-bottom: 1px dotted;
@@ -392,7 +388,7 @@ sub {
   bottom: -0.25em;
 }
 
-/* normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
 img {
   border: 0;
@@ -403,7 +399,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-/* normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 figure {
   margin: 1em 40px;
@@ -430,7 +426,7 @@ samp {
   font-size: 1em;
 }
 
-/* normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
 /* line 19, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button,
 input,
@@ -530,7 +526,7 @@ optgroup {
   font-weight: bold;
 }
 
-/* normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
 table {
   border-collapse: collapse;
@@ -653,7 +649,6 @@ dd {
   margin: 0;
 }
 
-/* Component (SMACSS module) rules */
 /* line 3, ../sass/components/_views.scss */
 .view .row {
   border-bottom: 1px solid white;
@@ -728,9 +723,9 @@ input[type="tel"] {
   font-size: 20px;
   height: 2.25rem;
   margin-bottom: .5rem;
+  max-width: 100%;
   padding: 0 .5rem;
   position: relative;
-  width: 80%;
 }
 
 /* line 47, ../sass/components/_forms.scss */
@@ -788,13 +783,19 @@ input[type="tel"]:focus {
   box-shadow: 0 0 2px #237ad9 inset;
 }
 
-/* line 95, ../sass/components/_forms.scss */
+/* line 94, ../sass/components/_forms.scss */
+.form-required {
+  color: #237ad9;
+  font-weight: bold;
+}
+
+/* line 100, ../sass/components/_forms.scss */
 .form-item {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   overflow: hidden;
 }
 
-/* line 103, ../sass/components/_forms.scss */
+/* line 108, ../sass/components/_forms.scss */
 .form-item-pass-pass1,
 .form-item-pass-pass2 {
   overflow: visible;
@@ -802,25 +803,25 @@ input[type="tel"]:focus {
   width: 40%;
 }
 
-/* line 109, ../sass/components/_forms.scss */
+/* line 114, ../sass/components/_forms.scss */
 .page-user input.password-confirm {
   margin-top: 0;
 }
 
-/* line 114, ../sass/components/_forms.scss */
+/* line 119, ../sass/components/_forms.scss */
 .form-type-password-confirm {
   padding-bottom: 3rem;
   position: relative;
 }
 
-/* line 120, ../sass/components/_forms.scss */
+/* line 125, ../sass/components/_forms.scss */
 .password-strength,
 .password-confirm {
   display: block;
   margin-bottom: .5rem;
   padding: .5rem 0;
 }
-/* line 126, ../sass/components/_forms.scss */
+/* line 131, ../sass/components/_forms.scss */
 .password-strength .password-indicator div,
 .password-confirm .password-indicator div {
   background: #f76558;
@@ -828,35 +829,35 @@ input[type="tel"]:focus {
   width: 0;
 }
 
-/* line 133, ../sass/components/_forms.scss */
+/* line 138, ../sass/components/_forms.scss */
 .password-strength-title {
   margin-bottom: .5rem;
 }
 
-/* line 137, ../sass/components/_forms.scss */
+/* line 142, ../sass/components/_forms.scss */
 .password-strength-text {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 143, ../sass/components/_forms.scss */
+/* line 148, ../sass/components/_forms.scss */
 .password-confirm .error,
 .password-confirm .ok {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 148, ../sass/components/_forms.scss */
+/* line 153, ../sass/components/_forms.scss */
 .password-strength-text {
   margin-top: .5rem;
 }
 
-/* line 152, ../sass/components/_forms.scss */
+/* line 157, ../sass/components/_forms.scss */
 .password-confirm .error {
   margin-top: .3rem;
 }
 
-/* line 156, ../sass/components/_forms.scss */
+/* line 161, ../sass/components/_forms.scss */
 .password-suggestions {
   background: #efefef;
   border: 1px solid #dddddd;
@@ -969,7 +970,7 @@ h6, h6 a {
   font-size: 13.4px;
 }
 
-@media all and (min-width: 40em) {
+@media (min-width: 40em) {
   /* line 49, ../sass/components/_typography.scss */
   h1, h1 a {
     font-size: 45px;
@@ -1000,7 +1001,7 @@ h6, h6 a {
     font-size: 12.395px;
   }
 }
-@media all and (min-width: 60em) {
+@media (min-width: 60em) {
   /* line 83, ../sass/components/_typography.scss */
   body {
     font-size: 16.5px;
@@ -1037,38 +1038,43 @@ ul li.leaf {
 }
 
 /* line 8, ../sass/components/_menus.scss */
+.menu {
+  margin-bottom: 0;
+}
+
+/* line 12, ../sass/components/_menus.scss */
 .menu li a {
   display: block;
   position: relative;
   width: 100%;
 }
 
-/* line 14, ../sass/components/_menus.scss */
-.menu-block-1 {
+/* line 18, ../sass/components/_menus.scss */
+.main-menu-1 {
   text-align: left;
 }
-/* line 16, ../sass/components/_menus.scss */
-.menu-block-1 .menu {
+/* line 20, ../sass/components/_menus.scss */
+.main-menu-1 .menu {
   float: left;
   list-style: none;
   margin-bottom: 0;
 }
 
-/* line 23, ../sass/components/_menus.scss */
-.js .menu-block-1 .menu {
+/* line 27, ../sass/components/_menus.scss */
+.js .main-menu-1 {
   max-height: 0;
   overflow: hidden;
 }
-/* line 26, ../sass/components/_menus.scss */
-.js .menu-block-1 .menu.toggled {
+/* line 30, ../sass/components/_menus.scss */
+.js .main-menu-1.toggled {
   max-height: 50em;
 }
-/* line 29, ../sass/components/_menus.scss */
-.js .menu-block-1 .menu.main-menu-2 {
+/* line 33, ../sass/components/_menus.scss */
+.js .main-menu-1.main-menu-2 {
   width: 200%;
 }
 
-/* line 36, ../sass/components/_menus.scss */
+/* line 40, ../sass/components/_menus.scss */
 a.menu-link {
   background: url("../images/menu-icon.svg") no-repeat scroll 10px 0.9em #237ad9;
   color: #fefefe !important;
@@ -1077,19 +1083,19 @@ a.menu-link {
   padding: .5em .5em .5em 40px;
 }
 
-/* line 44, ../sass/components/_menus.scss */
-.menu-block-1 .menu {
+/* line 48, ../sass/components/_menus.scss */
+.main-menu-1 {
   background: #efefef;
   clear: both;
   width: 100%;
 }
-/* line 48, ../sass/components/_menus.scss */
-.menu-block-1 .menu ul {
+/* line 52, ../sass/components/_menus.scss */
+.main-menu-1 ul {
   clear: both;
 }
 
-/* line 53, ../sass/components/_menus.scss */
-.menu-block-1 .menu li.expanded > a:after {
+/* line 57, ../sass/components/_menus.scss */
+.main-menu-1 li.expanded > a:after {
   content: '+';
   position: absolute;
   top: -10px;
@@ -1099,50 +1105,50 @@ a.menu-link {
   padding: 0.25em 0.5em;
 }
 
-/* line 63, ../sass/components/_menus.scss */
-.menu-block-1 .menu li.expanded > a.toggled:after {
+/* line 67, ../sass/components/_menus.scss */
+.main-menu-1 li.expanded > a.toggled:after {
   content: "-";
   top: -13px;
   right: 2px;
 }
 
-/* line 69, ../sass/components/_menus.scss */
-.menu-block-1 .menu li {
+/* line 73, ../sass/components/_menus.scss */
+.main-menu-1 li {
   clear: both;
   display: block;
   padding: .75em 20px;
 }
 
-/* line 75, ../sass/components/_menus.scss */
-.menu-block-1 .menu li.expanded {
+/* line 79, ../sass/components/_menus.scss */
+.main-menu-1 li.expanded {
   padding-bottom: 1.25em;
 }
 
-/* line 80, ../sass/components/_menus.scss */
-.menu-block-1 .menu li a,
+/* line 84, ../sass/components/_menus.scss */
+.main-menu-1 li a,
 a.menu-link {
   color: #237ad9;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 
-/* line 88, ../sass/components/_menus.scss */
-.menu-block-1 .menu li a:hover,
-.menu-block-1 .menu li a:focus,
-.menu-block-1 .menu li a.toggled {
+/* line 92, ../sass/components/_menus.scss */
+.main-menu-1 li a:hover,
+.main-menu-1 li a:focus,
+.main-menu-1 li a.toggled {
   color: #185597;
   outline: none;
 }
 
-/* line 95, ../sass/components/_menus.scss */
+/* line 99, ../sass/components/_menus.scss */
 footer .region-footer p a:hover,
 footer .region-footer p a:focus,
 footer .region-footer p a.toggled {
   color: #0e3055;
 }
 
-/* line 99, ../sass/components/_menus.scss */
-.menu-block-1 .menu li ul {
+/* line 103, ../sass/components/_menus.scss */
+.main-menu-1 li ul {
   background: #dddddd;
   clear: both;
   list-style: none;
@@ -1155,18 +1161,24 @@ footer .region-footer p a.toggled {
   -o-transition: all .3s;
   transition: all .3s;
 }
-/* line 108, ../sass/components/_menus.scss */
-.menu-block-1 .menu li ul li {
+/* line 112, ../sass/components/_menus.scss */
+.main-menu-1 li ul li {
   padding: .75rem .75rem .75rem 2rem;
   list-style: none;
   width: 200%;
 }
-/* line 112, ../sass/components/_menus.scss */
-.menu-block-1 .menu li ul li:last-child {
+/* line 116, ../sass/components/_menus.scss */
+.main-menu-1 li ul li:last-child {
   border-bottom: none;
 }
+@media (min-width: 60em) {
+  /* line 103, ../sass/components/_menus.scss */
+  .main-menu-1 li ul {
+    background: white;
+  }
+}
 
-/* line 118, ../sass/components/_menus.scss */
+/* line 125, ../sass/components/_menus.scss */
 .main-menu-2 {
   margin: .5em -20px -1em -100px;
   max-height: 50em;
@@ -1175,7 +1187,7 @@ footer .region-footer p a.toggled {
   width: 150%;
 }
 
-/* line 126, ../sass/components/_menus.scss */
+/* line 133, ../sass/components/_menus.scss */
 .js .main-menu-2 {
   max-height: 0;
   overflow: hidden;
@@ -1184,100 +1196,102 @@ footer .region-footer p a.toggled {
   -o-transition: all .3s;
   transition: all .3s;
 }
-/* line 130, ../sass/components/_menus.scss */
+/* line 137, ../sass/components/_menus.scss */
 .js .main-menu-2.toggled {
   max-height: 50em;
   margin-bottom: 0;
 }
 
-@media all and (min-width: 60em) {
-  /* line 139, ../sass/components/_menus.scss */
-  .menu-block-1 {
+@media (min-width: 60em) {
+  /* line 146, ../sass/components/_menus.scss */
+  .main-menu-1 {
     text-align: right;
   }
 
-  /* line 143, ../sass/components/_menus.scss */
-  .js .menu-block-1 .menu {
+  /* line 150, ../sass/components/_menus.scss */
+  .js .main-menu-1 {
     background-color: #fefefe;
     max-height: none;
     overflow: visible;
     z-index: 1000;
   }
 
-  /* line 150, ../sass/components/_menus.scss */
-  .menu-block-1 .menu {
+  /* line 157, ../sass/components/_menus.scss */
+  .main-menu-1 {
     margin-top: 0;
   }
 
-  /* line 154, ../sass/components/_menus.scss */
-  .menu-block-1 .menu li.expanded > a:after {
+  /* line 161, ../sass/components/_menus.scss */
+  .main-menu-1 li.expanded > a:after {
     content: '';
   }
 
-  /* line 158, ../sass/components/_menus.scss */
-  .menu-block-1 .menu li.expanded > a.toggled:after {
+  /* line 165, ../sass/components/_menus.scss */
+  .main-menu-1 li.expanded > a.toggled:after {
     content: '';
   }
 
-  /* line 162, ../sass/components/_menus.scss */
-  .menu-block-1 .menu li.expanded > a:after {
+  /* line 169, ../sass/components/_menus.scss */
+  .main-menu-1 li.expanded > a:after {
     content: '';
   }
 
-  /* line 166, ../sass/components/_menus.scss */
-  .menu-block-1 .menu li.expanded {
+  /* line 173, ../sass/components/_menus.scss */
+  .main-menu-1 li.expanded {
     padding-bottom: .5em;
   }
 
-  /* line 170, ../sass/components/_menus.scss */
-  .menu-block-1 .menu li {
+  /* line 177, ../sass/components/_menus.scss */
+  .main-menu-1 li {
     border-top: none;
     padding: .5em 1em;
   }
 
-  /* line 176, ../sass/components/_menus.scss */
-  .menu-block-1 > ul li.first {
+  /* line 183, ../sass/components/_menus.scss */
+  .main-menu-1 > ul li.first {
     padding-left: 0;
   }
-  /* line 179, ../sass/components/_menus.scss */
-  .menu-block-1 > ul li.last {
+  /* line 186, ../sass/components/_menus.scss */
+  .main-menu-1 > ul li.last {
     border-right: none;
+    padding-right: 0;
   }
 
-  /* line 184, ../sass/components/_menus.scss */
-  .menu-block-1 .menu li {
+  /* line 192, ../sass/components/_menus.scss */
+  .main-menu-1 li {
     display: inline-block;
     font-size: 14px;
     position: relative;
     font-weight: 300;
   }
 
-  /* line 191, ../sass/components/_menus.scss */
+  /* line 199, ../sass/components/_menus.scss */
   a.menu-link {
     display: none;
   }
 
-  /* line 195, ../sass/components/_menus.scss */
-  .menu ul {
+  /* line 203, ../sass/components/_menus.scss */
+  .main-menu-1 ul {
     display: none;
   }
 
-  /* line 199, ../sass/components/_menus.scss */
-  .menu li:hover > ul {
+  /* line 207, ../sass/components/_menus.scss */
+  .main-menu-1 li:hover > ul {
     display: block;
   }
 
-  /* line 203, ../sass/components/_menus.scss */
-  .js .menu-block-1 .main-menu-2 {
+  /* line 211, ../sass/components/_menus.scss */
+  .js .main-menu-1 .main-menu-2 {
     border: 1px solid #efefef;
-    position: absolute;
-    top: 2em;
     left: 7em;
-    width: 12em;
+    max-height: 50em;
+    position: absolute;
+    top: 1.75em;
     text-align: left;
+    width: 12em;
   }
-  /* line 210, ../sass/components/_menus.scss */
-  .js .menu-block-1 .main-menu-2 li {
+  /* line 219, ../sass/components/_menus.scss */
+  .js .main-menu-1 .main-menu-2 li {
     border-right: none;
     display: inline-block;
     margin-left: -5.25em;
@@ -1286,12 +1300,12 @@ footer .region-footer p a.toggled {
     position: relative;
     width: 15.2em;
   }
-  /* line 218, ../sass/components/_menus.scss */
-  .js .menu-block-1 .main-menu-2 li a {
+  /* line 227, ../sass/components/_menus.scss */
+  .js .main-menu-1 .main-menu-2 li a {
     display: block;
   }
 }
-/* line 228, ../sass/components/_menus.scss */
+/* line 237, ../sass/components/_menus.scss */
 .region-sidebar-first .menu li,
 .region-sidebar-second .menu li {
   border-bottom: 1px solid #efefef;
@@ -1299,17 +1313,17 @@ footer .region-footer p a.toggled {
   padding-bottom: .5em;
   padding-top: 0;
 }
-/* line 233, ../sass/components/_menus.scss */
+/* line 242, ../sass/components/_menus.scss */
 .region-sidebar-first .menu li.last,
 .region-sidebar-second .menu li.last {
   border: none;
 }
 
-/* line 240, ../sass/components/_menus.scss */
+/* line 249, ../sass/components/_menus.scss */
 ul.primary {
   border-bottom: 1px solid #bbbbbb;
 }
-/* line 242, ../sass/components/_menus.scss */
+/* line 251, ../sass/components/_menus.scss */
 ul.primary li {
   display: inline-block;
   list-style: none;
@@ -1321,11 +1335,11 @@ ul.primary li {
   margin-right: 0.5em;
   padding: 0 1em;
 }
-/* line 252, ../sass/components/_menus.scss */
+/* line 261, ../sass/components/_menus.scss */
 ul.primary li a {
   text-decoration: none;
 }
-/* line 256, ../sass/components/_menus.scss */
+/* line 265, ../sass/components/_menus.scss */
 ul.primary li.toggled {
   background-color: #fefefe;
 }
@@ -1337,11 +1351,16 @@ ul.primary li.toggled {
 }
 
 /* line 7, ../sass/components/_regions.scss */
+.header-wrapper {
+  padding-top: 1rem;
+}
+
+/* line 11, ../sass/components/_regions.scss */
 img.header__logo-image {
   height: 63px;
 }
 
-/* line 11, ../sass/components/_regions.scss */
+/* line 15, ../sass/components/_regions.scss */
 .header__logo-image {
   float: left;
   height: auto;
@@ -1349,48 +1368,43 @@ img.header__logo-image {
   position: relative;
 }
 
-/* line 18, ../sass/components/_regions.scss */
+/* line 22, ../sass/components/_regions.scss */
 .header__name-and-slogan {
   float: left;
 }
 
-/* line 22, ../sass/components/_regions.scss */
+/* line 26, ../sass/components/_regions.scss */
 .region-branding {
   float: left;
   overflow: hidden;
-  padding: 1rem 0;
+  padding-bottom: 2rem;
   position: relative;
 }
-
-/* line 29, ../sass/components/_regions.scss */
-.region-menu {
-  padding: 1rem 0;
-}
-
-@media all and (min-width: 60em) {
-  /* line 35, ../sass/components/_regions.scss */
+@media (min-width: 60em) {
+  /* line 26, ../sass/components/_regions.scss */
   .region-branding {
-    margin-bottom: 2rem;
+    padding-bottom: 0;
   }
 }
-/* line 48, ../sass/components/_regions.scss */
+
+/* line 43, ../sass/components/_regions.scss */
 #content {
   background: white;
   overflow: hidden;
 }
 
-/* line 53, ../sass/components/_regions.scss */
+/* line 48, ../sass/components/_regions.scss */
 #content .messages {
   margin-bottom: 1rem;
   padding: 20px;
 }
-/* line 56, ../sass/components/_regions.scss */
+/* line 51, ../sass/components/_regions.scss */
 #content .messages.status {
   background: #dfeff5;
   border: 1px solid #91c8dd;
 }
 
-/* line 63, ../sass/components/_regions.scss */
+/* line 58, ../sass/components/_regions.scss */
 .breadcrumb li {
   display: inline-block;
   list-style: none;
@@ -1399,43 +1413,37 @@ img.header__logo-image {
   font-size: 14.5px;
 }
 
-/* line 77, ../sass/components/_regions.scss */
+/* line 72, ../sass/components/_regions.scss */
 footer {
   clear: both;
 }
 
-/* line 81, ../sass/components/_regions.scss */
+/* line 76, ../sass/components/_regions.scss */
 .region-footer {
   padding: 10px 0;
 }
 
-/* line 85, ../sass/components/_regions.scss */
+/* line 80, ../sass/components/_regions.scss */
 .copyright {
   padding-bottom: 10px;
 }
-/* line 87, ../sass/components/_regions.scss */
+/* line 82, ../sass/components/_regions.scss */
 .copyright p {
   float: left;
   font-size: 12.5px;
 }
 
-/**
- * @file
- * Positioning for a responsive layout.
- *
- * Define CSS classes to create a fluid grid layout with optional sidebars
- * depending on whether blocks are placed in the left or right sidebars.
- *
- */
-/* line 16, ../sass/components/_layout.scss */
-header,
-.preface,
-.content-wrapper,
-footer {
-  clear: both;
+/* line 11, ../sass/components/_layout.scss */
+.grid-container {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 17.5px;
+  padding: 0 17.5px 35px;
+}
+/* line 15, ../sass/components/_layout.scss */
+.grid-container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* line 24, ../sass/components/_layout.scss */
@@ -1444,63 +1452,53 @@ footer {
   float: left;
   width: 100%;
 }
-
-/* line 31, ../sass/components/_layout.scss */
-#content,
-.region-sidebar-first,
-.region-sidebar-second {
-  margin-bottom: 3rem;
+@media (min-width: 60em) {
+  /* line 24, ../sass/components/_layout.scss */
+  .region-branding,
+  .region-menu {
+    width: 50%;
+  }
 }
 
-@media all and (min-width: 40em) {
-  /* line 38, ../sass/components/_layout.scss */
-  .two-sidebars #content {
+@media (min-width: 40em) {
+  /* line 36, ../sass/components/_layout.scss */
+  .two-sidebars .region-content {
     float: left;
     padding-right: 35px;
     width: 67%;
   }
-  /* line 42, ../sass/components/_layout.scss */
-  .two-sidebars #content:after {
+  /* line 40, ../sass/components/_layout.scss */
+  .two-sidebars .region-content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 47, ../sass/components/_layout.scss */
+  /* line 45, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33%;
   }
-  /* line 51, ../sass/components/_layout.scss */
+  /* line 49, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 33%;
   }
 }
-@media all and (min-width: 60em) {
-  /* line 62, ../sass/components/_layout.scss */
-  .region-branding {
-    width: 50%;
-  }
-
-  /* line 66, ../sass/components/_layout.scss */
-  .region-menu {
-    width: 50%;
-  }
-
-  /* line 72, ../sass/components/_layout.scss */
-  .two-sidebars #content {
+@media (min-width: 60em) {
+  /* line 59, ../sass/components/_layout.scss */
+  .two-sidebars .region-content {
     float: left;
     margin-left: 25%;
     padding-right: 35px;
     width: 50%;
   }
-  /* line 77, ../sass/components/_layout.scss */
-  .two-sidebars #content:after {
+  /* line 64, ../sass/components/_layout.scss */
+  .two-sidebars .region-content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 82, ../sass/components/_layout.scss */
+  /* line 68, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-first {
     clear: none;
     float: left;
@@ -1508,69 +1506,76 @@ footer {
     padding-right: 35px;
     width: 25%;
   }
-  /* line 89, ../sass/components/_layout.scss */
+  /* line 75, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 25%;
   }
 
-  /* line 97, ../sass/components/_layout.scss */
-  .one-sidebar.sidebar-first #content {
+  /* line 83, ../sass/components/_layout.scss */
+  .one-sidebar.sidebar-first .region-content {
     float: left;
     margin-left: 33%;
     padding-right: 35px;
     width: 67%;
   }
-  /* line 102, ../sass/components/_layout.scss */
-  .one-sidebar.sidebar-first #content:after {
+  /* line 88, ../sass/components/_layout.scss */
+  .one-sidebar.sidebar-first .region-content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 106, ../sass/components/_layout.scss */
+  /* line 92, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-first .region-sidebar-first {
     clear: none;
     float: left;
     margin-left: -100%;
     width: 33%;
-    padding-right: 30px;
+    padding-right: 35px;
   }
 
-  /* line 117, ../sass/components/_layout.scss */
-  .one-sidebar.sidebar-second #content {
+  /* line 103, ../sass/components/_layout.scss */
+  .one-sidebar.sidebar-second .region-content {
     float: left;
-    padding-right: 30px;
+    padding-right: 35px;
     width: 67%;
   }
-  /* line 121, ../sass/components/_layout.scss */
-  .one-sidebar.sidebar-second #content:after {
+  /* line 107, ../sass/components/_layout.scss */
+  .one-sidebar.sidebar-second .region-content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 125, ../sass/components/_layout.scss */
+  /* line 111, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-second .region-sidebar-second {
     clear: none;
     float: left;
     width: 33%;
   }
 }
-/* line 5, ../sass/components/_misc.scss */
+/* line 3, ../sass/components/_misc.scss */
+.feed-icon {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 9, ../sass/components/_misc.scss */
 #admin-menu {
   font-size: 15px;
 }
 
-/* line 9, ../sass/components/_misc.scss */
+/* line 13, ../sass/components/_misc.scss */
 #admin-menu li.admin-menu-account > a {
   background: #237ad9;
 }
 
-/* line 13, ../sass/components/_misc.scss */
+/* line 17, ../sass/components/_misc.scss */
 #admin-menu .dropdown li li.expandable ul {
   margin: -27px 0 0 160px;
 }
 
-/* line 20, ../sass/components/_misc.scss */
+/* line 24, ../sass/components/_misc.scss */
 ul.pager {
   background: none;
   border: none;
@@ -1581,30 +1586,30 @@ ul.pager {
   text-align: right;
 }
 
-/* line 30, ../sass/components/_misc.scss */
+/* line 34, ../sass/components/_misc.scss */
 ul.pager li {
   border: none;
   font-size: 15px;
   padding: .5em 0 .5em 1em;
 }
 
-/* line 36, ../sass/components/_misc.scss */
+/* line 40, ../sass/components/_misc.scss */
 ul.pager li a {
   border: none;
 }
 
-/* line 41, ../sass/components/_misc.scss */
+/* line 45, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-previous {
   text-transform: capitalize;
 }
 
-/* line 45, ../sass/components/_misc.scss */
+/* line 49, ../sass/components/_misc.scss */
 .pager li.pager-current {
   font-weight: normal;
 }
 
-/* line 49, ../sass/components/_misc.scss */
+/* line 53, ../sass/components/_misc.scss */
 .pager li, .pager li.pager-next, .pager li.pager-previous, .pager li.pager-last, .pager li.pager-first {
   border: none;
   margin-left: 1em;
@@ -1612,28 +1617,28 @@ ul.pager li a {
   text-align: right;
 }
 
-/* line 56, ../sass/components/_misc.scss */
+/* line 60, ../sass/components/_misc.scss */
 .pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
   display: inline-block;
 }
 
-/* line 61, ../sass/components/_misc.scss */
+/* line 65, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-current {
   float: right;
 }
 
-/* line 65, ../sass/components/_misc.scss */
+/* line 69, ../sass/components/_misc.scss */
 .pager li.pager-previous {
   float: left;
 }
 
-/* line 69, ../sass/components/_misc.scss */
+/* line 73, ../sass/components/_misc.scss */
 .item-list .pager li {
   padding: .25em 1em;
 }
 
-/* line 78, ../sass/components/_misc.scss */
+/* line 82, ../sass/components/_misc.scss */
 .img-right {
   float: right;
   height: auto;
@@ -1641,7 +1646,7 @@ ul.pager li a {
   max-width: 50%;
 }
 
-/* line 85, ../sass/components/_misc.scss */
+/* line 89, ../sass/components/_misc.scss */
 .img-left {
   float: left;
   height: auto;
@@ -1649,33 +1654,33 @@ ul.pager li a {
   max-width: 50%;
 }
 
-/* line 95, ../sass/components/_misc.scss */
+/* line 99, ../sass/components/_misc.scss */
 .messages.error {
   background: #f5dfdf;
   border: 2px solid #ce9e9e;
 }
-/* line 99, ../sass/components/_misc.scss */
+/* line 103, ../sass/components/_misc.scss */
 .messages.warning {
   background: #f8fad5;
   border: 2px solid #e5d35b;
 }
-/* line 103, ../sass/components/_misc.scss */
+/* line 107, ../sass/components/_misc.scss */
 .messages.info {
   background: #dfeff5;
   border: 2px solid #9ebcce;
 }
-/* line 107, ../sass/components/_misc.scss */
+/* line 111, ../sass/components/_misc.scss */
 .messages.success {
   background: #e8f5df;
   border: 2px solid #9ece9e;
 }
-/* line 111, ../sass/components/_misc.scss */
+/* line 115, ../sass/components/_misc.scss */
 .messages h2 {
   font-size: 1rem;
   font-weight: 300;
 }
 
-/* line 121, ../sass/components/_misc.scss */
+/* line 125, ../sass/components/_misc.scss */
 .messages.error,
 .messages.warning,
 .messages.info,
@@ -1684,7 +1689,7 @@ ul.pager li a {
   margin-bottom: 2rem;
   padding: 1rem;
 }
-/* line 125, ../sass/components/_misc.scss */
+/* line 129, ../sass/components/_misc.scss */
 .messages.error li,
 .messages.warning li,
 .messages.info li,
@@ -1692,7 +1697,7 @@ ul.pager li a {
   color: #222222;
 }
 
-/* line 131, ../sass/components/_misc.scss */
+/* line 135, ../sass/components/_misc.scss */
 .element-invisible {
   position: absolute !important;
   height: 1px;
@@ -1701,7 +1706,7 @@ ul.pager li a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 135, ../sass/components/_misc.scss */
+/* line 139, ../sass/components/_misc.scss */
 .clearfix:after {
   content: "";
   display: table;

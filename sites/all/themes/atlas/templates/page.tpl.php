@@ -1,7 +1,7 @@
 <div id="page">
 
   <div class="header-wrapper">
-    <header class="header" id="header" role="banner">
+    <header class="header grid-container" id="header" role="banner">
       <div class="branding-wrapper">
       <div class="region region-branding">
         <?php if ($logo): ?>
@@ -36,18 +36,13 @@
   </div>
 
   <div class="preface-wrapper">
-    <div id="preface">
+    <div id="preface grid-container">
       <?php print render($page['preface']); ?>
     </div>
   </div>
 
   <div id="main" class="content-wrapper">
-    <div id="content" class="column" role="main">
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
+    <div id="content" class="column grid-container" role="main">
       <?php print render($page['highlighted']); ?>
       <a id="main-content"></a>
       <?php print $messages; ?>
@@ -57,22 +52,21 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
+
+      <?php
+        // Render the sidebars to see if there's anything in them.
+        $sidebar_first  = render($page['sidebar_first']);
+        $sidebar_second = render($page['sidebar_second']);
+      ?>
+
+      <?php if ($sidebar_first || $sidebar_second): ?>
+          <?php print $sidebar_first; ?>
+          <?php print $sidebar_second; ?>
+      <?php endif; ?>
       <?php print $feed_icons; ?>
     </div>
-
-    <?php
-      // Render the sidebars to see if there's anything in them.
-      $sidebar_first  = render($page['sidebar_first']);
-      $sidebar_second = render($page['sidebar_second']);
-    ?>
-
-    <?php if ($sidebar_first || $sidebar_second): ?>
-        <?php print $sidebar_first; ?>
-        <?php print $sidebar_second; ?>
-    <?php endif; ?>
-
   </div>
-<footer>
+<footer class="grid-container">
   <?php print render($page['footer']); ?>
 </footer>
 </div>

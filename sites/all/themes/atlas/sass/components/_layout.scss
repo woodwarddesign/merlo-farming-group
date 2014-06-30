@@ -1,43 +1,41 @@
-/**
- * @file
- * Positioning for a responsive layout.
- *
- * Define CSS classes to create a fluid grid layout with optional sidebars
- * depending on whether blocks are placed in the left or right sidebars.
- *
- */
+// Inspired by CSS-Tricks Don't Overthink It Grid: http://css-tricks.com/dont-overthink-it-grids
+// I try to do things as simply as possible. Big grid frameworks usually aren't necessary.
+// If you need one, you can replace this file with the grid of your choice. Note that this is file
+// doesn't exactly replicate the CSS-Tricks exactly, but rather shares the same concept.
+
 
 $max-width: 1000px;
-$gutter: 35px;
+$pad: 35px;
 
-header,
-.preface,
-.content-wrapper,
-footer {
-  clear: both;
+// this class is applied in page.tpl.php to the page elements that are grid containers
+.grid-container {
   margin: 0 auto;
   max-width: $max-width;
-  padding: 0 ($gutter / 2);
+  padding: 0 ($pad / 2) $pad;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
+// layout for header regions
 .region-branding,
 .region-menu {
   float: left;
   width: 100%;
+  @include breakpoint($desk) {
+    width: 50%;
+  }
 }
 
-#content,
-.region-sidebar-first,
-.region-sidebar-second {
-  margin-bottom: $vert-spacing * 1.5;
-}
 
-@media all and (min-width: $tab) {
+@include breakpoint($tab) {
 
   .two-sidebars {
-    #content {
+    .region-content {
       float: left;
-      padding-right: $gutter;
+      padding-right: $pad;
       width: 67%;
       &:after {
         @include clear-it;
@@ -53,80 +51,67 @@ footer {
       width: 33%;
     }
   }
+} // end $tab breakpoint
 
-}
-
-
-@media all and (min-width: $desk) {
-
-  .region-branding {
-    width: 50%;
-  }
-
-  .region-menu {
-    width: 50%;
-  }
-
-// two sidebars, one on either side of content
-.two-sidebars {
-  #content {
-    float: left;
-    margin-left: 25%;
-    padding-right: $gutter;
-    width: 50%;
-    &:after {
-      @include clear-it;
+@include breakpoint($desk) {
+  // two sidebars, one on either side of content
+  .two-sidebars {
+    .region-content {
+      float: left;
+      margin-left: 25%;
+      padding-right: $pad;
+      width: 50%;
+      &:after {
+        @include clear-it;
+      }
     }
-  }
-
-  .region-sidebar-first {
-    clear: none;
-    float: left;
-    margin-left: -75%;
-    padding-right: $gutter;
-    width: 25%;
-  }
-  .region-sidebar-second {
-    float: left;
-    width: 25%;
-  }
-}
-
-// one sidebar, sidebar first
-.one-sidebar.sidebar-first {
-  #content {
-    float: left;
-    margin-left: 33%;
-    padding-right: $gutter;
-    width: 67%;
-    &:after {
-      @include clear-it;
+    .region-sidebar-first {
+      clear: none;
+      float: left;
+      margin-left: -75%;
+      padding-right: $pad;
+      width: 25%;
     }
-  }
-  .region-sidebar-first {
-    clear: none;
-    float: left;
-    margin-left: -100%;
-    width: 33%;
-    padding-right: 30px;
-  }
-}
-
-// one sidebar, sidebar second
-.one-sidebar.sidebar-second {
-  #content {
-    float: left;
-    padding-right: 30px;
-    width: 67%;
-    &:after {
-      @include clear-it;
+    .region-sidebar-second {
+      float: left;
+      width: 25%;
     }
-  }
-  .region-sidebar-second {
-    clear: none;
-    float: left;
-    width: 33%;
-  }
-}
+  } // end two-sidebars
 
-}
+  // one sidebar, sidebar first
+  .one-sidebar.sidebar-first {
+    .region-content {
+      float: left;
+      margin-left: 33%;
+      padding-right: $pad;
+      width: 67%;
+      &:after {
+        @include clear-it;
+      }
+    }
+    .region-sidebar-first {
+      clear: none;
+      float: left;
+      margin-left: -100%;
+      width: 33%;
+      padding-right: $pad;
+    }
+  } // end one sidebar, sidebar first
+
+  // one sidebar, sidebar second
+  .one-sidebar.sidebar-second {
+    .region-content {
+      float: left;
+      padding-right: $pad;
+      width: 67%;
+      &:after {
+        @include clear-it;
+      }
+    }
+    .region-sidebar-second {
+      clear: none;
+      float: left;
+      width: 33%;
+    }
+  } // end one sidebar, sidebar second
+} // end $desk breakpoint

@@ -1,24 +1,24 @@
-$gutter: 35px;
+$pad: 35px;
 
 .panel-left {
   margin-bottom: $vert-spacing;
 }
 
-@media all and (min-width: $tab) {
+@include breakpoint ($tab) {
 
   .panel-left,
   .panel-right {
     float: left;
-    padding: 0 $gutter;
+    padding: 0 $pad;
     width: 50%;
   }
 
   .panel-left {
-    margin-left: -($gutter);
+    margin-left: -($pad);
   }
 
   .panel-right {
-    margin-right: -($gutter);
+    margin-right: -($pad);
   }
 
 }

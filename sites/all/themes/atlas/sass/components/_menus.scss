@@ -5,13 +5,17 @@ ul li.leaf {
   list-style: none;
 }
 
+.menu {
+  margin-bottom: 0;
+}
+
 .menu li a {
   display: block;
   position: relative;
   width: 100%;
 }
 
-.menu-block-1 {
+.main-menu-1 {
   text-align: left;
   .menu {
     float: left;
@@ -20,7 +24,7 @@ ul li.leaf {
   }
 }
 
-.js .menu-block-1 .menu {
+.js .main-menu-1 {
   max-height: 0;
   overflow: hidden;
   &.toggled {
@@ -41,7 +45,7 @@ a.menu-link {
   padding: .5em .5em .5em 40px;
 }
 
-.menu-block-1 .menu {
+.main-menu-1 {
   background: $light-gray;
   clear: both;
   width: 100%;
@@ -50,7 +54,7 @@ a.menu-link {
   }
 }
 
-.menu-block-1 .menu li.expanded > a:after {
+.main-menu-1 li.expanded > a:after {
 	content: '+';
 	position: absolute;
 	top: -10px;
@@ -60,32 +64,32 @@ a.menu-link {
 	padding: 0.25em 0.5em;
 }
 
-.menu-block-1 .menu li.expanded > a.toggled:after {
+.main-menu-1 li.expanded > a.toggled:after {
   content: "-";
   top: -13px;
   right: 2px;
 }
 
-.menu-block-1 .menu li {
+.main-menu-1 li {
   clear: both;
   display: block;
   padding: .75em 20px;
 }
 
-.menu-block-1 .menu li.expanded {
+.main-menu-1 li.expanded {
   padding-bottom: 1.25em;
 }
 
-.menu-block-1 .menu li a,
+.main-menu-1 li a,
 a.menu-link {
   color: $link-color;
   font-family: $header-font-family;
   font-weight: 100;
 }
 
-.menu-block-1 .menu li a:hover,
-.menu-block-1 .menu li a:focus,
-.menu-block-1 .menu li a.toggled {
+.main-menu-1 li a:hover,
+.main-menu-1 li a:focus,
+.main-menu-1 li a.toggled {
   color: darken($link-color, 15%);
   outline: none;
 }
@@ -96,7 +100,7 @@ footer .region-footer p a.toggled {
 	  color: darken($link-color, 30%);
 }
 
-.menu-block-1 .menu li ul  {
+.main-menu-1 li ul  {
   background: $gray;
   clear: both;
   list-style: none;
@@ -112,6 +116,9 @@ footer .region-footer p a.toggled {
     &:last-child {
       border-bottom: none;
     }
+  }
+  @include breakpoint($desk) {
+    background: $base-color;
   }
 }
 
@@ -134,54 +141,55 @@ footer .region-footer p a.toggled {
 }
 
 
-@media all and (min-width: $desk) {
+@include breakpoint($desk) {
 
-	.menu-block-1 {
-		text-align: right;
-	}
+  	.main-menu-1 {
+  		text-align: right;
+  	}
 
-  .js .menu-block-1 .menu {
+  .js .main-menu-1 {
     background-color: $white;
     max-height: none;
     overflow: visible;
     z-index: 1000;
   }
 
-    .menu-block-1 .menu {
+    .main-menu-1 {
       margin-top: 0;
     }
 
-  .menu-block-1 .menu li.expanded > a:after {
+  .main-menu-1 li.expanded > a:after {
     content: '';
   }
 
-  .menu-block-1 .menu li.expanded > a.toggled:after {
+  .main-menu-1 li.expanded > a.toggled:after {
     content: '';
   }
 
-  .menu-block-1 .menu li.expanded > a:after {
+  .main-menu-1 li.expanded > a:after {
     content: '';
   }
 
-  .menu-block-1 .menu li.expanded {
+  .main-menu-1 li.expanded {
     padding-bottom: .5em;
   }
 
-  .menu-block-1 .menu li  {
+  .main-menu-1 li  {
     border-top: none;
     padding: .5em 1em;
   }
 
-  .menu-block-1 > ul li  {
+  .main-menu-1 > ul li  {
     &.first {
       padding-left: 0;
     }
     &.last {
       border-right: none;
+      padding-right: 0;
     }
   }
 
-  .menu-block-1 .menu li {
+  .main-menu-1 li {
     display: inline-block;
     font-size: $base-font-size * .7;
     position: relative;
@@ -192,21 +200,22 @@ footer .region-footer p a.toggled {
       display: none;
   }
 
-  .menu ul {
+  .main-menu-1 ul {
     display: none;
   }
 
-  .menu li:hover > ul {
+  .main-menu-1 li:hover > ul {
     display: block;
   }
 
-  .js .menu-block-1 .main-menu-2  {
+  .js .main-menu-1 .main-menu-2  {
     border: 1px solid $light-gray;
+    left: 7em;
+    max-height: 50em;
 		position: absolute;
-		top: 2em;
-		left: 7em;
-		width: 12em;
+		top: 1.75em;
 		text-align: left;
+		width: 12em;
     li {
       border-right: none;
       display: inline-block;

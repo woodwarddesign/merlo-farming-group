@@ -7,6 +7,7 @@
 #
 
 require 'compass-normalize'
+require 'breakpoint'
 
 
 # Change this to :production when ready to deploy the CSS to the live server.

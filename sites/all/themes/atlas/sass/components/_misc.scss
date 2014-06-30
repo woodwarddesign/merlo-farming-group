@@ -1,5 +1,9 @@
 // misc styles
 
+.feed-icon {
+  @include clear-it;
+}
+
 // admin menu
 
 #admin-menu {

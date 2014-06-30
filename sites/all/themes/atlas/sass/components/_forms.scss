@@ -39,9 +39,9 @@ input[type="tel"] {
   font-size: $base-font-size;
   height: 2.25rem;
   margin-bottom: .5rem;
+  max-width: 100%;
   padding: 0 .5rem;
   position: relative;
-  width: 80%;
 }
 
 textarea {
@@ -91,9 +91,14 @@ input[type="tel"]:focus {
   box-shadow: 0 0 2px $accent inset;
 }
 
+.form-required {
+  color: $accent;
+  font-weight: bold;
+}
+
 // Drupal's form field wrapper class
 .form-item {
-  margin-bottom: $vert-spacing * 1.5;
+  margin-bottom: 1.5rem;
   overflow: hidden;
 }
 

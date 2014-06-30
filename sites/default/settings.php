@@ -210,21 +210,18 @@
  *   );
  * @endcode
  */
-$databases = array (
-  'default' =>
-  array (
-    'default' =>
-    array (
-      'database' => 'prometheus',
-      'username' => 'root',
-      'password' => 'root',
-      'host' => 'localhost',
-      'port' => '',
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
-);
+if (!defined('PANTHEON_ENVIRONMENT')) {
+  // Database.
+  $databases['default']['default'] = array(
+    'database' => 'merlo',
+    'username' => 'root',
+    'password' => 'root',
+    'host' => 'localhost',
+    'driver' => 'mysql',
+    'port' => 3306,
+    'prefix' => '',
+  );
+}
 
 /**
  * Access control for update.php script.
