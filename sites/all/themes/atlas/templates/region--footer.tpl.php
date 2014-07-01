@@ -30,5 +30,5 @@
 ?>
   <div class="<?php print $classes; ?>">
     <?php print $content; ?>
-    <div class="copyright"><p>Copyright &copy; <?php echo(date("Y",time ())); ?> Your Company, Inc. All Rights Reserved.</p></div>
+    <div class="copyright"><p>Copyright &copy; <?php echo(date("Y",time ())); ?> Merlo Farming Group. All Rights Reserved.</p></div>
   </div>
