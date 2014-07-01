@@ -50,14 +50,18 @@ img {
   max-width: 100%;
 }
 
-.image-left {
+/* CKEditor floated images in body field */
+
+.img-left {
   float: left;
-  margin: 5px 15px 5px 0;
+  display: inline-block;
+  margin-right: $pad * .5;
   max-width: 50%;
 }
 
-.image-right {
+.img-right {
   float: right;
-  margin: 5px 0 5px 15px;
+  display: inline-block;
+  margin-right: $pad * .5;
   max-width: 50%;
 }
