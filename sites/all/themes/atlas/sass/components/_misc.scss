@@ -18,6 +18,20 @@
   margin: -27px 0 0 160px;
 }
 
+// floated images in body field
+
+.img-left {
+  float: left;
+  display: inline-block;
+  margin-right: $pad * .5;
+}
+
+.img-right {
+  float: left;
+  display: inline-block;
+  margin-right: $pad * .5;
+}
+
 
 // pager styles
 

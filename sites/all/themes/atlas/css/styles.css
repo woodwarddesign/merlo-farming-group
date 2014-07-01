@@ -1582,7 +1582,21 @@ footer {
   margin: -27px 0 0 160px;
 }
 
-/* line 24, ../sass/components/_misc.scss */
+/* line 23, ../sass/components/_misc.scss */
+.img-left {
+  float: left;
+  display: inline-block;
+  margin-right: 17.5px;
+}
+
+/* line 29, ../sass/components/_misc.scss */
+.img-right {
+  float: left;
+  display: inline-block;
+  margin-right: 17.5px;
+}
+
+/* line 38, ../sass/components/_misc.scss */
 ul.pager {
   background: none;
   border: none;
@@ -1593,30 +1607,30 @@ ul.pager {
   text-align: right;
 }
 
-/* line 34, ../sass/components/_misc.scss */
+/* line 48, ../sass/components/_misc.scss */
 ul.pager li {
   border: none;
   font-size: 15px;
   padding: .5em 0 .5em 1em;
 }
 
-/* line 40, ../sass/components/_misc.scss */
+/* line 54, ../sass/components/_misc.scss */
 ul.pager li a {
   border: none;
 }
 
-/* line 45, ../sass/components/_misc.scss */
+/* line 59, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-previous {
   text-transform: capitalize;
 }
 
-/* line 49, ../sass/components/_misc.scss */
+/* line 63, ../sass/components/_misc.scss */
 .pager li.pager-current {
   font-weight: normal;
 }
 
-/* line 53, ../sass/components/_misc.scss */
+/* line 67, ../sass/components/_misc.scss */
 .pager li, .pager li.pager-next, .pager li.pager-previous, .pager li.pager-last, .pager li.pager-first {
   border: none;
   margin-left: 1em;
@@ -1624,28 +1638,28 @@ ul.pager li a {
   text-align: right;
 }
 
-/* line 60, ../sass/components/_misc.scss */
+/* line 74, ../sass/components/_misc.scss */
 .pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
   display: inline-block;
 }
 
-/* line 65, ../sass/components/_misc.scss */
+/* line 79, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-current {
   float: right;
 }
 
-/* line 69, ../sass/components/_misc.scss */
+/* line 83, ../sass/components/_misc.scss */
 .pager li.pager-previous {
   float: left;
 }
 
-/* line 73, ../sass/components/_misc.scss */
+/* line 87, ../sass/components/_misc.scss */
 .item-list .pager li {
   padding: .25em 1em;
 }
 
-/* line 82, ../sass/components/_misc.scss */
+/* line 96, ../sass/components/_misc.scss */
 .img-right {
   float: right;
   height: auto;
@@ -1653,7 +1667,7 @@ ul.pager li a {
   max-width: 50%;
 }
 
-/* line 89, ../sass/components/_misc.scss */
+/* line 103, ../sass/components/_misc.scss */
 .img-left {
   float: left;
   height: auto;
@@ -1661,33 +1675,33 @@ ul.pager li a {
   max-width: 50%;
 }
 
-/* line 99, ../sass/components/_misc.scss */
+/* line 113, ../sass/components/_misc.scss */
 .messages.error {
   background: #f5dfdf;
   border: 2px solid #ce9e9e;
 }
-/* line 103, ../sass/components/_misc.scss */
+/* line 117, ../sass/components/_misc.scss */
 .messages.warning {
   background: #f8fad5;
   border: 2px solid #e5d35b;
 }
-/* line 107, ../sass/components/_misc.scss */
+/* line 121, ../sass/components/_misc.scss */
 .messages.info {
   background: #dfeff5;
   border: 2px solid #9ebcce;
 }
-/* line 111, ../sass/components/_misc.scss */
+/* line 125, ../sass/components/_misc.scss */
 .messages.success {
   background: #e8f5df;
   border: 2px solid #9ece9e;
 }
-/* line 115, ../sass/components/_misc.scss */
+/* line 129, ../sass/components/_misc.scss */
 .messages h2 {
   font-size: 1rem;
   font-weight: 300;
 }
 
-/* line 125, ../sass/components/_misc.scss */
+/* line 139, ../sass/components/_misc.scss */
 .messages.error,
 .messages.warning,
 .messages.info,
@@ -1696,7 +1710,7 @@ ul.pager li a {
   margin-bottom: 2rem;
   padding: 1rem;
 }
-/* line 129, ../sass/components/_misc.scss */
+/* line 143, ../sass/components/_misc.scss */
 .messages.error li,
 .messages.warning li,
 .messages.info li,
@@ -1704,7 +1718,7 @@ ul.pager li a {
   color: #222222;
 }
 
-/* line 135, ../sass/components/_misc.scss */
+/* line 149, ../sass/components/_misc.scss */
 .element-invisible {
   position: absolute !important;
   height: 1px;
@@ -1713,7 +1727,7 @@ ul.pager li a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 139, ../sass/components/_misc.scss */
+/* line 153, ../sass/components/_misc.scss */
 .clearfix:after {
   content: "";
   display: table;
