@@ -1,6 +1,0 @@
-CHANGELOG for Zendesk Forms
-
-7.x-1.x dev
-* Issue #2151723 by Jonathan Peterson, anawillem: Zendesk does not expose itself to mollom.
-* Issue #2183173 by Jonathan Peterson: Use first comment to set description, not description field.
-
