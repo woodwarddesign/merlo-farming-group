@@ -1,0 +1,13 @@
+diff --git a/includes/plugins/google_visualization_api.inc b/includes/plugins/google_visualization_api.inc
+index ced3544..b2410d5 100644
+--- a/includes/plugins/google_visualization_api.inc
++++ b/includes/plugins/google_visualization_api.inc
+@@ -54,7 +54,7 @@ class GoogleVisualizationAPIHandler implements VisualizationHandlerInterface {
+ 
+       foreach ($options['fields'] as $name => $column) {
+         if (!empty($column['enabled'])) {
+-          $value = (int) $row[$name];
++          $value = (float) $row[$name];
+ 
+           $table_row[] = $value;
+         }

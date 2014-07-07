@@ -54,7 +54,7 @@ class GoogleVisualizationAPIHandler implements VisualizationHandlerInterface {
 
       foreach ($options['fields'] as $name => $column) {
         if (!empty($column['enabled'])) {
-          $value = (int) $row[$name];
+          $value = (float) $row[$name];
 
           $table_row[] = $value;
         }
