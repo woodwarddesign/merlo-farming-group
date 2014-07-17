@@ -71,7 +71,9 @@ $pad: 35px;
   // one-third width
   .grid-1-3 {
     float: left;
-    padding-right: $pad;
+    margin-left: -($pad * .5);
+    margin-right: -($pad * .5);
+    padding: 0 $pad * .5;
     width: 33%;
     &:after {
       @include clear-it;
@@ -83,7 +85,9 @@ $pad: 35px;
   // one-half width
   .grid-1-2 {
     float: left;
-    padding-right: $pad;
+    margin-left: -($pad * .5);
+    margin-right: -($pad * .5);
+    padding: 0 $pad * .5;
     width: 50%;
     &:after {
       @include clear-it;
