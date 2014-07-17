@@ -1561,28 +1561,34 @@ footer {
   }
 }
 /* line 3, ../sass/components/_misc.scss */
+.gray-bg {
+  background: #dddddd;
+  min-height: 200px;
+}
+
+/* line 8, ../sass/components/_misc.scss */
 .feed-icon {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 9, ../sass/components/_misc.scss */
+/* line 14, ../sass/components/_misc.scss */
 #admin-menu {
   font-size: 15px;
 }
 
-/* line 13, ../sass/components/_misc.scss */
+/* line 18, ../sass/components/_misc.scss */
 #admin-menu li.admin-menu-account > a {
   background: #e6b015;
 }
 
-/* line 17, ../sass/components/_misc.scss */
+/* line 22, ../sass/components/_misc.scss */
 #admin-menu .dropdown li li.expandable ul {
   margin: -27px 0 0 160px;
 }
 
-/* line 23, ../sass/components/_misc.scss */
+/* line 28, ../sass/components/_misc.scss */
 .img-left {
   float: left;
   display: inline-block;
@@ -1591,7 +1597,7 @@ footer {
   max-width: 50%;
 }
 
-/* line 31, ../sass/components/_misc.scss */
+/* line 36, ../sass/components/_misc.scss */
 .img-right {
   float: right;
   display: inline-block;
@@ -1600,7 +1606,7 @@ footer {
   max-width: 50%;
 }
 
-/* line 42, ../sass/components/_misc.scss */
+/* line 47, ../sass/components/_misc.scss */
 ul.pager {
   background: none;
   border: none;
@@ -1611,30 +1617,30 @@ ul.pager {
   text-align: right;
 }
 
-/* line 52, ../sass/components/_misc.scss */
+/* line 57, ../sass/components/_misc.scss */
 ul.pager li {
   border: none;
   font-size: 15px;
   padding: .5em 0 .5em 1em;
 }
 
-/* line 58, ../sass/components/_misc.scss */
+/* line 63, ../sass/components/_misc.scss */
 ul.pager li a {
   border: none;
 }
 
-/* line 63, ../sass/components/_misc.scss */
+/* line 68, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-previous {
   text-transform: capitalize;
 }
 
-/* line 67, ../sass/components/_misc.scss */
+/* line 72, ../sass/components/_misc.scss */
 .pager li.pager-current {
   font-weight: normal;
 }
 
-/* line 71, ../sass/components/_misc.scss */
+/* line 76, ../sass/components/_misc.scss */
 .pager li, .pager li.pager-next, .pager li.pager-previous, .pager li.pager-last, .pager li.pager-first {
   border: none;
   margin-left: 1em;
@@ -1642,54 +1648,54 @@ ul.pager li a {
   text-align: right;
 }
 
-/* line 78, ../sass/components/_misc.scss */
+/* line 83, ../sass/components/_misc.scss */
 .pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
   display: inline-block;
 }
 
-/* line 83, ../sass/components/_misc.scss */
+/* line 88, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-current {
   float: right;
 }
 
-/* line 87, ../sass/components/_misc.scss */
+/* line 92, ../sass/components/_misc.scss */
 .pager li.pager-previous {
   float: left;
 }
 
-/* line 91, ../sass/components/_misc.scss */
+/* line 96, ../sass/components/_misc.scss */
 .item-list .pager li {
   padding: .25em 1em;
 }
 
-/* line 104, ../sass/components/_misc.scss */
+/* line 109, ../sass/components/_misc.scss */
 .messages.error {
   background: #f5dfdf;
   border: 2px solid #ce9e9e;
 }
-/* line 108, ../sass/components/_misc.scss */
+/* line 113, ../sass/components/_misc.scss */
 .messages.warning {
   background: #f8fad5;
   border: 2px solid #e5d35b;
 }
-/* line 112, ../sass/components/_misc.scss */
+/* line 117, ../sass/components/_misc.scss */
 .messages.info {
   background: #dfeff5;
   border: 2px solid #9ebcce;
 }
-/* line 116, ../sass/components/_misc.scss */
+/* line 121, ../sass/components/_misc.scss */
 .messages.success {
   background: #e8f5df;
   border: 2px solid #9ece9e;
 }
-/* line 120, ../sass/components/_misc.scss */
+/* line 125, ../sass/components/_misc.scss */
 .messages h2 {
   font-size: 1rem;
   font-weight: 300;
 }
 
-/* line 130, ../sass/components/_misc.scss */
+/* line 135, ../sass/components/_misc.scss */
 .messages.error,
 .messages.warning,
 .messages.info,
@@ -1698,7 +1704,7 @@ ul.pager li a {
   margin-bottom: 2rem;
   padding: 1rem;
 }
-/* line 134, ../sass/components/_misc.scss */
+/* line 139, ../sass/components/_misc.scss */
 .messages.error li,
 .messages.warning li,
 .messages.info li,
@@ -1706,7 +1712,7 @@ ul.pager li a {
   color: #222222;
 }
 
-/* line 140, ../sass/components/_misc.scss */
+/* line 145, ../sass/components/_misc.scss */
 .element-invisible {
   position: absolute !important;
   height: 1px;
@@ -1715,7 +1721,7 @@ ul.pager li a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 144, ../sass/components/_misc.scss */
+/* line 149, ../sass/components/_misc.scss */
 .clearfix:after {
   content: "";
   display: table;

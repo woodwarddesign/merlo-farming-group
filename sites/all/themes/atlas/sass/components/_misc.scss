@@ -1,5 +1,10 @@
 // misc styles
 
+.gray-bg {
+  background: $gray;
+  min-height: 200px;
+}
+
 .feed-icon {
   @include clear-it;
 }
