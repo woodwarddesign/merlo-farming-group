@@ -1595,7 +1595,7 @@ footer {
   }
 }
 /* line 3, ../sass/components/_misc.scss */
-.gray-bg {
+.gray-bg p {
   background: #dddddd;
   min-height: 200px;
 }
