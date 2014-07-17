@@ -1,20 +1,20 @@
 <section class="panel-main atlas-stacked">
   	   <?php if ($content['top']): ?>
-            <section class="panel-top">
+            <div class="panel-top">
               <?php print $content['top']; ?>
-            </section>
+            </div>
           <?php else: ?>
         <?php endif; ?>
         <?php if ($content['middle']): ?>
-          <section class="panel-middle">
+          <div class="panel-middle">
             <?php print $content['middle']; ?>
-          </section>
+          </div>
         <?php else: ?>
         <?php endif; ?>
         <?php if ($content['bottom']): ?>
-          <section class="panel-bottom">
+          <div class="panel-bottom">
             <?php print $content['bottom']; ?>
-          </section>
+          </div>
         <?php else: ?>
         <?php endif; ?>
 </section>
