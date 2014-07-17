@@ -54,6 +54,31 @@ $pad: 35px;
 } // end $tab breakpoint
 
 @include breakpoint($desk) {
+  // additional grid classes added to Panels panes for layout.
+  .grid-2-3 {
+    float: left;
+    padding-right: $pad;
+    width: 67%;
+    &:after {
+      @include clear-it;
+    }
+    &.last {
+      padding-right: 0;
+    }
+  }
+
+  .grid-1-3 {
+    float: left;
+    padding-right: $pad;
+    width: 33%;
+    &:after {
+      @include clear-it;
+    }
+    &.last {
+      padding-right: 0;
+    }
+  }
+
   // two sidebars, one on either side of content
   .two-sidebars {
     .region-content {
