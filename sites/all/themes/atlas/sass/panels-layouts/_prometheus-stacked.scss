@@ -1,5 +1,8 @@
 $pad: 35px;
 
+.panel-top,
+.panel-middle,
 .panel-bottom {
   @include clear-it;
+  width: 100%;
 }

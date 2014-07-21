@@ -1488,11 +1488,14 @@ footer {
     margin-right: -35px;
   }
 }
-/* line 3, ../sass/panels-layouts/_prometheus-stacked.scss */
+/* line 5, ../sass/panels-layouts/_prometheus-stacked.scss */
+.panel-top,
+.panel-middle,
 .panel-bottom {
   content: "";
   display: table;
   clear: both;
+  width: 100%;
 }
 
 /* line 11, ../sass/components/_layout.scss */
