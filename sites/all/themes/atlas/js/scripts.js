@@ -120,6 +120,10 @@ Drupal.behaviors.my_custom_behavior = {
        $('body').addClass('touch');
     }
 
+    // add placeholder image to google news feed item
+    var placeholderImage = '<img src="/sites/all/themes/atlas/images/news-filller-image.png" alt="News placeholder image">'
+    $( ".view-google-news-feed td:first-child").not(":has(span a img)").append(placeholderImage);
+
 // end custom
 
   }
