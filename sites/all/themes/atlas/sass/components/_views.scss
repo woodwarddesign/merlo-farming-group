@@ -16,3 +16,11 @@
 .view-front-feature img {
   display: block;
 }
+
+// google news view
+.view-google-news-feed .row {
+  border-bottom: 1px solid $gray;
+  margin-bottom:  0;
+  overflow: hidden;
+  padding-bottom:  0;
+}
