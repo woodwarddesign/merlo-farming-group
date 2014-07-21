@@ -17,7 +17,11 @@
 @import "components/typography";
 @import "components/menus";
 @import "components/regions";
+@import "panels-layouts/prometheus-one-col";
+@import "panels-layouts/prometheus-two-col";
+@import "panels-layouts/prometheus-stacked";
 @import "components/layout";
 @import "components/misc";
+
 
 @import "print";
