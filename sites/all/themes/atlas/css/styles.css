@@ -677,6 +677,11 @@ dd {
   padding-bottom: 0;
 }
 
+/* line 29, ../sass/components/_views.scss */
+.j br {
+  display: none;
+}
+
 /* line 3, ../sass/components/_blocks.scss */
 .sidebars .block {
   margin-bottom: 2rem;
