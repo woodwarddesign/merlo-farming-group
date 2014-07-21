@@ -53,6 +53,12 @@ $pad: 35px;
   }
 } // end $tab breakpoint
 
+.grid-1-3,
+.grid-2-3,
+.grid-3-3 {
+  width: 100%;
+}
+
 @include breakpoint($desk) {
   // additional grid classes added to Panels panes for layout.
 
