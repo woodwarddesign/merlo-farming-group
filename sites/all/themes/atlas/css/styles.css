@@ -650,34 +650,32 @@ dd {
 
 /* line 3, ../sass/components/_views.scss */
 .view .row {
-  border-bottom: 1px solid white;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
-/* line 7, ../sass/components/_views.scss */
+/* line 6, ../sass/components/_views.scss */
 .view .row p:last-child {
   margin-bottom: 0;
 }
 
-/* line 12, ../sass/components/_views.scss */
+/* line 11, ../sass/components/_views.scss */
 .view .row.last {
   border-bottom: none;
 }
 
-/* line 16, ../sass/components/_views.scss */
+/* line 15, ../sass/components/_views.scss */
 .view-front-feature img {
   display: block;
 }
 
-/* line 21, ../sass/components/_views.scss */
+/* line 20, ../sass/components/_views.scss */
 .view-google-news-feed .row {
-  border-bottom: 1px solid #dddddd;
   margin-bottom: 0;
   overflow: hidden;
   padding-bottom: 0;
 }
 
-/* line 29, ../sass/components/_views.scss */
+/* line 27, ../sass/components/_views.scss */
 .j br {
   display: none;
 }
