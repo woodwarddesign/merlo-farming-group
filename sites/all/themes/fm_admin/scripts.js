@@ -1,5 +1,5 @@
 (function ($, Drupal) {
-  alert('hi');
+$(document).ready(function() {
   target = jQuery("select#edit-field-commodity-type-und");
   crop = "";
   jQuery(target).on('change', function() {
@@ -21,4 +21,5 @@
   jQuery( ".almond-variety, .rice-variety, walnut-variety" ).css('display', 'none');
   }
   });
+});
 })(jQuery, Drupal);
