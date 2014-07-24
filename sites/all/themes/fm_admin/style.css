@@ -1157,3 +1157,9 @@ textarea.text-full {
 #admin-menu .dropdown li li.expandable ul {
 margin: -27px 0 0 160px;
 }
+
+.almond-variety,
+.rice-variety,
+.walnut-variety {
+  display: none;
+}
