@@ -9,11 +9,11 @@ $(document).ready(function() {
       jQuery( ".walnut-variety, .rice-variety" ).css('display', 'none');
       jQuery( ".almond-variety" ).css('display', 'block');
     break;
-  case "walnuts" :
+   case "walnuts" :
       jQuery( ".almond-variety, .rice-variety" ).css('display', 'none');
       jQuery( ".walnut-variety" ).css('display', 'block');
     break;
-  case "rice" :
+   case "rice" :
       jQuery( ".almond-variety, .walnut-variety" ).css('display', 'none');
       jQuery( ".rice-variety" ).css('display', 'block');
     break;

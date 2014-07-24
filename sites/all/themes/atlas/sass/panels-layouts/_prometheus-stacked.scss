@@ -4,5 +4,6 @@ $pad: 35px;
 .panel-middle,
 .panel-bottom {
   @include clear-it;
+  margin-bottom: $vert-spacing;
   width: 100%;
 }
