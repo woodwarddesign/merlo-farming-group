@@ -74,12 +74,16 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 .comment-links a:hover,
 .button:hover {
-  background: lighten($accent, 10%);
-  color: $white !important;
-  cursor: pointer;
+// background: lighten($accent, 10%);
+// color: $white !important;
+// cursor: pointer;
 }
 
-a.views-more-link {
+a.views-more-link,
+.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
 	display: inline-block;
 	@include background-image(linear-gradient($gray 0%, $white 100%));
 	@include box-shadow(0 0 4px lighten($black, 15%), inset 0 0 2px $black);
