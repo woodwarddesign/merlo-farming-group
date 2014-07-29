@@ -24,16 +24,41 @@ ul li.leaf {
   }
 }
 
-.js .main-menu-1 {
+.js .region-menu .menu {
   max-height: 0;
   overflow: hidden;
   &.toggled {
+    padding: 10px;
     max-height: 50em;
+	  background-color: rgba($white, .2);
+	  border: 1px solid $white;
+		margin-top: 10px;
+	  li {
+		  background-color: $white;
+		  overflow: hidden;
+		  li {
+			  background-color: transparent;
+			 a {color: white;}
+		  }
+	  }
   }
-  &.main-menu-2 {
-    width: 200%;
+  li:first-child {
+	  border-top: none;
   }
 }
+
+.region-menu {
+ 	&.toggled {
+	  background-color: rgba($white, .2);
+	  border: 1px solid $white;
+		margin-top: 10px;
+	  li {
+		  background-color: $white;
+		  overflow: hidden;
+	  }
+	}
+}
+
 
 // multi-toggle styles
 
