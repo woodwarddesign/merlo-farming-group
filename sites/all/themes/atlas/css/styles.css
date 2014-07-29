@@ -2068,3 +2068,8 @@ ul.pager li a {
   display: table;
   clear: both;
 }
+
+/* line 155, ../sass/components/_misc.scss */
+.front #page-title {
+  display: none;
+}
