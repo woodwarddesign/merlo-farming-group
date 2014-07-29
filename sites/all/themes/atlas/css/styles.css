@@ -1022,7 +1022,7 @@ h2.pane-title a {
 }
 
 /* line 39, ../sass/components/_typography.scss */
-.front #page-title {
+.front h1#page-title {
   display: none;
 }
 
