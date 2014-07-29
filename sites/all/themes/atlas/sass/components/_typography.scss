@@ -24,6 +24,18 @@ h1.page-title {
   margin-bottom: .5rem; margin-bottom: 8px;
 }
 
+h1.page-title,
+h2.pane-title {
+	@include background-image(linear-gradient($dark-green 0%, $light-green 100%));
+	@include box-shadow(0 0 1px darken($gray, 50%));
+	border: 4px solid $white;
+	padding: 15px;
+	color: $white;
+	a {
+		color: $white;
+	}	
+}
+
 h2, h2 a {
   font-size: $h2-font-size;
 }

@@ -20,6 +20,10 @@ $overlay: 5em;
   }
 }
 
+.header-wrapper {
+	padding-bottom: $overlay;
+}
+
 // layout for header regions
 .region-branding,
 .region-menu {
@@ -48,7 +52,7 @@ $overlay: 5em;
 	.content-inner {
 		margin: 10px;
 		overflow: hidden;
-		padding: 0 20px;
+		padding: 20px;
 	}
 }
 
