@@ -80,25 +80,41 @@ a.menu-link {
   padding-bottom: 1.25em;
 }
 
-.main-menu-1 li a,
-a.menu-link {
-  color: $accent;
+.region-menu .menu li a,
+a.menu-link,
+.region-footer .menu li a {
+  color: $link-color;
   font-family: $header-font-family;
   font-weight: 100;
 }
 
-.main-menu-1 li a:hover,
-.main-menu-1 li a:focus,
-.main-menu-1 li a.toggled {
-  color: darken($accent, 15%);
-  outline: none;
+.region-menu .menu li a,
+.region-footer .menu li a {
+	padding: 5px;
+	&:hover,
+	ul {
+		background-color: $light-green;
+		color: $white;		
+	}
 }
 
+.region-menu .menu li a:hover,
+.region-menu .menu li a:focus,
+.region-menu .menu li a.toggled,
+footer .menu li a:hover,
+footer .menu li a:focus,
+footer .menu li a.toggled {
+  outline: none;
+	text-decoration: underline;
+}
+
+/*
 footer .region-footer p a:hover,
 footer .region-footer p a:focus,
 footer .region-footer p a.toggled {
 	  color: darken($accent, 30%);
 }
+*/
 
 .main-menu-1 li ul  {
   background: $gray;

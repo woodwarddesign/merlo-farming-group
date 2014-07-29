@@ -552,7 +552,7 @@ th {
 body {
   color: #444444;
   font-size: 17px;
-  font-family: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 /* line 17, ../sass/_base.scss */
@@ -972,7 +972,7 @@ table tbody > tr:nth-child(even) > th {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   color: #222222;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 110%;
   margin-top: 0;
@@ -1205,30 +1205,48 @@ a.menu-link {
   padding-bottom: 1.25em;
 }
 
-/* line 84, ../sass/components/_menus.scss */
-.main-menu-1 li a,
-a.menu-link {
-  color: #79b01f;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* line 85, ../sass/components/_menus.scss */
+.region-menu .menu li a,
+a.menu-link,
+.region-footer .menu li a {
+  color: #e6b015;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 
 /* line 92, ../sass/components/_menus.scss */
-.main-menu-1 li a:hover,
-.main-menu-1 li a:focus,
-.main-menu-1 li a.toggled {
-  color: #4c6f14;
-  outline: none;
+.region-menu .menu li a,
+.region-footer .menu li a {
+  padding: 5px;
+}
+/* line 95, ../sass/components/_menus.scss */
+.region-menu .menu li a:hover,
+.region-menu .menu li a ul,
+.region-footer .menu li a:hover,
+.region-footer .menu li a ul {
+  background-color: #79b01f;
+  color: #fefefe;
 }
 
-/* line 99, ../sass/components/_menus.scss */
+/* line 106, ../sass/components/_menus.scss */
+.region-menu .menu li a:hover,
+.region-menu .menu li a:focus,
+.region-menu .menu li a.toggled,
+footer .menu li a:hover,
+footer .menu li a:focus,
+footer .menu li a.toggled {
+  outline: none;
+  text-decoration: underline;
+}
+
+/*
 footer .region-footer p a:hover,
 footer .region-footer p a:focus,
 footer .region-footer p a.toggled {
-  color: #202e08;
+	  color: darken($accent, 30%);
 }
-
-/* line 103, ../sass/components/_menus.scss */
+*/
+/* line 119, ../sass/components/_menus.scss */
 .main-menu-1 li ul {
   background: #dddddd;
   clear: both;
@@ -1242,24 +1260,24 @@ footer .region-footer p a.toggled {
   -o-transition: all .3s;
   transition: all .3s;
 }
-/* line 112, ../sass/components/_menus.scss */
+/* line 128, ../sass/components/_menus.scss */
 .main-menu-1 li ul li {
   padding: .75rem .75rem .75rem 2rem;
   list-style: none;
   width: 200%;
 }
-/* line 116, ../sass/components/_menus.scss */
+/* line 132, ../sass/components/_menus.scss */
 .main-menu-1 li ul li:last-child {
   border-bottom: none;
 }
 @media (min-width: 60em) {
-  /* line 103, ../sass/components/_menus.scss */
+  /* line 119, ../sass/components/_menus.scss */
   .main-menu-1 li ul {
     background: white;
   }
 }
 
-/* line 125, ../sass/components/_menus.scss */
+/* line 141, ../sass/components/_menus.scss */
 .main-menu-2 {
   margin: .5em -20px -1em -100px;
   max-height: 50em;
@@ -1268,7 +1286,7 @@ footer .region-footer p a.toggled {
   width: 150%;
 }
 
-/* line 133, ../sass/components/_menus.scss */
+/* line 149, ../sass/components/_menus.scss */
 .js .main-menu-2 {
   max-height: 0;
   overflow: hidden;
@@ -1277,19 +1295,19 @@ footer .region-footer p a.toggled {
   -o-transition: all .3s;
   transition: all .3s;
 }
-/* line 137, ../sass/components/_menus.scss */
+/* line 153, ../sass/components/_menus.scss */
 .js .main-menu-2.toggled {
   max-height: 50em;
   margin-bottom: 0;
 }
 
 @media (min-width: 60em) {
-  /* line 146, ../sass/components/_menus.scss */
+  /* line 162, ../sass/components/_menus.scss */
   .main-menu-1 {
     text-align: right;
   }
 
-  /* line 150, ../sass/components/_menus.scss */
+  /* line 166, ../sass/components/_menus.scss */
   .js .main-menu-1 {
     background-color: transparent;
     max-height: none;
@@ -1297,48 +1315,48 @@ footer .region-footer p a.toggled {
     z-index: 1000;
   }
 
-  /* line 157, ../sass/components/_menus.scss */
+  /* line 173, ../sass/components/_menus.scss */
   .main-menu-1 {
     margin-top: 0;
   }
 
-  /* line 161, ../sass/components/_menus.scss */
+  /* line 177, ../sass/components/_menus.scss */
   .main-menu-1 li.expanded > a:after {
     content: '';
   }
 
-  /* line 165, ../sass/components/_menus.scss */
+  /* line 181, ../sass/components/_menus.scss */
   .main-menu-1 li.expanded > a.toggled:after {
     content: '';
   }
 
-  /* line 169, ../sass/components/_menus.scss */
+  /* line 185, ../sass/components/_menus.scss */
   .main-menu-1 li.expanded > a:after {
     content: '';
   }
 
-  /* line 173, ../sass/components/_menus.scss */
+  /* line 189, ../sass/components/_menus.scss */
   .main-menu-1 li.expanded {
     padding-bottom: .5em;
   }
 
-  /* line 177, ../sass/components/_menus.scss */
+  /* line 193, ../sass/components/_menus.scss */
   .main-menu-1 li {
     border-top: none;
     padding: .5em 1em;
   }
 
-  /* line 183, ../sass/components/_menus.scss */
+  /* line 199, ../sass/components/_menus.scss */
   .main-menu-1 > ul li.first {
     padding-left: 0;
   }
-  /* line 186, ../sass/components/_menus.scss */
+  /* line 202, ../sass/components/_menus.scss */
   .main-menu-1 > ul li.last {
     border-right: none;
     padding-right: 0;
   }
 
-  /* line 192, ../sass/components/_menus.scss */
+  /* line 208, ../sass/components/_menus.scss */
   .main-menu-1 li {
     display: inline-block;
     font-size: 14px;
@@ -1346,22 +1364,22 @@ footer .region-footer p a.toggled {
     font-weight: 300;
   }
 
-  /* line 199, ../sass/components/_menus.scss */
+  /* line 215, ../sass/components/_menus.scss */
   a.menu-link {
     display: none;
   }
 
-  /* line 203, ../sass/components/_menus.scss */
+  /* line 219, ../sass/components/_menus.scss */
   .main-menu-1 ul {
     display: none;
   }
 
-  /* line 207, ../sass/components/_menus.scss */
+  /* line 223, ../sass/components/_menus.scss */
   .main-menu-1 li:hover > ul {
     display: block;
   }
 
-  /* line 211, ../sass/components/_menus.scss */
+  /* line 227, ../sass/components/_menus.scss */
   .js .main-menu-1 .main-menu-2 {
     border: 1px solid #efefef;
     left: 7em;
@@ -1371,7 +1389,7 @@ footer .region-footer p a.toggled {
     text-align: left;
     width: 12em;
   }
-  /* line 219, ../sass/components/_menus.scss */
+  /* line 235, ../sass/components/_menus.scss */
   .js .main-menu-1 .main-menu-2 li {
     border-right: none;
     display: inline-block;
@@ -1381,12 +1399,12 @@ footer .region-footer p a.toggled {
     position: relative;
     width: 15.2em;
   }
-  /* line 227, ../sass/components/_menus.scss */
+  /* line 243, ../sass/components/_menus.scss */
   .js .main-menu-1 .main-menu-2 li a {
     display: block;
   }
 }
-/* line 237, ../sass/components/_menus.scss */
+/* line 253, ../sass/components/_menus.scss */
 .region-sidebar-first .menu li,
 .region-sidebar-second .menu li {
   border-bottom: 1px solid #efefef;
@@ -1394,18 +1412,18 @@ footer .region-footer p a.toggled {
   padding-bottom: .5em;
   padding-top: 0;
 }
-/* line 242, ../sass/components/_menus.scss */
+/* line 258, ../sass/components/_menus.scss */
 .region-sidebar-first .menu li.last,
 .region-sidebar-second .menu li.last {
   border: none;
 }
 
-/* line 249, ../sass/components/_menus.scss */
+/* line 265, ../sass/components/_menus.scss */
 ul.primary {
   border-bottom: 1px solid #bbbbbb;
   margin-top: 1rem;
 }
-/* line 252, ../sass/components/_menus.scss */
+/* line 268, ../sass/components/_menus.scss */
 ul.primary li {
   display: inline-block;
   list-style: none;
@@ -1417,11 +1435,11 @@ ul.primary li {
   margin-right: 0.5em;
   padding: 0 1em;
 }
-/* line 262, ../sass/components/_menus.scss */
+/* line 278, ../sass/components/_menus.scss */
 ul.primary li a {
   text-decoration: none;
 }
-/* line 266, ../sass/components/_menus.scss */
+/* line 282, ../sass/components/_menus.scss */
 ul.primary li.toggled {
   background-color: #fefefe;
 }
@@ -1526,7 +1544,7 @@ img.header__logo-image {
   display: inline-block;
   list-style: none;
   padding: 2rem 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 14.5px;
 }
 
