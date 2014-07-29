@@ -981,7 +981,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 11, ../sass/components/_typography.scss */
 h1, h1 a {
-  font-size: 38.25px;
+  font-size: 22.5px;
 }
 
 /* line 15, ../sass/components/_typography.scss */
@@ -1049,7 +1049,7 @@ h6, h6 a {
 @media (min-width: 40em) {
   /* line 61, ../sass/components/_typography.scss */
   h1, h1 a {
-    font-size: 45px;
+    font-size: 33.75px;
   }
 
   /* line 65, ../sass/components/_typography.scss */
@@ -1078,31 +1078,36 @@ h6, h6 a {
   }
 }
 @media (min-width: 60em) {
-  /* line 95, ../sass/components/_typography.scss */
+  /* line 96, ../sass/components/_typography.scss */
+  h1, h1 a {
+    font-size: 22.5px;
+  }
+
+  /* line 100, ../sass/components/_typography.scss */
   body {
     font-size: 16.5px;
   }
-  /* line 99, ../sass/components/_typography.scss */
+  /* line 104, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
     font-size: 24.75px;
   }
-  /* line 103, ../sass/components/_typography.scss */
+  /* line 108, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
     font-size: 21.615px;
   }
-  /* line 107, ../sass/components/_typography.scss */
+  /* line 112, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
     font-size: 16.5px;
   }
-  /* line 111, ../sass/components/_typography.scss */
+  /* line 116, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
     font-size: 13.695px;
   }
-  /* line 115, ../sass/components/_typography.scss */
+  /* line 120, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
     font-size: 11.055px;
   }
-  /* line 120, ../sass/components/_typography.scss */
+  /* line 125, ../sass/components/_typography.scss */
   body.no-sidebars {
     font-size: 20px;
   }
