@@ -44,6 +44,7 @@
   <div id="main" class="content-wrapper grid-container">
    	<div class="content-inner">
 	    <div id="content" class="column" role="main">
+	      <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
 	      <?php print render($page['highlighted']); ?>
 	      <a id="main-content"></a>
 	      <?php print $messages; ?>

@@ -600,7 +600,7 @@ p, ol, ul, blockquote, pre, code, span {
   font-weight: 300;
   hyphens: auto;
   line-height: 1.4;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   word-wrap: break-word;
 }
 
@@ -1408,7 +1408,17 @@ footer .region-footer p a.toggled {
     display: block;
   }
 
-  /* line 252, ../sass/components/_menus.scss */
+  /* line 253, ../sass/components/_menus.scss */
+  .js .region-menu .menu,
+  .js .region-menu .menu li ul {
+    background-color: transparent;
+    border: none;
+    max-height: none;
+    overflow: visible;
+    z-index: 1000;
+  }
+
+  /* line 261, ../sass/components/_menus.scss */
   .js .main-menu-1 .main-menu-2 {
     border: 1px solid #efefef;
     left: 7em;
@@ -1418,7 +1428,7 @@ footer .region-footer p a.toggled {
     text-align: left;
     width: 12em;
   }
-  /* line 260, ../sass/components/_menus.scss */
+  /* line 269, ../sass/components/_menus.scss */
   .js .main-menu-1 .main-menu-2 li {
     border-right: none;
     display: inline-block;
@@ -1428,12 +1438,12 @@ footer .region-footer p a.toggled {
     position: relative;
     width: 15.2em;
   }
-  /* line 268, ../sass/components/_menus.scss */
+  /* line 277, ../sass/components/_menus.scss */
   .js .main-menu-1 .main-menu-2 li a {
     display: block;
   }
 }
-/* line 278, ../sass/components/_menus.scss */
+/* line 287, ../sass/components/_menus.scss */
 .region-sidebar-first .menu li,
 .region-sidebar-second .menu li {
   border-bottom: 1px solid #efefef;
@@ -1441,18 +1451,18 @@ footer .region-footer p a.toggled {
   padding-bottom: .5em;
   padding-top: 0;
 }
-/* line 283, ../sass/components/_menus.scss */
+/* line 292, ../sass/components/_menus.scss */
 .region-sidebar-first .menu li.last,
 .region-sidebar-second .menu li.last {
   border: none;
 }
 
-/* line 290, ../sass/components/_menus.scss */
+/* line 299, ../sass/components/_menus.scss */
 ul.primary {
   border-bottom: 1px solid #bbbbbb;
   margin-top: 1rem;
 }
-/* line 293, ../sass/components/_menus.scss */
+/* line 302, ../sass/components/_menus.scss */
 ul.primary li {
   display: inline-block;
   list-style: none;
@@ -1464,11 +1474,11 @@ ul.primary li {
   margin-right: 0.5em;
   padding: 0 1em;
 }
-/* line 303, ../sass/components/_menus.scss */
+/* line 312, ../sass/components/_menus.scss */
 ul.primary li a {
   text-decoration: none;
 }
-/* line 307, ../sass/components/_menus.scss */
+/* line 316, ../sass/components/_menus.scss */
 ul.primary li.toggled {
   background-color: #fefefe;
 }

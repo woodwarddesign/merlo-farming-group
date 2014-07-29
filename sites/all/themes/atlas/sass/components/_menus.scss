@@ -248,6 +248,15 @@ footer .region-footer p a.toggled {
   .main-menu-1 li:hover > ul {
     display: block;
   }
+  
+  .js .region-menu .menu,
+  .js .region-menu .menu li ul {
+    background-color: transparent;
+    border: none;
+    max-height: none;
+    overflow: visible;
+    z-index: 1000;
+  }
 
   .js .main-menu-1 .main-menu-2  {
     border: 1px solid $light-gray;
