@@ -997,7 +997,7 @@ h1.site-name, h1.site-name a, h2.site-name, h2.site-name a {
 /* line 23, ../sass/components/_typography.scss */
 h1#page-title {
   margin-bottom: .5rem;
-  margin-bottom: 8px;
+  margin-bottom: 1.5em;
 }
 
 /* line 28, ../sass/components/_typography.scss */
