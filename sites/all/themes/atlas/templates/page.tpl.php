@@ -41,29 +41,31 @@
     </div>
   </div>
 
-  <div id="main" class="content-wrapper">
-    <div id="content" class="column grid-container" role="main">
-      <?php print render($page['highlighted']); ?>
-      <a id="main-content"></a>
-      <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-
-      <?php
-        // Render the sidebars to see if there's anything in them.
-        $sidebar_first  = render($page['sidebar_first']);
-        $sidebar_second = render($page['sidebar_second']);
-      ?>
-
-      <?php if ($sidebar_first || $sidebar_second): ?>
-          <?php print $sidebar_first; ?>
-          <?php print $sidebar_second; ?>
-      <?php endif; ?>
-      <?php print $feed_icons; ?>
+  <div id="main" class="content-wrapper grid-container">
+   	<div class="content-inner">
+	    <div id="content" class="column" role="main">
+	      <?php print render($page['highlighted']); ?>
+	      <a id="main-content"></a>
+	      <?php print $messages; ?>
+	      <?php print render($tabs); ?>
+	      <?php print render($page['help']); ?>
+	      <?php if ($action_links): ?>
+	        <ul class="action-links"><?php print render($action_links); ?></ul>
+	      <?php endif; ?>
+	      <?php print render($page['content']); ?>
+	
+	      <?php
+	        // Render the sidebars to see if there's anything in them.
+	        $sidebar_first  = render($page['sidebar_first']);
+	        $sidebar_second = render($page['sidebar_second']);
+	      ?>
+	
+	      <?php if ($sidebar_first || $sidebar_second): ?>
+	          <?php print $sidebar_first; ?>
+	          <?php print $sidebar_second; ?>
+	      <?php endif; ?>
+	      <?php print $feed_icons; ?>
+	    </div>
     </div>
   </div>
 <footer class="grid-container">
