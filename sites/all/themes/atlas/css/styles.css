@@ -677,6 +677,11 @@ dd {
 }
 
 /* line 28, ../sass/components/_views.scss */
+.view-google-news-feed .grid-1-2 {
+  padding: 0;
+}
+
+/* line 34, ../sass/components/_views.scss */
 .j br {
   display: none;
 }
@@ -958,34 +963,35 @@ tbody {
 /* line 32, ../sass/components/_tables.scss */
 tbody td:first-child {
   width: 25% !important;
+  padding-left: 0;
 }
-/* line 34, ../sass/components/_tables.scss */
+/* line 35, ../sass/components/_tables.scss */
 tbody td:first-child a {
   display: block;
 }
-/* line 36, ../sass/components/_tables.scss */
+/* line 37, ../sass/components/_tables.scss */
 tbody td:first-child a span {
   font-size: smaller !important;
   display: block;
 }
-/* line 41, ../sass/components/_tables.scss */
+/* line 42, ../sass/components/_tables.scss */
 tbody td:first-child img {
   width: 100%;
   max-width: none;
 }
 
-/* line 49, ../sass/components/_tables.scss */
+/* line 50, ../sass/components/_tables.scss */
 table thead th {
   vertical-align: bottom;
 }
 
-/* line 54, ../sass/components/_tables.scss */
+/* line 55, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
   background-color: #fefefe;
 }
 
-/* line 59, ../sass/components/_tables.scss */
+/* line 60, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(even) > td,
 table tbody > tr:nth-child(even) > th {
   background-color: #8ece24;
