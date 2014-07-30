@@ -109,12 +109,29 @@ img.header__logo-image {
 
 // footer region
 
+.footer-wrapper {
+	@include merlo-gradient-180;
+	border-top: 1px solid $white;
+	overflow: hidden;
+	text-align: center;
+	
+	p {
+		color: $white;
+	}
+	a {
+		color: $link-color;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 footer {
   clear: both;
 }
 
 .region-footer {
-  padding: 10px 0;
+  padding: 10px 15px;
 }
 
 .copyright {
