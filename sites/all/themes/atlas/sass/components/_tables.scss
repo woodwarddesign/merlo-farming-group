@@ -30,6 +30,14 @@ tbody {
   border-top: 0;
   td {
 	  &:first-child {
+	  	width: 25%!important;
+	  	a {
+		  	display: block;
+	  	}
+	  	img {
+	  		width: 100%;
+		  	max-width: none;
+	  	}
 		  span {
 			  font-size: smaller!important;
 			  display: block;

@@ -955,24 +955,37 @@ table th {
 tbody {
   border-top: 0;
 }
-/* line 33, ../sass/components/_tables.scss */
+/* line 32, ../sass/components/_tables.scss */
+tbody td:first-child {
+  width: 25% !important;
+}
+/* line 34, ../sass/components/_tables.scss */
+tbody td:first-child a {
+  display: block;
+}
+/* line 37, ../sass/components/_tables.scss */
+tbody td:first-child img {
+  width: 100%;
+  max-width: none;
+}
+/* line 41, ../sass/components/_tables.scss */
 tbody td:first-child span {
   font-size: smaller !important;
   display: block;
 }
 
-/* line 41, ../sass/components/_tables.scss */
+/* line 49, ../sass/components/_tables.scss */
 table thead th {
   vertical-align: bottom;
 }
 
-/* line 46, ../sass/components/_tables.scss */
+/* line 54, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
   background-color: #fefefe;
 }
 
-/* line 51, ../sass/components/_tables.scss */
+/* line 59, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(even) > td,
 table tbody > tr:nth-child(even) > th {
   background-color: #8ece24;
