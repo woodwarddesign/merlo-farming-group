@@ -963,15 +963,15 @@ tbody td:first-child {
 tbody td:first-child a {
   display: block;
 }
-/* line 37, ../sass/components/_tables.scss */
+/* line 36, ../sass/components/_tables.scss */
+tbody td:first-child a span {
+  font-size: smaller !important;
+  display: block;
+}
+/* line 41, ../sass/components/_tables.scss */
 tbody td:first-child img {
   width: 100%;
   max-width: none;
-}
-/* line 41, ../sass/components/_tables.scss */
-tbody td:first-child span {
-  font-size: smaller !important;
-  display: block;
 }
 
 /* line 49, ../sass/components/_tables.scss */
