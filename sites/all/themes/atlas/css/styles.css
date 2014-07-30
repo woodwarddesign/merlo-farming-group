@@ -678,7 +678,7 @@ dd {
 
 /* line 28, ../sass/components/_views.scss */
 .view-google-news-feed .grid-1-2 {
-  padding: 0 15px 0 0;
+  padding: 0 15px 0 5px;
 }
 
 /* line 34, ../sass/components/_views.scss */
