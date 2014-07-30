@@ -939,30 +939,35 @@ table td {
   text-align: left;
   vertical-align: top;
 }
+/* line 19, ../sass/components/_tables.scss */
+table th span,
+table td span {
+  font-size: inherit !important;
+}
 
-/* line 20, ../sass/components/_tables.scss */
+/* line 24, ../sass/components/_tables.scss */
 table th {
   border-bottom: 0;
   font-weight: bold;
 }
 
-/* line 25, ../sass/components/_tables.scss */
+/* line 29, ../sass/components/_tables.scss */
 tbody {
   border-top: 0;
 }
 
-/* line 29, ../sass/components/_tables.scss */
+/* line 33, ../sass/components/_tables.scss */
 table thead th {
   vertical-align: bottom;
 }
 
-/* line 34, ../sass/components/_tables.scss */
+/* line 38, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
   background-color: #fefefe;
 }
 
-/* line 39, ../sass/components/_tables.scss */
+/* line 43, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(even) > td,
 table tbody > tr:nth-child(even) > th {
   background-color: #8ece24;
@@ -1090,31 +1095,31 @@ h6, h6 a {
 
   /* line 104, ../sass/components/_typography.scss */
   body {
-    font-size: 16.5px;
+    font-size: 14.5px;
   }
   /* line 108, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
-    font-size: 24.75px;
+    font-size: 21.75px;
   }
   /* line 112, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
-    font-size: 21.615px;
+    font-size: 18.995px;
   }
   /* line 116, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
-    font-size: 16.5px;
+    font-size: 14.5px;
   }
   /* line 120, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
-    font-size: 13.695px;
+    font-size: 12.035px;
   }
   /* line 124, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
-    font-size: 11.055px;
+    font-size: 9.715px;
   }
   /* line 129, ../sass/components/_typography.scss */
   body.no-sidebars {
-    font-size: 20px;
+    font-size: 14.5px;
   }
 }
 /* line 4, ../sass/components/_menus.scss */

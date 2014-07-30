@@ -102,32 +102,32 @@ h6, h6 a {
   }
 
   body {
-    font-size: $base-font-size * .825;
+    font-size: $base-font-size * .725;
     &.two-sidebars {
 
       h2, h2 a {
-        font-size: $h2-font-size * .825;
+        font-size: $h2-font-size * .725;
       }
 
       h3, h3 a, h2.block__title, h2.pane-title {
-        font-size: $h3-font-size * .825;
+        font-size: $h3-font-size * .725;
       }
 
       h4, h4 a {
-        font-size: $h4-font-size * .825;
+        font-size: $h4-font-size * .725;
       }
 
       h5, h5 a {
-        font-size: $h5-font-size * .825;
+        font-size: $h5-font-size * .725;
       }
 
       h6, h6 a {
-        font-size: $h6-font-size * .825;
+        font-size: $h6-font-size * .725;
       }
 
     }
     &.no-sidebars {
-      font-size: $base-font-size;
+      font-size: $base-font-size * .725;
     }
   }
 }
