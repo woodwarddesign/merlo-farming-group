@@ -971,7 +971,7 @@ tbody td:first-child a {
 }
 /* line 37, ../sass/components/_tables.scss */
 tbody td:first-child a span {
-  font-size: smaller !important;
+  font-size: 65% !important;
   display: block;
 }
 /* line 42, ../sass/components/_tables.scss */
