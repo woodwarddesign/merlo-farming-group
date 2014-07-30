@@ -69,9 +69,12 @@
 	    </div>
     </div>
   </div>
-<footer class="grid-container">
-  <?php print render($page['footer']); ?>
-</footer>
+
+	<div class="footer-wrapper">
+		<footer class="grid-container">
+		  <?php print render($page['footer']); ?>
+		</footer>
+	</div>
 </div>
 
 <?php print render($page['bottom']); ?>
