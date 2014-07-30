@@ -48,7 +48,7 @@ p, ol, ul, blockquote, pre, code, span {
   font-weight: $body-font-weight;
   hyphens: auto;
   line-height: $base-line-height;
-  margin: 0 0 $vert-spacing 0;
+  margin: 0 0 ($vert-spacing / 2) 0;
   word-wrap: break-word;
 }
 

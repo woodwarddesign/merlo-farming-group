@@ -1,11 +1,24 @@
+#page {
+	@include background-image(linear-gradient($black 10%, $brown 25%));
+}
+
+#main {
+	background-color: rgba($white, .3);
+	border: 1px solid $white;
+	padding: 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	.content-inner {
+		background-color: $white;
+		margin: 15px;
+		overflow: hidden;
+	}
+}
+
 // header
 .header-wrapper,
 .preface-wrapper {
   width: 100%;
-}
-
-.header-wrapper {
-  margin-bottom: $vert-spacing;
 }
 
 .header-wrapper {
@@ -16,7 +29,23 @@
   background-image: linear-gradient(#336607, #79b01f);
   border-bottom: 1px solid #fefefe;
   overflow: hidden;
-  padding-top: 1rem;
+  margin-bottom: $vert-spacing;
+}
+
+.header {
+	background-image: url('../images/leaf.svg');
+	background-position: 100% -30%;
+	background-repeat: no-repeat;
+	background-size: 75%;
+	overflow: hidden;
+	@include breakpoint ($tab) {
+		background-position: 100% 30%;
+		background-size: 55%;				
+	}
+}
+
+.grid-container.header {
+	padding-top: .5em;
 }
 
 img.header__logo-image {
@@ -40,6 +69,7 @@ img.header__logo-image {
   padding-bottom: 2rem;
   position: relative;
   @include breakpoint($desk) {
+  	margin-top: 20px;
     padding-bottom: 0;
   }
 }
@@ -53,7 +83,7 @@ img.header__logo-image {
 
 #content {
   background: $base-color;
-  overflow: hidden;
+//  overflow: hidden;
 }
 
 #content .messages {
@@ -80,12 +110,29 @@ img.header__logo-image {
 
 // footer region
 
+.footer-wrapper {
+	@include merlo-gradient-180;
+	border-top: 1px solid $white;
+	overflow: hidden;
+	text-align: center;
+	
+	p {
+		color: $white;
+	}
+	a {
+		color: $link-color;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 footer {
   clear: both;
 }
 
 .region-footer {
-  padding: 10px 0;
+  padding: 10px 15px;
 }
 
 .copyright {

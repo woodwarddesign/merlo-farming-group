@@ -6,6 +6,7 @@
 
 $max-width: 1000px;
 $pad: 35px;
+$overlay: 5em;
 
 // this class is applied in page.tpl.php to the page elements that are grid containers
 .grid-container {
@@ -19,6 +20,10 @@ $pad: 35px;
   }
 }
 
+.header-wrapper {
+	padding-bottom: $overlay / 2;
+}
+
 // layout for header regions
 .region-branding,
 .region-menu {
@@ -28,6 +33,29 @@ $pad: 35px;
     width: 50%;
   }
 }
+
+
+
+#main {
+	padding: 0;
+	margin: 15px;
+	margin-top: -$overlay;
+	margin-bottom: -($overlay / 2);
+	position: relative;
+	z-index: 2;
+	
+  @include breakpoint($desk) {
+	  margin-left: auto;
+	  margin-right: auto;
+  }
+  
+	.content-inner {
+		margin: 10px;
+		overflow: hidden;
+		padding: 20px;
+	}
+}
+
 
 
 @include breakpoint($tab) {

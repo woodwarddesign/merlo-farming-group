@@ -213,7 +213,7 @@
 if (!defined('PANTHEON_ENVIRONMENT')) {
   // Database.
   $databases['default']['default'] = array(
-    'database' => 'merlo',
+    'database' => 'merlo_mfg',
     'username' => 'root',
     'password' => 'root',
     'host' => 'localhost',
