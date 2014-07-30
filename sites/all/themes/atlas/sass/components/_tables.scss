@@ -28,6 +28,14 @@ table th {
 
 tbody {
   border-top: 0;
+  td {
+	  &:first-child {
+		  span {
+			  font-size: smaller!important;
+			  display: block;
+		  }
+	  }
+  }
 }
 
 table thead th {

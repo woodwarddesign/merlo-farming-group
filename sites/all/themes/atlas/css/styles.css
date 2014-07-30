@@ -955,19 +955,24 @@ table th {
 tbody {
   border-top: 0;
 }
-
 /* line 33, ../sass/components/_tables.scss */
+tbody td:first-child span {
+  font-size: smaller !important;
+  display: block;
+}
+
+/* line 41, ../sass/components/_tables.scss */
 table thead th {
   vertical-align: bottom;
 }
 
-/* line 38, ../sass/components/_tables.scss */
+/* line 46, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
   background-color: #fefefe;
 }
 
-/* line 43, ../sass/components/_tables.scss */
+/* line 51, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(even) > td,
 table tbody > tr:nth-child(even) > th {
   background-color: #8ece24;
