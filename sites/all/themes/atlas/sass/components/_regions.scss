@@ -53,10 +53,17 @@ img.header__logo-image {
 }
 
 .header__logo-image {
-  float: left;
   height: auto;
   margin-right: 1em;
   position: relative;
+	width: 100%;
+	max-width: 480px;
+	display: block;
+	margin: 0 auto;
+	
+	@include breakpoint($desk) {
+	  float: left;		
+	}
 }
 
 .header__name-and-slogan {
