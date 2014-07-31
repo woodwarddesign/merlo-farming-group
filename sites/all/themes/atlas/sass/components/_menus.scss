@@ -44,6 +44,7 @@ ul li.leaf {
 	  li {
 		  background-color: $white;
 		  overflow: hidden;
+		  margin-bottom: 1px;
 		  li {
 			  background-color: transparent;
 			 a {color: white;}
@@ -116,7 +117,7 @@ a.menu-link {
 .main-menu-1 li {
   clear: both;
   display: block;
-  padding: .75em 20px;
+  padding: .5em;
 }
 
 .main-menu-1 li.expanded {
@@ -137,6 +138,10 @@ a.menu-link,
 	ul {
 		background-color: $light-green;
 		color: $white;		
+
+		@include breakpoint($desk) {
+			background-color: transparent;
+		}	
 	}
 }
 
