@@ -1630,7 +1630,7 @@ ul.primary li.toggled {
 
 /* line 51, ../sass/components/_regions.scss */
 img.header__logo-image {
-  height: 83px;
+  width: 100%;
 }
 
 /* line 55, ../sass/components/_regions.scss */
@@ -1652,32 +1652,33 @@ img.header__logo-image {
   overflow: hidden;
   padding-bottom: 2rem;
   position: relative;
+  margin-top: -7px;
+  margin-bottom: -90px;
 }
 @media (min-width: 60em) {
   /* line 66, ../sass/components/_regions.scss */
   .region-branding {
-    margin-top: 20px;
     padding-bottom: 0;
   }
 }
 
-/* line 84, ../sass/components/_regions.scss */
+/* line 85, ../sass/components/_regions.scss */
 #content {
   background: white;
 }
 
-/* line 89, ../sass/components/_regions.scss */
+/* line 90, ../sass/components/_regions.scss */
 #content .messages {
   margin-bottom: 1rem;
   padding: 20px;
 }
-/* line 92, ../sass/components/_regions.scss */
+/* line 93, ../sass/components/_regions.scss */
 #content .messages.status {
   background: #dfeff5;
   border: 1px solid #91c8dd;
 }
 
-/* line 99, ../sass/components/_regions.scss */
+/* line 100, ../sass/components/_regions.scss */
 .breadcrumb li {
   display: inline-block;
   list-style: none;
@@ -1686,7 +1687,7 @@ img.header__logo-image {
   font-size: 14.5px;
 }
 
-/* line 113, ../sass/components/_regions.scss */
+/* line 114, ../sass/components/_regions.scss */
 .footer-wrapper {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #79b01f), color-stop(100%, #336607));
   background-image: -webkit-linear-gradient(#79b01f, #336607);
@@ -1697,34 +1698,34 @@ img.header__logo-image {
   overflow: hidden;
   text-align: center;
 }
-/* line 119, ../sass/components/_regions.scss */
+/* line 120, ../sass/components/_regions.scss */
 .footer-wrapper p {
   color: #fefefe;
 }
-/* line 122, ../sass/components/_regions.scss */
+/* line 123, ../sass/components/_regions.scss */
 .footer-wrapper a {
   color: #e6b015;
 }
-/* line 124, ../sass/components/_regions.scss */
+/* line 125, ../sass/components/_regions.scss */
 .footer-wrapper a:hover {
   text-decoration: underline;
 }
 
-/* line 130, ../sass/components/_regions.scss */
+/* line 131, ../sass/components/_regions.scss */
 footer {
   clear: both;
 }
 
-/* line 134, ../sass/components/_regions.scss */
+/* line 135, ../sass/components/_regions.scss */
 .region-footer {
   padding: 10px 15px;
 }
 
-/* line 138, ../sass/components/_regions.scss */
+/* line 139, ../sass/components/_regions.scss */
 .copyright {
   padding-bottom: 10px;
 }
-/* line 140, ../sass/components/_regions.scss */
+/* line 141, ../sass/components/_regions.scss */
 .copyright p {
   float: left;
   font-size: 12.5px;
