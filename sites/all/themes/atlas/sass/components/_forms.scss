@@ -56,7 +56,8 @@ button, input[type="reset"],
 input[type="submit"],
 input[type="button"],
 .comment-links a,
-.button {
+.button,
+.more-link a {
   background: $accent;
   border: 2px solid lighten($accent, 15%);
   border-radius: .5rem;
@@ -83,8 +84,9 @@ a.views-more-link,
 .button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
-	display: inline-block;
+input[type="button"],
+.more-link a {
+	display: block;
 	@include background-image(linear-gradient($gray 0%, $white 100%));
 	@include box-shadow(0 0 4px lighten($black, 15%), inset 0 0 2px $black);
 	@include border-radius(20px);
@@ -104,6 +106,10 @@ input[type="button"] {
 	}
 	&:active {
 		top: 1px;
+	}
+	
+	@include breakpoint($tab) {
+		display: inline-block;
 	}
 }
 

@@ -13,6 +13,11 @@ ul li.leaf {
   display: block;
   position: relative;
   width: 100%;
+	font-weight: 100;
+  
+  @include breakpoint($desk) {
+	  font-weight: bold;	  
+  }
 }
 
 .main-menu-1 {
@@ -27,20 +32,34 @@ ul li.leaf {
 .js .region-menu .menu {
   max-height: 0;
   overflow: hidden;
+  
   &.toggled {
     padding: 10px;
     max-height: 50em;
 	  background-color: rgba($white, .2);
 	  border: 1px solid $white;
 		margin-top: 10px;
+
+		
 	  li {
 		  background-color: $white;
 		  overflow: hidden;
+		  margin-bottom: 1px;
 		  li {
 			  background-color: transparent;
 			 a {color: white;}
 		  }
 	  }
+	  		
+		@include breakpoint($desk) {
+			background-color: transparent;
+			border: none;
+			margin-top: 0;
+			padding: 0;
+			li {
+				background-color: transparent;
+			}
+		}
   }
   li:first-child {
 	  border-top: none;
@@ -98,7 +117,7 @@ a.menu-link {
 .main-menu-1 li {
   clear: both;
   display: block;
-  padding: .75em 20px;
+  padding: .5em;
 }
 
 .main-menu-1 li.expanded {
@@ -110,7 +129,6 @@ a.menu-link,
 .region-footer .menu li a {
   color: $link-color;
   font-family: $header-font-family;
-  font-weight: 100;
 }
 
 .region-menu .menu li a,
@@ -120,6 +138,10 @@ a.menu-link,
 	ul {
 		background-color: $light-green;
 		color: $white;		
+
+		@include breakpoint($desk) {
+			background-color: transparent;
+		}	
 	}
 }
 

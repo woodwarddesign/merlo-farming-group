@@ -57,6 +57,9 @@ $overlay: 5em;
 }
 
 
+footer.grid-container {
+	margin-top: $overlay / 2;
+}
 
 @include breakpoint($tab) {
 
