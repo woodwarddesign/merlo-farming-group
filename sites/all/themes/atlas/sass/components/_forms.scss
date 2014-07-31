@@ -86,7 +86,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 .more-link a {
-	display: inline-block;
+	display: block;
 	@include background-image(linear-gradient($gray 0%, $white 100%));
 	@include box-shadow(0 0 4px lighten($black, 15%), inset 0 0 2px $black);
 	@include border-radius(20px);
@@ -106,6 +106,10 @@ input[type="button"],
 	}
 	&:active {
 		top: 1px;
+	}
+	
+	@include breakpoint($tab) {
+		display: inline-block;
 	}
 }
 

@@ -786,7 +786,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 .more-link a {
-  display: inline-block;
+  display: block;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #fefefe));
   background-image: -webkit-linear-gradient(#dddddd 0%, #fefefe 100%);
   background-image: -moz-linear-gradient(#dddddd 0%, #fefefe 100%);
@@ -837,8 +837,19 @@ input[type="button"]:active,
 .more-link a:active {
   top: 1px;
 }
+@media (min-width: 40em) {
+  /* line 88, ../sass/components/_forms.scss */
+  a.views-more-link,
+  .button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  .more-link a {
+    display: inline-block;
+  }
+}
 
-/* line 119, ../sass/components/_forms.scss */
+/* line 123, ../sass/components/_forms.scss */
 input[type='text']:focus,
 textarea:focus,
 select:focus,
@@ -851,19 +862,19 @@ input[type="tel"]:focus {
   box-shadow: 0 0 2px #79b01f inset;
 }
 
-/* line 124, ../sass/components/_forms.scss */
+/* line 128, ../sass/components/_forms.scss */
 .form-required {
   color: #79b01f;
   font-weight: bold;
 }
 
-/* line 130, ../sass/components/_forms.scss */
+/* line 134, ../sass/components/_forms.scss */
 .form-item {
   margin-bottom: 1.5rem;
   overflow: hidden;
 }
 
-/* line 138, ../sass/components/_forms.scss */
+/* line 142, ../sass/components/_forms.scss */
 .form-item-pass-pass1,
 .form-item-pass-pass2 {
   overflow: visible;
@@ -871,25 +882,25 @@ input[type="tel"]:focus {
   width: 40%;
 }
 
-/* line 144, ../sass/components/_forms.scss */
+/* line 148, ../sass/components/_forms.scss */
 .page-user input.password-confirm {
   margin-top: 0;
 }
 
-/* line 149, ../sass/components/_forms.scss */
+/* line 153, ../sass/components/_forms.scss */
 .form-type-password-confirm {
   padding-bottom: 3rem;
   position: relative;
 }
 
-/* line 155, ../sass/components/_forms.scss */
+/* line 159, ../sass/components/_forms.scss */
 .password-strength,
 .password-confirm {
   display: block;
   margin-bottom: .5rem;
   padding: .5rem 0;
 }
-/* line 161, ../sass/components/_forms.scss */
+/* line 165, ../sass/components/_forms.scss */
 .password-strength .password-indicator div,
 .password-confirm .password-indicator div {
   background: #f76558;
@@ -897,35 +908,35 @@ input[type="tel"]:focus {
   width: 0;
 }
 
-/* line 168, ../sass/components/_forms.scss */
+/* line 172, ../sass/components/_forms.scss */
 .password-strength-title {
   margin-bottom: .5rem;
 }
 
-/* line 172, ../sass/components/_forms.scss */
+/* line 176, ../sass/components/_forms.scss */
 .password-strength-text {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 178, ../sass/components/_forms.scss */
+/* line 182, ../sass/components/_forms.scss */
 .password-confirm .error,
 .password-confirm .ok {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 183, ../sass/components/_forms.scss */
+/* line 187, ../sass/components/_forms.scss */
 .password-strength-text {
   margin-top: .5rem;
 }
 
-/* line 187, ../sass/components/_forms.scss */
+/* line 191, ../sass/components/_forms.scss */
 .password-confirm .error {
   margin-top: .3rem;
 }
 
-/* line 191, ../sass/components/_forms.scss */
+/* line 195, ../sass/components/_forms.scss */
 .password-suggestions {
   background: #efefef;
   border: 1px solid #dddddd;
