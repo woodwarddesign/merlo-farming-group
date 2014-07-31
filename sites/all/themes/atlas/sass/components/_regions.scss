@@ -10,7 +10,6 @@
 	margin-bottom: 15px;
 	.content-inner {
 		background-color: $white;
-		margin: 15px;
 		overflow: hidden;
 	}
 }
@@ -80,6 +79,11 @@ img.header__logo-image {
   @include breakpoint($desk) {
     padding-bottom: 0;
   }
+}
+
+.region-menu {
+	position: relative;
+	z-index: 2;
 }
 
 // preface region
