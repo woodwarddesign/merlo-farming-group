@@ -678,7 +678,7 @@ dd {
 
 /* line 28, ../sass/components/_views.scss */
 .view-google-news-feed .grid-1-2 {
-  padding: 0 15px 0 5px;
+  padding: 0 15px 0 0;
 }
 /* line 31, ../sass/components/_views.scss */
 .view-google-news-feed .more-link {
@@ -1052,104 +1052,104 @@ h2.pane-title {
   padding: 10px;
   color: #fefefe;
 }
-/* line 34, ../sass/components/_typography.scss */
+/* line 35, ../sass/components/_typography.scss */
 h1#page-title a,
 h2.pane-title a {
   color: #fefefe;
 }
 
-/* line 39, ../sass/components/_typography.scss */
+/* line 40, ../sass/components/_typography.scss */
 .front h1#page-title {
   display: none;
 }
 
-/* line 43, ../sass/components/_typography.scss */
+/* line 44, ../sass/components/_typography.scss */
 h2, h2 a {
   font-size: 30px;
 }
 
-/* line 47, ../sass/components/_typography.scss */
+/* line 48, ../sass/components/_typography.scss */
 h3, h3 a, h2.block__title, h2.pane-title {
   font-size: 26.2px;
 }
 
-/* line 51, ../sass/components/_typography.scss */
+/* line 52, ../sass/components/_typography.scss */
 h4, h4 a {
   font-size: 20px;
 }
 
-/* line 55, ../sass/components/_typography.scss */
+/* line 56, ../sass/components/_typography.scss */
 h5, h5 a {
   font-size: 16.6px;
 }
 
-/* line 59, ../sass/components/_typography.scss */
+/* line 60, ../sass/components/_typography.scss */
 h6, h6 a {
   font-size: 13.4px;
 }
 
 @media (min-width: 40em) {
-  /* line 65, ../sass/components/_typography.scss */
+  /* line 66, ../sass/components/_typography.scss */
   h1, h1 a {
     font-size: 33.75px;
   }
 
-  /* line 69, ../sass/components/_typography.scss */
+  /* line 70, ../sass/components/_typography.scss */
   body {
     font-size: 18.5px;
   }
-  /* line 73, ../sass/components/_typography.scss */
+  /* line 74, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
     font-size: 27.75px;
   }
-  /* line 77, ../sass/components/_typography.scss */
+  /* line 78, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
     font-size: 24.235px;
   }
-  /* line 81, ../sass/components/_typography.scss */
+  /* line 82, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
     font-size: 18.5px;
   }
-  /* line 85, ../sass/components/_typography.scss */
+  /* line 86, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
     font-size: 15.355px;
   }
-  /* line 89, ../sass/components/_typography.scss */
+  /* line 90, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
     font-size: 12.395px;
   }
 }
 @media (min-width: 60em) {
-  /* line 100, ../sass/components/_typography.scss */
+  /* line 101, ../sass/components/_typography.scss */
   h1, h1 a {
     font-size: 22.5px;
   }
 
-  /* line 104, ../sass/components/_typography.scss */
+  /* line 105, ../sass/components/_typography.scss */
   body {
     font-size: 14.5px;
   }
-  /* line 108, ../sass/components/_typography.scss */
+  /* line 109, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
     font-size: 21.75px;
   }
-  /* line 112, ../sass/components/_typography.scss */
+  /* line 113, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
     font-size: 18.995px;
   }
-  /* line 116, ../sass/components/_typography.scss */
+  /* line 117, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
     font-size: 14.5px;
   }
-  /* line 120, ../sass/components/_typography.scss */
+  /* line 121, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
     font-size: 12.035px;
   }
-  /* line 124, ../sass/components/_typography.scss */
+  /* line 125, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
     font-size: 9.715px;
   }
-  /* line 129, ../sass/components/_typography.scss */
+  /* line 130, ../sass/components/_typography.scss */
   body.no-sidebars {
     font-size: 14.5px;
   }
