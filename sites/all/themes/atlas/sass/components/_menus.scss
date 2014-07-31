@@ -32,12 +32,15 @@ ul li.leaf {
 .js .region-menu .menu {
   max-height: 0;
   overflow: hidden;
+  
   &.toggled {
     padding: 10px;
     max-height: 50em;
 	  background-color: rgba($white, .2);
 	  border: 1px solid $white;
 		margin-top: 10px;
+
+		
 	  li {
 		  background-color: $white;
 		  overflow: hidden;
@@ -46,6 +49,16 @@ ul li.leaf {
 			 a {color: white;}
 		  }
 	  }
+	  		
+		@include breakpoint($desk) {
+			background-color: transparent;
+			border: none;
+			margin-top: 0;
+			padding: 0;
+			li {
+				background-color: transparent;
+			}
+		}
   }
   li:first-child {
 	  border-top: none;
