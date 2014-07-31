@@ -13,6 +13,11 @@ ul li.leaf {
   display: block;
   position: relative;
   width: 100%;
+	font-weight: 100;
+  
+  @include breakpoint($desk) {
+	  font-weight: bold;	  
+  }
 }
 
 .main-menu-1 {
@@ -110,7 +115,6 @@ a.menu-link,
 .region-footer .menu li a {
   color: $link-color;
   font-family: $header-font-family;
-  font-weight: 100;
 }
 
 .region-menu .menu li a,
