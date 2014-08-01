@@ -36,7 +36,9 @@ tbody {
 	  	width: 25%!important;
 	  	padding-left: 0;
 	  	a {
-	  		font-weight: bold;
+	  		b {
+		  		font-weight: bold;	
+	  		}
 		  	display: block;
 			  span {
 				  font-size: 65%!important;
