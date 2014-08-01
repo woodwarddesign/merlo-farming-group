@@ -29,6 +29,9 @@ table th {
 tbody {
   border-top: 0;
   td {
+  	b {
+	  	font-weight: normal;
+  	}
 	  &:first-child {
 	  	width: 25%!important;
 	  	padding-left: 0;

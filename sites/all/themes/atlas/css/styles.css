@@ -980,20 +980,24 @@ tbody {
   border-top: 0;
 }
 /* line 32, ../sass/components/_tables.scss */
+tbody td b {
+  font-weight: normal;
+}
+/* line 35, ../sass/components/_tables.scss */
 tbody td:first-child {
   width: 25% !important;
   padding-left: 0;
 }
-/* line 35, ../sass/components/_tables.scss */
+/* line 38, ../sass/components/_tables.scss */
 tbody td:first-child a {
   display: block;
 }
-/* line 37, ../sass/components/_tables.scss */
+/* line 40, ../sass/components/_tables.scss */
 tbody td:first-child a span {
   font-size: 65% !important;
   display: block;
 }
-/* line 42, ../sass/components/_tables.scss */
+/* line 45, ../sass/components/_tables.scss */
 tbody td:first-child img {
   width: 100%;
   max-width: none;
@@ -1005,18 +1009,18 @@ tbody td:first-child img {
   left: 1px;
 }
 
-/* line 54, ../sass/components/_tables.scss */
+/* line 57, ../sass/components/_tables.scss */
 table thead th {
   vertical-align: bottom;
 }
 
-/* line 59, ../sass/components/_tables.scss */
+/* line 62, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
   background-color: #fefefe;
 }
 
-/* line 64, ../sass/components/_tables.scss */
+/* line 67, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(even) > td,
 table tbody > tr:nth-child(even) > th {
   background-color: #8ece24;
