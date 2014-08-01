@@ -30,12 +30,13 @@ tbody {
   border-top: 0;
   td {
   	b {
-	  	font-weight: normal;
+	  	font-weight: 300;
   	}
 	  &:first-child {
 	  	width: 25%!important;
 	  	padding-left: 0;
 	  	a {
+	  		font-weight: bold;
 		  	display: block;
 			  span {
 				  font-size: 65%!important;
