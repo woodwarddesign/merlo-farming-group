@@ -997,20 +997,26 @@ tbody td:first-child a span {
 tbody td:first-child img {
   width: 100%;
   max-width: none;
+  border: 4px solid #fefefe !important;
+  -webkit-box-shadow: 0 0 1px #5e5e5e;
+  -moz-box-shadow: 0 0 1px #5e5e5e;
+  box-shadow: 0 0 1px #5e5e5e;
+  position: relative;
+  left: 1px;
 }
 
-/* line 50, ../sass/components/_tables.scss */
+/* line 54, ../sass/components/_tables.scss */
 table thead th {
   vertical-align: bottom;
 }
 
-/* line 55, ../sass/components/_tables.scss */
+/* line 59, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
   background-color: #fefefe;
 }
 
-/* line 60, ../sass/components/_tables.scss */
+/* line 64, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(even) > td,
 table tbody > tr:nth-child(even) > th {
   background-color: #8ece24;

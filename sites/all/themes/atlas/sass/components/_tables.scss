@@ -42,6 +42,10 @@ tbody {
 	  	img {
 	  		width: 100%;
 		  	max-width: none;
+		  	border: 4px solid $white!important;
+				@include box-shadow(0 0 1px darken($gray, 50%));
+				position: relative;
+				left: 1px;
 	  	}
 	  }
   }
