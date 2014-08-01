@@ -75,9 +75,10 @@ img.header__logo-image {
   overflow: hidden;
   padding-bottom: 2rem;
   position: relative;
-  margin-top: -7px;
+  margin-top: -9px;
   margin-bottom: -90px;
   @include breakpoint($desk) {
+    margin-top: -7px;
     padding-bottom: 0;
   }
 }
