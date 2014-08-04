@@ -13,6 +13,11 @@ ul li.leaf {
   display: block;
   position: relative;
   width: 100%;
+	font-weight: 100;
+  
+  @include breakpoint($desk) {
+	  font-weight: bold;	  
+  }
 }
 
 .main-menu-1 {
@@ -24,16 +29,55 @@ ul li.leaf {
   }
 }
 
-.js .main-menu-1 {
+.js .region-menu .menu {
   max-height: 0;
   overflow: hidden;
+  
   &.toggled {
+    padding: 10px;
     max-height: 50em;
+	  background-color: rgba($white, .2);
+	  border: 1px solid $white;
+		margin-top: 10px;
+
+		
+	  li {
+		  background-color: $white;
+		  overflow: hidden;
+		  margin-bottom: 1px;
+		  li {
+			  background-color: transparent;
+			 a {color: white;}
+		  }
+	  }
+	  		
+		@include breakpoint($desk) {
+			background-color: transparent;
+			border: none;
+			margin-top: 0;
+			padding: 0;
+			li {
+				background-color: transparent;
+			}
+		}
   }
-  &.main-menu-2 {
-    width: 200%;
+  li:first-child {
+	  border-top: none;
   }
 }
+
+.region-menu {
+ 	&.toggled {
+	  background-color: rgba($white, .2);
+	  border: 1px solid $white;
+		margin-top: 10px;
+	  li {
+		  background-color: $white;
+		  overflow: hidden;
+	  }
+	}
+}
+
 
 // multi-toggle styles
 
@@ -73,32 +117,51 @@ a.menu-link {
 .main-menu-1 li {
   clear: both;
   display: block;
-  padding: .75em 20px;
+  padding: .5em;
 }
 
 .main-menu-1 li.expanded {
   padding-bottom: 1.25em;
 }
 
-.main-menu-1 li a,
-a.menu-link {
-  color: $accent;
+.region-menu .menu li a,
+a.menu-link,
+.region-footer .menu li a {
+  color: $link-color;
   font-family: $header-font-family;
-  font-weight: 100;
 }
 
-.main-menu-1 li a:hover,
-.main-menu-1 li a:focus,
-.main-menu-1 li a.toggled {
-  color: darken($accent, 15%);
+.region-menu .menu li a,
+.region-footer .menu li a {
+	padding: 5px;
+	&:hover,
+	ul {
+		background-color: $light-green;
+		color: $white;		
+
+		@include breakpoint($desk) {
+			background-color: transparent;
+		}	
+	}
+}
+
+.region-menu .menu li a:hover,
+.region-menu .menu li a:focus,
+.region-menu .menu li a.toggled,
+footer .menu li a:hover,
+footer .menu li a:focus,
+footer .menu li a.toggled {
   outline: none;
+	text-decoration: underline;
 }
 
+/*
 footer .region-footer p a:hover,
 footer .region-footer p a:focus,
 footer .region-footer p a.toggled {
 	  color: darken($accent, 30%);
 }
+*/
 
 .main-menu-1 li ul  {
   background: $gray;
@@ -143,9 +206,9 @@ footer .region-footer p a.toggled {
 
 @include breakpoint($desk) {
 
-  	.main-menu-1 {
-  		text-align: right;
-  	}
+	.main-menu-1 {
+		text-align: right;
+	}
 
   .js .main-menu-1 {
     background-color: transparent;
@@ -206,6 +269,15 @@ footer .region-footer p a.toggled {
 
   .main-menu-1 li:hover > ul {
     display: block;
+  }
+  
+  .js .region-menu .menu,
+  .js .region-menu .menu li ul {
+    background-color: transparent;
+    border: none;
+    max-height: none;
+    overflow: visible;
+    z-index: 1000;
   }
 
   .js .main-menu-1 .main-menu-2  {

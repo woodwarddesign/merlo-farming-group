@@ -15,6 +15,10 @@ table td {
   line-height: $base-line-height;
   text-align: left;
   vertical-align: top;
+  
+  span {
+	  font-size: inherit!important;
+  }
 }
 
 table th {
@@ -24,6 +28,23 @@ table th {
 
 tbody {
   border-top: 0;
+  td {
+	  &:first-child {
+	  	width: 25%!important;
+	  	padding-left: 0;
+	  	a {
+		  	display: block;
+			  span {
+				  font-size: 65%!important;
+				  display: block;
+			  }
+	  	}
+	  	img {
+	  		width: 100%;
+		  	max-width: none;
+	  	}
+	  }
+  }
 }
 
 table thead th {

@@ -56,7 +56,8 @@ button, input[type="reset"],
 input[type="submit"],
 input[type="button"],
 .comment-links a,
-.button {
+.button,
+.more-link a {
   background: $accent;
   border: 2px solid lighten($accent, 15%);
   border-radius: .5rem;
@@ -74,9 +75,42 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 .comment-links a:hover,
 .button:hover {
-  background: lighten($accent, 10%);
-  color: $white !important;
-  cursor: pointer;
+// background: lighten($accent, 10%);
+// color: $white !important;
+// cursor: pointer;
+}
+
+a.views-more-link,
+.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.more-link a {
+	display: block;
+	@include background-image(linear-gradient($gray 0%, $white 100%));
+	@include box-shadow(0 0 4px lighten($black, 15%), inset 0 0 2px $black);
+	@include border-radius(20px);
+	@include text-shadow(0 -1px 0 $white);
+	@include trans-all;
+	border: 1px solid $white!important;
+	color: lighten($black, 15%)!important;
+	font-weight: bold;
+	font-size: .9em;
+	letter-spacing: .1em;
+	padding: .75em 1.5em;
+	margin-bottom: .5em;
+	text-align: center;
+	position: relative;
+	&:hover {
+		@include border-radius(4px);
+	}
+	&:active {
+		top: 1px;
+	}
+	
+	@include breakpoint($tab) {
+		display: inline-block;
+	}
 }
 
 input[type='text']:focus,
