@@ -15,12 +15,14 @@ Drupal.behaviors.my_custom_behavior = {
 
   $(document).ready(function() {
 
+// weather data from forecat.io
     $.ajax({
         url: 'https://api.forecast.io/forecast/1c11c79d6b408b1165bf09c2337b0f4c/39.4900784,-121.571218',
         dataType: 'jsonp',
         success: function(data){
-            //do whatever you want with the data here
-            $(".front .pane-3").append("<p>" + data.currently.summary + "</p>");
+            // if successful, remove placeholder text
+            $('.remove-me').remove();
+            $('.front .pane-3').append('<h2>Current weather for Oroville, CA</h2>' + '<p>' + data.currently.summary + '</p>' + '<p>' + parseInt(Math.ceil(data.currently.temperature, 10)) + ' degrees</p>'  + '<p>' + (parseFloat(data.currently.humidity) * 100) + '% relative humidity</p>' + '<p>' + (parseFloat(data.currently.precipProbability) * 100) + '% chance of precipitation</p>').addClass('partly-cloudy-day');
         }
     });
 
@@ -83,11 +85,11 @@ Drupal.behaviors.my_custom_behavior = {
 
   //remove any items that have been added on resize when going back to desktop width
   function removeMobileMenuItem() {
-    $("li.expanded").each(function() {
+    $('li.expanded').each(function() {
        var menuParent = $(this).children('a').text();
-       var firstChildItem = $(this).find("ul li:first-child a").text();
+       var firstChildItem = $(this).find('ul li:first-child a').text();
        if (menuParent == firstChildItem){
-       $(this).find("ul li:first-child").remove();
+       $(this).find('ul li:first-child').remove();
        }
     });
   }
@@ -130,8 +132,8 @@ Drupal.behaviors.my_custom_behavior = {
     }
 
     // add placeholder image to google news feed item
-    var placeholderImage = '<img src="/sites/all/themes/atlas/images/news-filller-image.png" alt="News placeholder image">'
-    $( ".view-google-news-feed td:first-child").not(":has(span a img)").append(placeholderImage);
+    var placeholderImage = '<img src=\'/sites/all/themes/atlas/images/news-filller-image.png\' alt=\'News placeholder image\'>';
+    $( '.view-google-news-feed td:first-child').not(':has(span a img)').append(placeholderImage);
 
 // end custom
 
