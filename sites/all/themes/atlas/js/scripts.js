@@ -15,6 +15,15 @@ Drupal.behaviors.my_custom_behavior = {
 
   $(document).ready(function() {
 
+    $.ajax({
+        url: 'https://api.forecast.io/forecast/1c11c79d6b408b1165bf09c2337b0f4c/39.4900784,-121.571218',
+        dataType: 'jsonp',
+        success: function(data){
+            //do whatever you want with the data here
+            $(".front .pane-3").append(JSON.stringify(data));
+        }
+    });
+
   //set up variable for mobile. set this to keep track of width so functions are run only on transition from
   // moble to desktop and vice versa. if this isn't done, functions will fire constantly as window is resized
   var mobile = 0;
