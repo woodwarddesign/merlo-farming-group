@@ -20,7 +20,7 @@ Drupal.behaviors.my_custom_behavior = {
         dataType: 'jsonp',
         success: function(data){
             //do whatever you want with the data here
-            $(".front .pane-3").append(JSON.stringify(data));
+            $(".front .pane-3").append("<p>" + data.currently.summary + "</p>");
         }
     });
 
