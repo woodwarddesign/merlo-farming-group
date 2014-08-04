@@ -22,7 +22,7 @@ Drupal.behaviors.my_custom_behavior = {
         success: function(data){
             // if successful, remove placeholder text
             $('.remove-me').remove();
-            $('.front .pane-3').append('<h2>Current weather for Oroville, CA</h2>' + '<p>' + data.currently.summary + '</p>' + '<p>' + parseInt(Math.ceil(data.currently.temperature, 10)) + ' degrees</p>'  + '<p>' + (parseFloat(data.currently.humidity) * 100) + '% relative humidity</p>' + '<p>' + (parseFloat(data.currently.precipProbability) * 100) + '% chance of precipitation</p>').addClass('partly-cloudy-day');
+            $('.front .pane-3').append('<h2 class="pane-title">Current weather</h2>' + '<p>' + data.currently.summary + '</p>' + '<p>' + parseInt(Math.ceil(data.currently.temperature, 10)) + ' degrees</p>'  + '<p>' + (parseFloat(data.currently.humidity) * 100) + '% relative humidity</p>' + '<p>' + (parseFloat(data.currently.precipProbability) * 100) + '% chance of precipitation</p><p>Oroville, CA</p>').addClass('partly-cloudy-day');
         }
     });
 
