@@ -2258,8 +2258,8 @@ ul.pager li a {
   width: 100%;
   background-image: url("../images/leaf.svg");
   background-repeat: no-repeat;
-  background-position: top right top;
-  background-size: 150%;
+  background-position: right top;
+  background-size: 92%;
 }
 /* line 191, ../sass/components/_misc.scss */
 .bantam h3, .bantam p {
