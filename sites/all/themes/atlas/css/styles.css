@@ -2256,7 +2256,13 @@ ul.pager li a {
     padding-right: 2rem;
   }
 }
-/* line 181, ../sass/components/_misc.scss */
+@media (min-width: 60em) {
+  /* line 180, ../sass/components/_misc.scss */
+  .bantam .right {
+    margin-top: 2.5rem;
+  }
+}
+/* line 184, ../sass/components/_misc.scss */
 .bantam .right:before {
   content: "";
   display: block;
@@ -2270,19 +2276,19 @@ ul.pager li a {
   background-position: right top;
   background-size: 92%;
 }
-/* line 196, ../sass/components/_misc.scss */
+/* line 199, ../sass/components/_misc.scss */
 .bantam h3, .bantam p {
   color: #fefefe;
 }
-/* line 200, ../sass/components/_misc.scss */
+/* line 203, ../sass/components/_misc.scss */
 .bantam img {
   width: 100%;
 }
-/* line 204, ../sass/components/_misc.scss */
+/* line 207, ../sass/components/_misc.scss */
 .bantam p:last-child {
   margin-bottom: 0;
 }
-/* line 208, ../sass/components/_misc.scss */
+/* line 211, ../sass/components/_misc.scss */
 .bantam:after {
   content: "";
   display: table;
