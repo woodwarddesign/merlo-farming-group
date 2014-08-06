@@ -2222,6 +2222,8 @@ ul.pager li a {
 
 /* line 155, ../sass/components/_misc.scss */
 .bantam {
+  position: relative;
+  overflow: hidden;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #336607), color-stop(100%, #79b01f));
   background-image: -webkit-linear-gradient(#336607 0%, #79b01f 100%);
   background-image: -moz-linear-gradient(#336607 0%, #79b01f 100%);
@@ -2234,26 +2236,44 @@ ul.pager li a {
   padding: 20px;
   margin-bottom: 2rem;
 }
-/* line 163, ../sass/components/_misc.scss */
+/* line 165, ../sass/components/_misc.scss */
 .bantam .left,
 .bantam .right {
   width: 50%;
   float: left;
   text-align: center;
 }
-/* line 169, ../sass/components/_misc.scss */
+/* line 171, ../sass/components/_misc.scss */
+.bantam .left {
+  padding-right: 2rem;
+}
+/* line 176, ../sass/components/_misc.scss */
+.bantam .right:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  bottom: 0;
+  width: 100%;
+  background-image: url("../images/leaf.svg");
+  background-repeat: no-repeat;
+  background-position: top right top;
+  background-size: 150%;
+}
+/* line 191, ../sass/components/_misc.scss */
 .bantam h3, .bantam p {
   color: #fefefe;
 }
-/* line 173, ../sass/components/_misc.scss */
+/* line 195, ../sass/components/_misc.scss */
 .bantam img {
   width: 100%;
 }
-/* line 177, ../sass/components/_misc.scss */
+/* line 199, ../sass/components/_misc.scss */
 .bantam p:last-child {
   margin-bottom: 0;
 }
-/* line 181, ../sass/components/_misc.scss */
+/* line 203, ../sass/components/_misc.scss */
 .bantam:after {
   content: "";
   display: table;

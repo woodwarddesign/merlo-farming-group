@@ -153,6 +153,8 @@ ul.pager li a {
 // bantam ad
 
 .bantam {
+	position: relative;
+	overflow: hidden;
 	@include background-image(linear-gradient($dark-green 0%, $light-green 100%));
 	@include box-shadow(0 0 1px darken($gray, 50%));
 	border: 4px solid $white;
@@ -164,6 +166,26 @@ ul.pager li a {
 		width: 50%;
 		float: left;
 		text-align: center;
+	}
+	
+	.left {
+		padding-right: 2rem;
+	}
+	
+	.right {
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0%;
+			bottom: 0;
+			width: 100%;
+			background-image: url('../images/leaf.svg');
+			background-repeat: no-repeat;
+			background-position: top right top;
+			background-size: 150%;
+		}
 	}
 	
 	h3, p {
