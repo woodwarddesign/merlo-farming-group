@@ -179,7 +179,7 @@ ul.pager li a {
 	
 	.right {
 		@include breakpoint($desk) {
-			margin-top: 2.5rem;
+			margin-top: 2rem;
 		}
 		&:before {
 			content: "";
