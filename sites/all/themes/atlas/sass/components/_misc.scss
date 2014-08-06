@@ -163,9 +163,12 @@ ul.pager li a {
 	
 	.left,
 	.right {
-		width: 50%;
+		width: 100%;
 		float: left;
 		text-align: center;
+		@include breakpoint($tab) {
+			width: 50%;
+		}
 	}
 	
 	.left {
