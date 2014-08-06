@@ -87,6 +87,10 @@ a.menu-link {
   display: block;
   float: left;
   padding: .5em .5em .5em 40px;
+  
+  &.toggled {
+	  margin-bottom: 1.5em;	  
+  }
 }
 
 .main-menu-1 {

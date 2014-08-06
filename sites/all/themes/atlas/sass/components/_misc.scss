@@ -150,3 +150,65 @@ ul.pager li a {
   @include clear-it;
 }
 
+// bantam ad
+
+.bantam {
+	position: relative;
+	overflow: hidden;
+	@include background-image(linear-gradient($dark-green 0%, $light-green 100%));
+	@include box-shadow(0 0 1px darken($gray, 50%));
+	border: 4px solid $white;
+	padding: 20px;
+	margin-bottom: 2rem;
+	
+	.left,
+	.right {
+		width: 100%;
+		text-align: center;
+		@include breakpoint($tab) {
+			width: 50%;
+			float: left;
+		}
+	}
+	
+	.left {
+		@include breakpoint($tab) {
+			padding-right: 2rem;
+		}
+	}
+	
+	.right {
+		@include breakpoint($desk) {
+			margin-top: 2rem;
+		}
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0%;
+			bottom: 0;
+			width: 100%;
+			background-image: url('../images/leaf.svg');
+			background-repeat: no-repeat;
+			background-position: right top;
+			background-size: 92%;
+		}
+	}
+	
+	h3, p {
+		color: $white;		
+	}
+	
+	img {
+		width: 100%;
+	}
+	
+	p:last-child {
+		margin-bottom: 0;
+	}
+	
+	&:after {
+		@include clear-it;
+	}
+}

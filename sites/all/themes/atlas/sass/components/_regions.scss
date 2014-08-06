@@ -10,7 +10,7 @@
 	margin-bottom: 15px;
 	.content-inner {
 		background-color: $white;
-		margin: 15px;
+		margin: 20px;
 		overflow: hidden;
 	}
 }
@@ -49,14 +49,21 @@
 }
 
 img.header__logo-image {
-  height: 83px;
+  width: 100%;
 }
 
 .header__logo-image {
-  float: left;
   height: auto;
   margin-right: 1em;
   position: relative;
+	width: 100%;
+	max-width: 480px;
+	display: block;
+	margin: 0 auto;
+	
+	@include breakpoint($desk) {
+	  float: left;		
+	}
 }
 
 .header__name-and-slogan {
@@ -68,10 +75,17 @@ img.header__logo-image {
   overflow: hidden;
   padding-bottom: 2rem;
   position: relative;
+  margin-top: -9px;
+  margin-bottom: -90px;
   @include breakpoint($desk) {
-  	margin-top: 20px;
+    margin-top: -7px;
     padding-bottom: 0;
   }
+}
+
+.region-menu {
+	position: relative;
+	z-index: 2;
 }
 
 // preface region
