@@ -2219,3 +2219,43 @@ ul.pager li a {
   display: table;
   clear: both;
 }
+
+/* line 155, ../sass/components/_misc.scss */
+.bantam {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #336607), color-stop(100%, #79b01f));
+  background-image: -webkit-linear-gradient(#336607 0%, #79b01f 100%);
+  background-image: -moz-linear-gradient(#336607 0%, #79b01f 100%);
+  background-image: -o-linear-gradient(#336607 0%, #79b01f 100%);
+  background-image: linear-gradient(#336607 0%, #79b01f 100%);
+  -webkit-box-shadow: 0 0 1px #5e5e5e;
+  -moz-box-shadow: 0 0 1px #5e5e5e;
+  box-shadow: 0 0 1px #5e5e5e;
+  border: 4px solid #fefefe;
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+/* line 163, ../sass/components/_misc.scss */
+.bantam .left,
+.bantam .right {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+/* line 169, ../sass/components/_misc.scss */
+.bantam h3, .bantam p {
+  color: #fefefe;
+}
+/* line 173, ../sass/components/_misc.scss */
+.bantam img {
+  width: 100%;
+}
+/* line 177, ../sass/components/_misc.scss */
+.bantam p:last-child {
+  margin-bottom: 0;
+}
+/* line 181, ../sass/components/_misc.scss */
+.bantam:after {
+  content: "";
+  display: table;
+  clear: both;
+}
