@@ -172,7 +172,9 @@ ul.pager li a {
 	}
 	
 	.left {
-		padding-right: 2rem;
+		@include breakpoint($tab) {
+			padding-right: 2rem;
+		}
 	}
 	
 	.right {
