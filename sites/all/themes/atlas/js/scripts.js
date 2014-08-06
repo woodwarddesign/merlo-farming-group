@@ -15,16 +15,50 @@ Drupal.behaviors.my_custom_behavior = {
 
   $(document).ready(function() {
 
-// weather data from forecat.io
+  // weather data from forecat.io. First see if there is recent data stored locally.
+  if (localStorage.d1 === undefined) {
+    getWeather();
+  }
+  else {
+    var d1 = Date.parse(localStorage.d1);
+    var d2 = new Date();
+    var dateDiff = d2 - d1;
+
+    // if this is true, weather is over 15 minutes old and should be retrieved again
+    if (dateDiff > 900000) {
+      localStorage.clear();
+      getWeather();
+    }
+    else {
+      addWeatherWidget();
+    }
+  }
+
+  function getWeather() {
     $.ajax({
         url: 'https://api.forecast.io/forecast/1c11c79d6b408b1165bf09c2337b0f4c/39.4900784,-121.571218',
         dataType: 'jsonp',
         success: function(data){
-            // if successful, remove placeholder text
-            $('.remove-me').remove();
-            $('.front .pane-3').append('<h2 class="pane-title">Current weather</h2>' + '<p>' + data.currently.summary + '</p>' + '<p>' + parseInt(Math.ceil(data.currently.temperature, 10)) + ' degrees</p>'  + '<p>' + (parseFloat(data.currently.humidity) * 100) + '% relative humidity</p>' + '<p>' + (parseFloat(data.currently.precipProbability) * 100) + '% chance of precipitation</p><p>Oroville, CA</p>').addClass('partly-cloudy-day');
+          localStorage.d1 = new Date();
+          localStorage.temp = parseInt(Math.ceil(data.currently.temperature, 10));
+          localStorage.humidity = (parseFloat(data.currently.humidity) * 100);
+          localStorage.precipProbability = (parseFloat(data.currently.precipProbability) * 100);
+          localStorage.icon = data.currently.icon;
+          localStorage.weatherSummary = data.currently.summary;
+          addWeatherWidget();
+        },
+        error: function() {
+          $('.front .weather-widget').append('<h2 class="pane-title">Current weather</h2>' + '<p>Weather is temporarily unavailable.</p>');
         }
     });
+  }
+
+  function addWeatherWidget() {
+    // remove placeholder text
+    $('.remove-me').remove();
+    // add weather data
+    $('.front .weather-widget').append('<h2 class="pane-title">Current weather</h2>' + '<p>' + localStorage.weatherSummary + '</p>' + '<p>' + localStorage.temp + ' degrees</p>'  + '<p>' + localStorage.humidity  + '% relative humidity</p>' + '<p>' + localStorage.precipProbability + '% chance of precipitation</p><p>Oroville, CA</p>').addClass(localStorage.icon);
+  }
 
   //set up variable for mobile. set this to keep track of width so functions are run only on transition from
   // moble to desktop and vice versa. if this isn't done, functions will fire constantly as window is resized
