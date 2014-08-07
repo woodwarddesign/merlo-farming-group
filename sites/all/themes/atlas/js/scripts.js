@@ -40,10 +40,13 @@ Drupal.behaviors.my_custom_behavior = {
         dataType: 'jsonp',
         success: function(data){
           localStorage.d1 = new Date();
-          localStorage.temp = parseInt(Math.ceil(data.currently.temperature, 10));
+          localStorage.temp = parseInt(Math.round(data.currently.temperature));
+          localStorage.feelsLike = parseInt(Math.round(data.currently.apparentTemperature));
           localStorage.humidity = (parseInt(data.currently.humidity * 100));
           localStorage.precipProbability = (parseInt(data.currently.precipProbability * 100));
           localStorage.icon = data.currently.icon;
+          localStorage.forecastHigh = parseInt(Math.round(data.daily.data[0].temperatureMax));
+          localStorage.forecastLow = parseInt(Math.round(data.daily.data[0].temperatureMin));
           localStorage.weatherSummary = data.currently.summary;
           addWeatherWidget();
         },
@@ -57,7 +60,7 @@ Drupal.behaviors.my_custom_behavior = {
     // remove placeholder text
     $('.remove-me').remove();
     // add weather data
-    $('.front .weather-widget').append('<h2 class="pane-title">Current weather</h2>' + '<p>' + localStorage.weatherSummary + '</p>' + '<p>' + localStorage.temp + ' degrees</p>'  + '<p>' + localStorage.humidity  + '% relative humidity</p>' + '<p>' + localStorage.precipProbability + '% chance of precipitation</p><p>Durham, CA</p>').addClass(localStorage.icon);
+    $('.front .weather-widget').append('<div class="widget-wrapper ' + localStorage.icon + '-top"><div class="weather-bg ' + localStorage.icon + '"></div><div class="weather-widget-top">' + '<p class="current-summary grid-2-3 first"><span class="forecast-high">High: ' + localStorage.forecastHigh + '</span><span class="forecast-low">Low: ' + localStorage.forecastLow + '</span><span class="feels-like">Feels like: ' + localStorage.feelsLike + '</span></p>' + '<p class="current-temp grid-1-3 last"><span class="temp">' + localStorage.temp + '&deg;</span><span class="text-summary">' + localStorage.weatherSummary + '</span></p></div><div class="weather-widget-bottom"><p class="humidity-precip grid-1-2 first">Humidity: '  + localStorage.humidity  + '%</p>' + '<p class="grid-1-2 last">Durham, CA</p></div></div>');
   }
 
   //set up variable for mobile. set this to keep track of width so functions are run only on transition from
