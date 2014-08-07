@@ -1,6 +1,6 @@
 /**
  * @file
- * JavaScript file for the Atlas
+ * JavaScript file for Atlas theme
  *
  */
 
@@ -36,19 +36,19 @@ Drupal.behaviors.my_custom_behavior = {
 
   function getWeather() {
     $.ajax({
-        url: 'https://api.forecast.io/forecast/1c11c79d6b408b1165bf09c2337b0f4c/39.4900784,-121.571218',
+        url: 'https://api.forecast.io/forecast/1c11c79d6b408b1165bf09c2337b0f4c/39.625379,-121.799302',
         dataType: 'jsonp',
         success: function(data){
           localStorage.d1 = new Date();
           localStorage.temp = parseInt(Math.ceil(data.currently.temperature, 10));
-          localStorage.humidity = (parseFloat(data.currently.humidity) * 100);
-          localStorage.precipProbability = (parseFloat(data.currently.precipProbability) * 100);
+          localStorage.humidity = (parseInt(data.currently.humidity * 100));
+          localStorage.precipProbability = (parseInt(data.currently.precipProbability * 100));
           localStorage.icon = data.currently.icon;
           localStorage.weatherSummary = data.currently.summary;
           addWeatherWidget();
         },
         error: function() {
-          $('.front .weather-widget').append('<h2 class="pane-title">Current weather</h2>' + '<p>Weather is temporarily unavailable.</p>');
+          $('.front .weather-widget').append('<h2 class="pane-title">Current Weather</h2>' + '<p>Weather is temporarily unavailable.</p>');
         }
     });
   }
@@ -57,7 +57,7 @@ Drupal.behaviors.my_custom_behavior = {
     // remove placeholder text
     $('.remove-me').remove();
     // add weather data
-    $('.front .weather-widget').append('<h2 class="pane-title">Current weather</h2>' + '<p>' + localStorage.weatherSummary + '</p>' + '<p>' + localStorage.temp + ' degrees</p>'  + '<p>' + localStorage.humidity  + '% relative humidity</p>' + '<p>' + localStorage.precipProbability + '% chance of precipitation</p><p>Oroville, CA</p>').addClass(localStorage.icon);
+    $('.front .weather-widget').append('<h2 class="pane-title">Current weather</h2>' + '<p>' + localStorage.weatherSummary + '</p>' + '<p>' + localStorage.temp + ' degrees</p>'  + '<p>' + localStorage.humidity  + '% relative humidity</p>' + '<p>' + localStorage.precipProbability + '% chance of precipitation</p><p>Durham, CA</p>').addClass(localStorage.icon);
   }
 
   //set up variable for mobile. set this to keep track of width so functions are run only on transition from
