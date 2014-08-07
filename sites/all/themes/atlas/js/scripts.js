@@ -60,8 +60,12 @@ Drupal.behaviors.my_custom_behavior = {
     // remove placeholder text
     $('.remove-me').remove();
     // add weather data
-    $('.front .weather-widget').append('<div class="widget-wrapper ' + localStorage.icon + '-top"><div class="weather-bg ' + localStorage.icon + '"></div><div class="weather-widget-top">' + '<p class="current-summary grid-2-3 first"><span class="forecast-high">High: ' + localStorage.forecastHigh + '</span><span class="forecast-low">Low: ' + localStorage.forecastLow + '</span><span class="feels-like">Feels like: ' + localStorage.feelsLike + '</span></p>' + '<p class="current-temp grid-1-3 last"><span class="temp">' + localStorage.temp + '&deg;</span><span class="text-summary">' + localStorage.weatherSummary + '</span></p></div><div class="weather-widget-bottom"><p class="humidity-precip grid-1-2 first">Humidity: '  + localStorage.humidity  + '%</p>' + '<p class="grid-1-2 last">Durham, CA</p></div></div>');
+    $('.front .weather-widget').append('<div class="widget-wrapper ' + localStorage.icon + '-top"><canvas id="icon1" width="128" height="128" class="weather-icon"></canvas><div class="weather-widget-top">' + '<p class="current-summary grid-2-3 first"><span class="forecast-high">High: ' + localStorage.forecastHigh + '</span><span class="forecast-low">Low: ' + localStorage.forecastLow + '</span><span class="feels-like">Feels like: ' + localStorage.feelsLike + '</span></p>' + '<p class="current-temp grid-1-3 last"><span class="temp">' + localStorage.temp + '&deg;</span><span class="text-summary">' + localStorage.weatherSummary + '</span></p></div><div class="weather-widget-bottom"><p class="humidity-precip grid-1-2 first">Humidity: '  + localStorage.humidity  + '%</p>' + '<p class="grid-1-2 last">Durham, CA</p></div></div>');
   }
+
+  var skycons = new Skycons({'color': 'white'});
+  skycons.add('icon1', localStorage.icon);
+  skycons.play();
 
   //set up variable for mobile. set this to keep track of width so functions are run only on transition from
   // moble to desktop and vice versa. if this isn't done, functions will fire constantly as window is resized

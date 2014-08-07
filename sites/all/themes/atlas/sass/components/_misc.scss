@@ -13,6 +13,7 @@
 
 .weather-widget,
 .widget-wrapper {
+  @include merlo-gradient;
   min-height: 280px;
   overflow: hidden;
   position: relative;
@@ -56,56 +57,11 @@
   padding-left: .5rem;
 }
 
-/* clear-day */
-
-.clear-day-top {
-  background: #aad0fd;
-  border: 3px solid darken(#aad0fd, 15%);
-}
-
-.clear-day {
-  -webkit-animation: sunny 15s linear infinite;
-	animation: sunny 15s linear infinite;
-  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
-  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
-	height: 140px;
-	width: 2px;
-	margin-left: 0;
-	position: absolute;
-	left: 50%;
-	top: 23%;
-}
-
-.clear-day:before {
-	background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
-  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
-  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
-	content: '';
-	height: 140px;
-	width: 2px;
-	opacity: 1;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	transform: rotate(90deg);
-}
-
-.clear-day:after {
-	background: #FFEE44;
-	border-radius: 50%;
-	box-shadow: rgba(255,255,0,0.2) 0 0 0 15px;
-	content: '';
-	height: 80px;
-	width: 80px;
-	position: absolute;
-	left: -40px;
-	top: 30px;
-}
-
-@keyframes sunny {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+// temp positioning
+.weather-icon {
+  left: 27%;
+  margin-top: 25%;
+  position: relative;
 }
 
 

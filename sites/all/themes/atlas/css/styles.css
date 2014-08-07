@@ -2068,19 +2068,24 @@ footer.grid-container {
 /* line 15, ../sass/components/_misc.scss */
 .weather-widget,
 .widget-wrapper {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #336607), color-stop(100%, #79b01f));
+  background-image: -webkit-linear-gradient(#336607, #79b01f);
+  background-image: -moz-linear-gradient(#336607, #79b01f);
+  background-image: -o-linear-gradient(#336607, #79b01f);
+  background-image: linear-gradient(#336607, #79b01f);
   min-height: 280px;
   overflow: hidden;
   position: relative;
 }
 
-/* line 22, ../sass/components/_misc.scss */
+/* line 23, ../sass/components/_misc.scss */
 .weather-widget-top,
 .weather-widget-bottom {
   padding: .5rem;
   position: absolute;
   width: 100%;
 }
-/* line 26, ../sass/components/_misc.scss */
+/* line 27, ../sass/components/_misc.scss */
 .weather-widget-top span, .weather-widget-top p,
 .weather-widget-bottom span,
 .weather-widget-bottom p {
@@ -2090,114 +2095,59 @@ footer.grid-container {
   text-shadow: 1px 1px 1px #222222;
 }
 
-/* line 34, ../sass/components/_misc.scss */
+/* line 35, ../sass/components/_misc.scss */
 .weather-widget-top {
   top: 0;
 }
 
-/* line 38, ../sass/components/_misc.scss */
+/* line 39, ../sass/components/_misc.scss */
 .weather-widget-bottom {
   bottom: 0;
 }
 
-/* line 43, ../sass/components/_misc.scss */
+/* line 44, ../sass/components/_misc.scss */
 .temp,
 .text-summary {
   line-height: 100%;
   text-align: center;
 }
 
-/* line 48, ../sass/components/_misc.scss */
+/* line 49, ../sass/components/_misc.scss */
 .weather-widget-top .temp {
   font-size: 2.5rem;
   margin-bottom: .25rem;
   text-align: right;
 }
 
-/* line 55, ../sass/components/_misc.scss */
+/* line 56, ../sass/components/_misc.scss */
 .grid-2-3.current-summary,
 .humidity-precip.grid-1-2 {
   padding-left: .5rem;
 }
 
-/* clear-day */
 /* line 61, ../sass/components/_misc.scss */
-.clear-day-top {
-  background: #aad0fd;
-  border: 3px solid #5fa7fb;
+.weather-icon {
+  left: 27%;
+  margin-top: 25%;
+  position: relative;
 }
 
-/* line 66, ../sass/components/_misc.scss */
-.clear-day {
-  -webkit-animation: sunny 15s linear infinite;
-  animation: sunny 15s linear infinite;
-  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
-  height: 140px;
-  width: 2px;
-  margin-left: 0;
-  position: absolute;
-  left: 50%;
-  top: 23%;
-}
-
-/* line 80, ../sass/components/_misc.scss */
-.clear-day:before {
-  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
-  content: '';
-  height: 140px;
-  width: 2px;
-  opacity: 1;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  transform: rotate(90deg);
-}
-
-/* line 94, ../sass/components/_misc.scss */
-.clear-day:after {
-  background: #FFEE44;
-  border-radius: 50%;
-  box-shadow: rgba(255, 255, 0, 0.2) 0 0 0 15px;
-  content: '';
-  height: 80px;
-  width: 80px;
-  position: absolute;
-  left: -40px;
-  top: 30px;
-}
-
-@keyframes sunny {
-  /* line 107, ../sass/components/_misc.scss */
-  0% {
-    transform: rotate(0deg);
-  }
-
-  /* line 108, ../sass/components/_misc.scss */
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* line 114, ../sass/components/_misc.scss */
+/* line 70, ../sass/components/_misc.scss */
 #admin-menu {
   font-size: 15px;
 }
 
-/* line 118, ../sass/components/_misc.scss */
+/* line 74, ../sass/components/_misc.scss */
 #admin-menu li.admin-menu-account > a {
   background: #79b01f;
 }
 
-/* line 122, ../sass/components/_misc.scss */
+/* line 78, ../sass/components/_misc.scss */
 #admin-menu .dropdown li li.expandable ul {
   margin: -27px 0 0 160px;
 }
 
-/* line 128, ../sass/components/_misc.scss */
+/* line 84, ../sass/components/_misc.scss */
 .img-left {
   float: left;
   display: inline-block;
@@ -2206,7 +2156,7 @@ footer.grid-container {
   max-width: 50%;
 }
 
-/* line 136, ../sass/components/_misc.scss */
+/* line 92, ../sass/components/_misc.scss */
 .img-right {
   float: right;
   display: inline-block;
@@ -2215,7 +2165,7 @@ footer.grid-container {
   max-width: 50%;
 }
 
-/* line 147, ../sass/components/_misc.scss */
+/* line 103, ../sass/components/_misc.scss */
 ul.pager {
   background: none;
   border: none;
@@ -2226,30 +2176,30 @@ ul.pager {
   text-align: right;
 }
 
-/* line 157, ../sass/components/_misc.scss */
+/* line 113, ../sass/components/_misc.scss */
 ul.pager li {
   border: none;
   font-size: 15px;
   padding: .5em 0 .5em 1em;
 }
 
-/* line 163, ../sass/components/_misc.scss */
+/* line 119, ../sass/components/_misc.scss */
 ul.pager li a {
   border: none;
 }
 
-/* line 168, ../sass/components/_misc.scss */
+/* line 124, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-previous {
   text-transform: capitalize;
 }
 
-/* line 172, ../sass/components/_misc.scss */
+/* line 128, ../sass/components/_misc.scss */
 .pager li.pager-current {
   font-weight: normal;
 }
 
-/* line 176, ../sass/components/_misc.scss */
+/* line 132, ../sass/components/_misc.scss */
 .pager li, .pager li.pager-next, .pager li.pager-previous, .pager li.pager-last, .pager li.pager-first {
   border: none;
   margin-left: 1em;
@@ -2257,54 +2207,54 @@ ul.pager li a {
   text-align: right;
 }
 
-/* line 183, ../sass/components/_misc.scss */
+/* line 139, ../sass/components/_misc.scss */
 .pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
   display: inline-block;
 }
 
-/* line 188, ../sass/components/_misc.scss */
+/* line 144, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-current {
   float: right;
 }
 
-/* line 192, ../sass/components/_misc.scss */
+/* line 148, ../sass/components/_misc.scss */
 .pager li.pager-previous {
   float: left;
 }
 
-/* line 196, ../sass/components/_misc.scss */
+/* line 152, ../sass/components/_misc.scss */
 .item-list .pager li {
   padding: .25em 1em;
 }
 
-/* line 209, ../sass/components/_misc.scss */
+/* line 165, ../sass/components/_misc.scss */
 .messages.error {
   background: #f5dfdf;
   border: 2px solid #ce9e9e;
 }
-/* line 213, ../sass/components/_misc.scss */
+/* line 169, ../sass/components/_misc.scss */
 .messages.warning {
   background: #f8fad5;
   border: 2px solid #e5d35b;
 }
-/* line 217, ../sass/components/_misc.scss */
+/* line 173, ../sass/components/_misc.scss */
 .messages.info {
   background: #dfeff5;
   border: 2px solid #9ebcce;
 }
-/* line 221, ../sass/components/_misc.scss */
+/* line 177, ../sass/components/_misc.scss */
 .messages.success {
   background: #e8f5df;
   border: 2px solid #9ece9e;
 }
-/* line 225, ../sass/components/_misc.scss */
+/* line 181, ../sass/components/_misc.scss */
 .messages h2 {
   font-size: 1rem;
   font-weight: 300;
 }
 
-/* line 235, ../sass/components/_misc.scss */
+/* line 191, ../sass/components/_misc.scss */
 .messages.error,
 .messages.warning,
 .messages.info,
@@ -2313,7 +2263,7 @@ ul.pager li a {
   margin-bottom: 2rem;
   padding: 1rem;
 }
-/* line 239, ../sass/components/_misc.scss */
+/* line 195, ../sass/components/_misc.scss */
 .messages.error li,
 .messages.warning li,
 .messages.info li,
@@ -2321,7 +2271,7 @@ ul.pager li a {
   color: #222222;
 }
 
-/* line 245, ../sass/components/_misc.scss */
+/* line 201, ../sass/components/_misc.scss */
 .element-invisible {
   position: absolute !important;
   height: 1px;
@@ -2330,14 +2280,14 @@ ul.pager li a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 249, ../sass/components/_misc.scss */
+/* line 205, ../sass/components/_misc.scss */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 255, ../sass/components/_misc.scss */
+/* line 211, ../sass/components/_misc.scss */
 .bantam {
   position: relative;
   overflow: hidden;
@@ -2353,14 +2303,14 @@ ul.pager li a {
   padding: 20px;
   margin-bottom: 2rem;
 }
-/* line 265, ../sass/components/_misc.scss */
+/* line 221, ../sass/components/_misc.scss */
 .bantam .left,
 .bantam .right {
   width: 100%;
   text-align: center;
 }
 @media (min-width: 40em) {
-  /* line 265, ../sass/components/_misc.scss */
+  /* line 221, ../sass/components/_misc.scss */
   .bantam .left,
   .bantam .right {
     width: 50%;
@@ -2368,18 +2318,18 @@ ul.pager li a {
   }
 }
 @media (min-width: 40em) {
-  /* line 274, ../sass/components/_misc.scss */
+  /* line 230, ../sass/components/_misc.scss */
   .bantam .left {
     padding-right: 2rem;
   }
 }
 @media (min-width: 60em) {
-  /* line 280, ../sass/components/_misc.scss */
+  /* line 236, ../sass/components/_misc.scss */
   .bantam .right {
     margin-top: 2rem;
   }
 }
-/* line 284, ../sass/components/_misc.scss */
+/* line 240, ../sass/components/_misc.scss */
 .bantam .right:before {
   content: "";
   display: block;
@@ -2393,19 +2343,19 @@ ul.pager li a {
   background-position: right top;
   background-size: 92%;
 }
-/* line 299, ../sass/components/_misc.scss */
+/* line 255, ../sass/components/_misc.scss */
 .bantam h3, .bantam p {
   color: #fefefe;
 }
-/* line 303, ../sass/components/_misc.scss */
+/* line 259, ../sass/components/_misc.scss */
 .bantam img {
   width: 100%;
 }
-/* line 307, ../sass/components/_misc.scss */
+/* line 263, ../sass/components/_misc.scss */
 .bantam p:last-child {
   margin-bottom: 0;
 }
-/* line 311, ../sass/components/_misc.scss */
+/* line 267, ../sass/components/_misc.scss */
 .bantam:after {
   content: "";
   display: table;
