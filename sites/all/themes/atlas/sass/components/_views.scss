@@ -33,6 +33,17 @@
 	}
 }
 
+// commodity views
+
+.commodity-table-header,
+.pricing-grid-row {
+  display: table;
+  width: 100%;
+  span {
+    display: table-cell;
+  }
+}
+
 // hide line break at top of news item
 .j br {
   display: none;

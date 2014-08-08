@@ -685,7 +685,19 @@ dd {
   margin-bottom: 1.5em;
 }
 
-/* line 37, ../sass/components/_views.scss */
+/* line 39, ../sass/components/_views.scss */
+.commodity-table-header,
+.pricing-grid-row {
+  display: table;
+  width: 100%;
+}
+/* line 42, ../sass/components/_views.scss */
+.commodity-table-header span,
+.pricing-grid-row span {
+  display: table-cell;
+}
+
+/* line 48, ../sass/components/_views.scss */
 .j br {
   display: none;
 }
