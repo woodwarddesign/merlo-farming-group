@@ -41,7 +41,22 @@
   width: 100%;
   span {
     display: table-cell;
+    width: 33%;
   }
+}
+
+.commodity-table-header {
+  background: $gray;
+  span {
+    font-weight: bold;
+  }
+}
+
+.commodity-table-header span:nth-child(2),
+.commodity-table-header span:nth-child(3),
+.pricing-grid-row span:nth-child(2),
+.pricing-grid-row span:nth-child(3) {
+  text-align: center;
 }
 
 // hide line break at top of news item

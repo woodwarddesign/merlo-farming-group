@@ -695,9 +695,27 @@ dd {
 .commodity-table-header span,
 .pricing-grid-row span {
   display: table-cell;
+  width: 33%;
 }
 
 /* line 48, ../sass/components/_views.scss */
+.commodity-table-header {
+  background: #dddddd;
+}
+/* line 50, ../sass/components/_views.scss */
+.commodity-table-header span {
+  font-weight: bold;
+}
+
+/* line 58, ../sass/components/_views.scss */
+.commodity-table-header span:nth-child(2),
+.commodity-table-header span:nth-child(3),
+.pricing-grid-row span:nth-child(2),
+.pricing-grid-row span:nth-child(3) {
+  text-align: center;
+}
+
+/* line 63, ../sass/components/_views.scss */
 .j br {
   display: none;
 }
